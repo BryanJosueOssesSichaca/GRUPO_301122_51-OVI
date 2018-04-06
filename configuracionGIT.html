@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Configuración Inicial GIT</title>
+</head>
+<body>
+<div class="scroll">	
+	<article>
+		<header>
+			<h2>Configuración inicial de GIT <span class="icon-git"></span></h2>
+			<p>Publicado el 06/04/2018 a las 00:45</p>
+		</header>
+		<p>
+			Una vez que esté instalado git y si es la primera vez que lo utilizamos, tenemos que configurar nuestros datos como nombre, correo electornico, editor etc… para esto utilizamos el comando <b>config</b> en la línea de comandos (GIT bash para Windows, la terminal del sistema para distribuciones de Linux y Mac Os):
+		</p>
+		<p class="title">Configurar nombre de usuario:</p>
+		<div class="code">
+			<p>
+				<span class="init">$</span> git <span class="clave">config</span> --global user.name <span class="parametro">“NombreDeUsuario”</span>
+			</p>
+		</div>
+		<p class="title">Configurar Correo Electronico:</p>
+		<div class="code">
+			<p>
+				<span class="init">$</span> git <span class="clave">config</span> --global user.email <span class="parametro">CorreoElectornico@ejemplo.com</span>
+			</p>
+		</div>
+		<p>
+			GIT siempre utilizará esta informacion para todo lo que hagas en el Sistema, para sobrescribir los datos solamente hay que utilizar el mismo comando pero con un nombre o email diferente.
+		</p>
+		<p class="title">Configurar Editor</p>
+		<p>
+			Puedes especificar el editor que GIT utilizará por defecto cuando GIT necesite que introduzcas un mensaje (como la descripción de los commits) en caso de no configurar esta opción git utilizara el editor por defecto del sistema.
+		</p>
+		<div class="code">
+			<p>
+				  <span class="init">$</span> git <span class="clave">config</span> -- global core.editor<span class="parametro"> NombreEditor</span>
+			</p>
+		</div>
+		<p class="title">Comprobar la configuración</p>
+		<p>Para comprobar La configuración utilizamos el comando:</p>
+		<div class="code">
+			<span class="init">$</span> git <span class="clave">config</span> -- global <span class="parametro">--list</span>
+		</div>
+		<div class="title-important">
+			<p class="title-important">Configuración de Git a través de Github Desktop</p>
+		</div>
+		<p>
+			Si utilizas GIT a través de una herramienta que nos proporcione una interfaz gráfica como Github Desktop, GIT kraken o source tree no tendrás que ingresar ningún comando de manera manual sino acceder a través de los menús de opciones.
+		</p>
+		<p>
+			En Github Desktop  debemos ir al menú <span class="clave">File -> Options</span>, allí nos encontraremos multiples pestañas:
+		</p>
+		<p class="title">Accounts:</p>
+		<p>
+			Aquí podemos iniciar sesión con nuestra cuenta de Github (Usuario y contraseña).
+		</p>
+		<p class="title">Git:</p>
+		<p>
+			igual que con el comando <span class="clave">config</span>, podemos configurar nuestro nombre y correo electrónico.
+		</p>
+		<p class="title">Advanced:</p>
+		<p>
+			Podemos elegir el editor externo, el Shell para la línea de comandos de GIT (por defecto GIT bash) entre otras opciones.
+		</p>
+		<div class="image-center">
+			<img src="Imagenes/Accounts.png" alt="options-GithubDesktop" title="options-GithubDesktop"/>
+			<p class="reference">Menú "Options" Github Desktop (06 de Abril del 2018) “elaboración propia”</p>
+		</div>
+	</article>
+</div>	
+</body>
+</html>
