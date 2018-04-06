@@ -137,6 +137,10 @@ p.title-important{
         float: none;
         margin:auto;
     }
+
+    div.image-center{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 670px){
