@@ -4,7 +4,9 @@ Este es el código fuente realizado para la actividad Unidad 1 y 2: Fase de Cons
 
 # Github Pages
 
-El proyecto esta publicado en Github Pages a traves de esta [*URL*](https://bryanjosueossessichaca.github.io/GRUPO_301122_51-OVI/) *https://bryanjosueossessichaca.github.io/GRUPO_301122_51-OVI/*
+El proyecto esta publicado en Github Pages a traves de esta [*URL*](https://bryanjosueossessichaca.github.io/GRUPO_301122_51-OVI/) 
+
+* *https://bryanjosueossessichaca.github.io/GRUPO_301122_51-OVI/*
 
 # Contribución
 
