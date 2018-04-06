@@ -2,6 +2,10 @@
 
 Este es el código fuente realizado para la actividad Unidad 1 y 2: Fase de Construcción - Crear un OVI en formato WEB con HTML5 y CSS3 del curso de diseño web.
 
+# Github Pages
+
+El proyecto esta publicado en Github Pages a traves de esta [*URL*](https://bryanjosueossessichaca.github.io/GRUPO_301122_51-OVI/) *https://bryanjosueossessichaca.github.io/GRUPO_301122_51-OVI/*
+
 # Contribución
 
 Esta obra está bajo una Licencia [*Creative Commons Atribución-NoComercial 4.0 Internacional*](https://creativecommons.org/licenses/by-nc/4.0/).
