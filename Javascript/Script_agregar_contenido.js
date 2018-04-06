@@ -34,6 +34,7 @@
 		cargarContenido("#Articulo-Git","Principal_git.html");
 		cargarContenido("#configuracion-Git","configuracionGIT.html");
 		cargarContenido("#inicial-Git","CreandoClonandoGit.html");
+		cargarContenido("#gitWork-Git","TrabajandoConGit.html")
 		cargarContenido("#github-video","videoGithub.html");
 		/* Agregar contenido de HTML */
 		cargarContenido("#Articulo1-HTML5","Principal_HTML5.html");
