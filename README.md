@@ -23,6 +23,8 @@ El código fuente esta almacenado en la plataforma Github, el [Fork & Pull workf
 * Enviar sus cambios a través de pull request
 ![pullRequest button](Imagenes/pull-request.png)
 
+* **¡Importante Actualizar periódicamente el Fork o copia realizado del repositorio, para tener la versión más actual disponible!
+
 # Requisitos
 
 * Una [cuenta de Github](https://github.com)
