@@ -1,9 +1,0 @@
-<h1>TLenguaje de programación para paginas web</h1> 
-<h2>Introduccion</h2> 
-<P>HTML es un sistema que sierve para definir tipos de documentos estructurados y lenguajes con marcas para tener una presentacion en el termino HTML
-esto identifica dos cosas como lo son tipo de documento y un lenguaje de marcas.</P>
-<h3>Que es el HTML</h3> 
-<P>Es un lenguaje normalmente utilizado en la WWW. Este lenguaje fue creado en el año 1986 por un fisico nuclear con el nombre de Tim Berners-Lee
-el cual se baso en dos herramientas ya existentes los cuales eran el concepto de hipertexto(Conocido también como link o ancla) y el SGML (Lenguaje Estándar de Marcación General).
-En si HTML no es un lenguaje de programacion si no que es un sistema de etiquetas . HTML no presenta ningún compilador, por lo tanto algún error de sintaxis que se presente éste no lo detectará y se visualizara en la forma como éste lo entienda.
-</P>
