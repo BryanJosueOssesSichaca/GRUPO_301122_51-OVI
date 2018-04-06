@@ -62,8 +62,9 @@ div.image img, div.image-center img{
 }
 
 div.image-center{
-    width:60%;
+    width:70%;
     margin:auto;
+    margin-bottom:20px;
     padding:0;
     text-align: center !important;
 }
