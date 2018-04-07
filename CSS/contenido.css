@@ -5,7 +5,7 @@
     height:500px;
     margin-left: 10%;
     margin-bottom: 20px;
-    transition: 1s ease;
+    transition: 1s ease; 
 }
 
 .content article header{
@@ -18,7 +18,7 @@
 }
 
 div.scroll{
-    height:1225px;
+    height:1500px;
     overflow:scroll;
     padding: 1%;
 }
