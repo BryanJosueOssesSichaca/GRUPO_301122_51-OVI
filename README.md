@@ -19,7 +19,7 @@ Del listado de cursos disponible para realizar el contenido y actividades del OV
 
 ![contenido button](Imagenes/contenido.png)
 
-**por lo tanto el OVI cuenta con apartados para:
+**por lo tanto el OVI cuenta con apartados para el contenido de:**
 
 * Git
 * HTML5
@@ -35,7 +35,7 @@ El código fuente esta almacenado en la plataforma Github, el [Fork & Pull workf
 * Enviar sus cambios a través de pull request
 ![pullRequest button](Imagenes/pull-request.png)
 
-* **¡Importante Actualizar periódicamente el Fork o copia realizado del repositorio, para tener la versión más actual disponible!
+* **¡Importante Actualizar periódicamente el Fork o copia realizado del repositorio, para tener la versión más actual disponible!**
 
 # Requisitos
 
