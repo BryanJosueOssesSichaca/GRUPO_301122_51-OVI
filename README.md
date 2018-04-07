@@ -29,7 +29,7 @@ Del listado de cursos disponible para realizar el contenido y actividades del OV
 * HTML5
 * CSS3
 
-* **El contenido de la pagina web se carga a través de un script en jQuery llamado ![Script_agregar_contenido.js](Javascript/Script_agregar_contenido.js) el contenido tiene que ser visualizado a través del Index del OVI ya que desde el index se cargan los demas archivos .html archivos .js (Javascript) y archivos .css necesarios para el correcto funcionamiento.**
+El contenido de la pagina web se carga a través de un **script en jQuery llamado ![Script_agregar_contenido.js](Javascript/Script_agregar_contenido.js)** el contenido tiene que ser visualizado a través del **Index** del OVI ya que desde el index se **cargan los demas archivos .html, archivos .js (Javascript) y archivos .css necesarios para el correcto funcionamiento.**
 
 # Como editar
 
