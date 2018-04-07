@@ -29,6 +29,8 @@ Del listado de cursos disponible para realizar el contenido y actividades del OV
 * HTML5
 * CSS3
 
+* **El contenido de la pagina web se carga a través de un script en jQuery llamado ![Script_agregar_contenido.js](Javascript/Script_agregar_contenido.js) el contenido tiene que ser visualizado a través del Index del OVI ya que desde el index se cargan los demas archivos .html archivos .js (Javascript) y archivos .css necesarios para el correcto funcionamiento.**
+
 # Como editar
 
 El código fuente esta almacenado en la plataforma Github, el [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) es utilizado para aceptar y revisar los cambios sobre el OVI.
@@ -41,8 +43,9 @@ El código fuente esta almacenado en la plataforma Github, el [Fork & Pull workf
 
 * **¡Importante Actualizar periódicamente el Fork o copia realizado del repositorio, para tener la versión más actual disponible!**
 
+
 # Requisitos
 
 * Una [cuenta de Github](https://github.com)
-* Tener instalado Git, en caso de estar familiarizado con los comandos de Git solo hace falta la linea de comandos (Git bash) de otra manera puede descargar herramientas que le ofrezcan una interfaz grafica para trabajar con Git como [Github Desktop](https://desktop.github.com/) o [sourceTree](https://www.sourcetreeapp.com/)
+* Tener instalado Git, en caso de estar familiarizado con los comandos de Git solo hace falta la linea de comandos (Git bash) de otra manera puede descargar herramientas que le ofrezcan una interfaz grafica para trabajar con Git como [Github Desktop](https://desktop.github.com/) o [SourceTree](https://www.sourcetreeapp.com/)
 
