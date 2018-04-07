@@ -6,7 +6,10 @@ Este es el código fuente realizado para la actividad Unidad 1 y 2: Fase de Cons
 
 El proyecto esta publicado en Github Pages a traves de esta [*URL*](https://bryanjosueossessichaca.github.io/GRUPO_301122_51-OVI/) 
 
+**Mirrors:**
+
 * *https://bryanjosueossessichaca.github.io/GRUPO_301122_51-OVI/*
+* *https://jdavidmguzman96.github.io/GRUPO_301122_51-OVI/*
 
 # Contribución
 
@@ -21,6 +24,7 @@ Del listado de cursos disponible para realizar el contenido y actividades del OV
 
 **por lo tanto el OVI cuenta con apartados para el contenido de:**
 
+* Editores de codigo
 * Git
 * HTML5
 * CSS3
