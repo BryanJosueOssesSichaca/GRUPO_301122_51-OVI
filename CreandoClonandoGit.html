@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crear y Clonar repositorios</title>
+</head>
+<body>
+	<div class="scroll">
+		<article>
+			<header>
+				<h2>Creando y Clonando repositorios con Git <span class="icon-git"></span></h2>
+				<p>Publicado el 06/04/2018 a las 10:13</p>
+			</header>
+			<p>
+				Para empezar a utilizar git y llevar un seguimiento sobre un proyecto lo primero que debemos hacer es crear un directorio/carpeta.
+			</p>
+			<p>
+				Una vez  haya sido creado este directorio debemos utilizar en la línea de comandos (GIT Bash) el siguiente comando sobre la ruta del directorio creado: 
+			</p>
+			<div class="code">
+				<span class="init">$</span> git <span class="clave">init</span>
+			</div>
+			<p>Este comando creara un subdirectorio llamado <span class="clave">.git</span>, el cual contiene todos los archivos necesarios para la creación del repositorio.</p>
+			<p>
+				En caso de estar utilizando una herramienta que nos bride una interfaz gráfica en lugar de la línea de comandos (GIT bash) como lo puede ser github desktop, git kraken o source tree no tendremos que digitar manualmente el comando sino acceder a través de los menús de la interfaz gráfica a la creación de un nuevo repositorio.
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/repositorio.png" alt="repositorio-GithubDesktop" title="repositorio-GithubDesktop"/>
+				<p style="text-align: center" class="reference">Creación de repositorio en Github Desktop (06 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p>
+				En el caso de Github Desktop podremos editar el nombre del repositorio, agregar una descripción, seleccionar la ruta en nuestro computador donde se creará el directorio que contendrá el repositorio y el subdirectorio .git, así como de manera opcional agregar un archivo README, gitIgnore y una licencia (software libre y open source en caso de no tener una cuenta enterprise en github) al proyecto.
+			</p>
+			<p>
+				El archivo <span class="parametro">gitIgnore</span> específica a través de una serie de patrones que archivos de manera intencional GIT no debe de seguir o ignorar y el archivo <span class="parametro">README</span> debe de facilitar una guía o descripción rápida del repositorio.
+			</p>
+			<p class="title-important">Clonando repositorios con Git</p>
+			<p>
+				En caso de querer obtener una copia de un repositorio GIT existente necesitamos clonarlo, para clonar un repositorio necesitamos utilizar el comando <span class="clave">clone:</span>
+			</p>
+			<div class="code">
+				<p>
+				<span class="init">$</span> git <span class="clave">clone</span> <span class="parametro">url-del-repositorio</span>
+				</p>
+				<p>
+				<span class="init">$</span> git <span class="clave">clone</span> <span class="parametro">https://github.com/BryanJosueOssesSichaca/GRUPO_301122_51-OVI</span>
+				</p>
+			</div>
+			<p>
+				Si queremos cambiar el nombre del directorio donde será clonado el repositorio debemos agregar un parametro extra con el nombre del directorio deseado.
+			</p>
+			<div class="code">
+				<p>
+				<span class="init">$</span> git <span class="clave">clone</span> <span class="parametro">https://github.com/BryanJosueOssesSichaca/GRUPO_301122_51-OVI</span> <span class="init">Nombre-Del-Directorio</span>
+				</p>
+			</div>
+			<p>
+				Para clonar un repositorio en GithubDesktop debemos ir al <span class="clave">menú File -> clone repository</span>, en la pestaña URL debemos colocar la URL del repositorio a clonar así como el directorio de destino donde se clonará el repositorio.
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/clone.png" alt="clone-GithubDesktop" title="clone-GithubDesktop"/>
+				<p style="text-align: center" class="reference">Clonando repositorio con Github Desktop (06 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p class="title-important">Obteniendo Información del repositorio</p>
+			<p class="title">estatus de nuestro repositorio (Git Bash)</p>
+			<p>
+				la principal herramienta con la que podemos comprobar en que estado estan los archivos del repositorio es el comando <span class="clave">status:</span>
+			</p>
+			<div class="code">
+				<span class="init">$</span> git <span class="clave">status</span>
+			</div>
+			<p>
+				nos devolvera información como en que rama nos encontramos, si hay archivos en el staging area para hacer commit, si hay archivos nuevos a los cuales Git no les esta haciendo un seguimiento y si hay cambios sobre archivos existentes en el repositorio.
+			</p>
+			<p>
+				EJ: <span class="clave"># On branch master
+nothing to commit, working directory clean</span>
+			</p>
+			<p class="title">estatus de nuestro repositorio (Github Desktop)</p>
+			<p>
+				En el caso de Github Desktop podemos ver el estado de los archivos en el panel principal en la pestaña <span class="clave">changes</span> Github Desktop nos indica con un simbolo <span class="clave">[+]</span> los archivos nuevos que han sido agregados al repositorio, en el caso de los archivos modificados existentes un circulo amarillo y dando click sobre los cambios podremos ver en <span class="parametro">rojo</span> las lineas de codigo eliminadas y en <span class="clave">verde</span> las lineas de codigo agregadas, para los archivos eliminados un simbolo <span class="parametro">[-]</span>
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/changes.png" alt="changes-GithubDesktop" title="changes-GithubDesktop"/>
+				<p style="text-align: center" class="reference">Pestaña Changes Github Desktop (06 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p class="title">Historial de commits de un repositorio (Git Bash)</p>
+			<p>
+				Si hemos clonado un repositorio que ya poseia un historial de cambios quizas quieras ver el historial de commits, para esto debemos utilizar el comando <b>log</b>
+			</p>
+			<div class="code">
+				<span class="init">$</span> git <span class="clave">log</span>
+			</div>
+			<p>
+				al ejecutar este comando se imprimira en la pantalla de la terminal una lista que contendra información para cada commit parecida a esta:
+			</p>
+			<div class="code">
+				<p>
+					commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+					<br/>
+					Author: <span class="parametro">NombreAutor </span><span class="parametro">&lt;correoElectornico@ejemplo.com&gt;</span>
+					</br>
+					Date:   Mon Mar 17 21:52:11 2018 -0700
+					</br></br>
+	    			<span class="parametro">Descripción de los cambios del commit</span>
+				</p>
+			</div>
+			<p>
+				nos muestra el codigo comprobación SHA de cada commit, los datos del autor (Nombre y Correo electronico), la fecha en la que se realizo el commit y la descripción del commit. 
+			</p>
+			<p class="title">Historial de commits de un repositorio (Github Desktop)</p>
+			<p>
+				En el panel principal debemos hacer click sobre la pestaña <b>History</b> aqui podremos ver el historial de commits, el cual nos muestra el nombre del commit, la descripción del commit, el nombre de la persona/contribuyente que creo ese commit, la fecha en la cual se creo ese commit asi como los archivos modificados.
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/history.png" alt="history-GithubDesktop" title="history-GithubDesktop"/>
+				<p style="text-align: center" class="reference">Pestaña History Github Desktop (06 de Abril del 2018) “elaboración propia”</p>
+			</div>
+		</article>
+	</div>
+</body>
+</html>

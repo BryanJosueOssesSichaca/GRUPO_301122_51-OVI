@@ -1,3 +1,5 @@
+
+
 .content article .video{
     width:80%;
     height:500px;
@@ -20,7 +22,7 @@ div.scroll{
     overflow:scroll;
     padding: 1%;
 }
-.content article > p, article > h3, article > h2, .content div.principal{
+.content article > p, article > h3, article > h2, .content div.principal,div.title-important p{
     font-size: 1.3em;
     text-align: justify;
     margin-bottom: 20px;
@@ -54,9 +56,58 @@ div.image{
     margin-right: 2%;
 }
 
-div.image img{
+div.image img, div.image-center img{
     width:100%;
     height:auto;
+}
+
+div.image-center{
+    width:70%;
+    margin:auto;
+    margin-bottom:20px;
+    padding:0;
+    text-align: center !important;
+}
+
+div.code{
+    padding: 10px;
+    display: inline-block;
+    font-size: 1.2em;
+    background: #f1f1f1;
+    border: 1px solid #cccbcb;
+    border-radius:5px;
+    margin-bottom:10px;
+}
+
+div.code p{
+    font-family: 'Mina' !important; 
+}
+
+p.title, p.title-important{
+    color:#126093;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+p.title-important{
+    color: #666 !important;
+    font-size: 2em !important;
+}
+
+.title-important{
+    text-align: center !important;
+}
+
+.init{
+    color:#9f1bad;
+}
+
+.clave{
+    color:#4dc03b;
+}
+
+.parametro{
+    color:#a62219;
 }
 
 .resaltado{
@@ -86,6 +137,10 @@ div.image img{
         width:70%;
         float: none;
         margin:auto;
+    }
+
+    div.image-center{
+        width: 100%;
     }
 }
 
