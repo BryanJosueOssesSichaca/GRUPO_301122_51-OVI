@@ -30,7 +30,7 @@ div.scroll{
 }
 
 .content article ol.lista{
-    list-style: none;
+    list-style: circle;
 }
 
 .content article ul.lista{
@@ -43,10 +43,10 @@ div.scroll{
 
 
 .content article ol.lista li{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-left: 1.5%;
     font-size: 1.3em;
-
+    text-align: justify;
 }
 
 div.image{
