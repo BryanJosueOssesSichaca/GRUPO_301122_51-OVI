@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trabajando con Git</title>
+</head>
+<body>
+	<div class="scroll">
+		<article>
+			<header>
+				<h2>Trabajando con Github <span class="icon-github"></span></h2>
+				<p>Publicado el 07/04/2018 a las 19:53</p>
+			</header>
+			<p class="title-important">Creando y sincronizando repositorio Remoto en Github</p>
+			<p class="title">Vincular nuestro repositorio Local con nuestro repositorio remoto en Github (Git Bash)</p>
+			<p>
+				si estamos trabajando con la linea de comandos lo primero que tenemos que hacer es crear un repositorio desde la pagina oficial de github.
+			</p>
+			<p>
+				hacemos click en el botón<span class="clave"> Start a project</span> en la pagina principal de Github, a través de una interfaz web podremos crear un nuevo repositorio. 
+			</p>
+			<ol class="lista">
+				<li><span class="init">Owner:</span> la cuenta de Github a la que estará vinculado el repositorio.</li>
+				<li><span class="init">Repository Name:</span> aquí debemos escribir el nombre que tendrá el repositorio.</li>
+				<li><span class="init">Description:</span> una descripción opcional del respositorio.</li>
+				<li><span class="init">Public/private</span> Seleccionar si nuestro repositorio será publico o privado <span class="parametro">(Para crear repositorios privados en Github debemos contar con una cuenta enterprise)</span>.</li>
+				<li><span class="init">Initialize this repository with a README:</span>Crear un archivo README.md junto con el repositorio.</li>
+				<li><span class="init">Add gitIgnore/License:</span> agregar licenciamiento al codigo fuente del repositorio <span class="parametro">(en caso de ser un repositorio publico, solo tendremos disponibles licencias de software libre y open source)</span>, asi como el archivo gitignore.</li>
+			</ol>
+			<div class="image-center">
+				<img src="Imagenes/repositorio-github.png" alt="Repositorio Github" title="Repositorio Github" style="max-width: 700px"/>
+				<p style="text-align: center" class="reference">Creando repositorio en Github (08 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p>
+				Una vez que este creado el repositorio debemos dar click en el boton <span class="clave">Clone or download</span> y copiar la URL de nuestro repositorio remoto en Github. 
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/clone-or-download.png" alt="clone-or-download" title="clone-or-download"/>
+				<p style="text-align: center" class="reference">Boton Clone or Download - Github (08 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p>
+				cuando tengamos la URL de nuestro repositorio remoto en Github debemos ir a la linea de comandos de Git (Git bash), dirigirnos a la ruta del repositorio local que hayamos creado (o crear uno nuevo, <span class="parametro">cabe mencionar que no hace falta que el repositorio local se llame igual que el remoto</span>) e introducir el comando <span class="clave">remote:</span>
+			</p>
+			<div class="code">
+				<p>
+					<span class="init">$</span> git <span class="clave">remote</span> <span class="parametro">add origin</span> <span class="init">URL-repositorio-remoto-Github</span> 
+				</p>
+			</div>
+			<p>
+				de esta manera nuestro repositorio local estará sincronizado con nuestro repositorio remoto en Github.
+			</p>
+			<p>
+				Si queremos ver el repositorio remoto que tenemos vinculado debemos de pasarle el parametro <span class="parametro">-v</span> al comando <span class="clave">remote:</span>
+			</p>
+			<div class="code">
+				<p>
+					<span class="init">$</span> git <span class="clave">remote</span> <span class="parametro">-v</span>
+				</p>
+			</div>
+			<p>
+				si queremos eliminar el repositorio remoto debemos pasarle el parametro <span class="parametro">remove</span> al comando <span class="clave">remote</span>
+			</p>
+			<div class="code">
+				<p>
+					<span class="init">$</span> git <span class="clave">remote</span> <span class="parametro">remove origin</span>
+				</p>
+			</div>
+			<div class="image-center">
+				<img src="Imagenes/git-origin.png" alt="git-origin" title="git-origin" style="max-width:600px"/>
+				<p style="text-align: center" class="reference">comando remote - Git Bash (08 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p class="title">Vincular nuestro repositorio Local con nuestro repositorio remoto en Github (Github Desktop)</p>
+			<p>
+				una vez que hayamos creado nuestro repositorio local, solamente tendremos que dar click en el botón <span class="clave">publish repository</span>, se abrirá una nueva ventana donde tendremos que colocar el nombre del repositorio remoto, la descripción y podremos seleccionar si será publico o privado <span class="parametro">(Para crear repositorios privados en Github debemos contar con una cuenta enterprise)</span>. 
+			</p>
+			<p>
+				automaticamente Github Desktop nos creará un repositorio remoto con la cuenta de github con la que hemos iniciado sesión en Github Desktop y lo sincronizará con nuestro repositorio local.
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/publish-githubdesktop.png" alt="publish-repository-githubdesktop" title="publish-repository-githubdesktop"/>
+				<p style="text-align: center" class="reference">publish repository - Github Desktop (08 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p class="title-important">Fetch, Push y Pull</p>
+			<p class="title">Fetch, Push y Pull (Git Bash)</p>
+			<p>
+				Cuando nuestro repositorio local esta vinculado con un repositorio remoto, es muy importante que antes de empezar a trabajar o hacer cambios en el proyecto <span class="parametro">tengamos la ultima version con todos los commits del repositorio remoto</span>, para esto utilizamos el comando <span class="clave">fetch</span>
+			</p>
+			<div class="code">
+				<p>
+					<span class="init">$</span> git <span class="clave">fetch:</span> <span class="parametro">origin</span>
+				</p>
+			</div>
+			<p>
+				el comando fetch recupera todos los datos del repositorio remoto y en caso de existir nuevos cambios, nos informará sobre estos cambios. 
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/fetch-git.png" alt="fetch-git" title="fetch-git" style="max-width:600px"/>
+				<p style="text-align: center" class="reference">comando fetch - Git Bash (08 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p>
+				Es muy importante no olvidar hacer fetch antes de comenzar a realizar cambios en el repositorio local, ya que si intentamos publicar los cambios del repositorio local con una version distinta a la del repositorio remoto Git no nos lo permitirá. 
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/fetch-fail.png" alt="fetch-fallo" title="fetch-fallo" style="max-width:600px"/>
+				<p style="text-align: center" class="reference">comando fetch error - Git Bash (08 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p>
+				el comando <span class="clave">fetch</span> unicamente recupera la información pero no la une con la que tenemos en nuestro repositorio local, para actualizar nuestro repositorio local con los cambios que puedan existir en nuestro repositorio remoto debemos utilizar el comando <span class="clave">pull</span>
+			</p>
+			<div class="code">
+				<p>
+					<span class="init">$</span> git <span class="clave">pull:</span> <span class="parametro">origin</span> <span class="init">Nombre_rama</span>
+				</p>
+			</div>
+			<p>
+				en caso tal de que la versión de nuestro repositorio local no sea la misma que la de nuestro repositorio remoto, por defecto Git no nos permitirá unir los cambios <span class="parametro">(fatal: refusing to merge unrelated histories)</span>.
+			</p>
+			<p>
+				para solucionar este problema tendremos que pasarle al comando pull el parametro <span class="parametro">--allow-unrelated-histories</span>.
+			</p>
+			<div class="code">
+				<p>
+					<span class="init">$</span> git <span class="clave">pull:</span> <span class="parametro">origin</span> <span class="init">Nombre_rama --allow-unrelated-histories</span>
+				</p>
+			</div>
+			<p>
+				una vez utilicemos el comando <span class="clave"> pull</span> se abrirá el  editor <span class="parametro">(Por defecto Git bash utiliza el editor vim)</span> que hayamos configurado y en el  debemos escribir la descripción del commit con la mezcla de los cambios en el repositorio remoto con el local.
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/git-pull.png" alt="git-pull" title="git-pull" style="max-width:600px"/>
+				<p style="text-align: center" class="reference">comando pull - Git Bash (08 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p>
+				en este punto tendremos que empezar a realizar nuestros cambios al proyecto de manera local, cuando ya hayamos confirmados nuestros cambios a través de commits en nuestro repositorio local, tendremos que enviar esos cambios a nuestro repositorio remoto.
+			</p>
+			<p>
+				para enviar nuestros nuevos commits realizados en nuestro repositorio local a nuestro repositorio remoto debemos de utilizar el comando <span class="clave">push</span>
+			</p>
+			<div class="code">
+				<p>
+					<span class="init">$</span> git <span class="clave">push:</span> <span class="parametro">origin</span> <span class="init">Nombre_rama</span>
+				</p>
+			</div>
+			<p>
+				Git nos pedira el nombre de usuario de Github y la contraseña para poder confirmar los cambios en el repositorio remoto cada vez que utilicemos el comando <span class="clave">push</span>, en caso de que los datos de inicio de sesión de Github sean erroneos, Git no nos permitirá mezclar nuestros cambios locales con el repositorio remoto.
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/git-push.png" alt="git-push" title="git-push" style="max-width:600px"/>
+				<p style="text-align: center" class="reference">comando push - Git Bash (08 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p class="title">Fetch, Push y Pull (Github Desktop)</p>	
+			<p>
+				para hacer <span class="clave">fetch</span> en github desktop solo tendremos que dar click en el boton <span class="clave">Fetch Origin</span>
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/fetch-origin-github.png" alt="fetch-origin-github" title="fetch-origin-github" style="max-width:175px"/>
+				<p style="text-align: center" class="reference">Captura Botón Fetch Origin - Github Desktop (08 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p>
+				En caso de existir cambios en el repositorio remoto que no esten en nuestro repositorio local, el boton fetch se sustituirá por el botón <span class="clave">pull origin</span> y un numero que indica la cantidad de commits nuevos, de esta manera podemos hacer <span class="clave">pull</span> y traer los cambios del repositorio remoto al local. 
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/githubdesktop-pull.png" alt="githubdesktop-pull" title="githubdesktop-pull" style="max-width:175px"/>
+				<p style="text-align: center" class="reference">Captura Botón pull Origin - Github Desktop (08 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p>
+				en este punto empezaremos a trabajar de manera local y cuando hayamos confirmado losw cambios a través de commits aparecera un boton llamado <span class="clave">push origin</span> y un numero indicando la cantidad de commits realizados de manera local que seran enviados al repositorio remoto.
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/push-githubdekstop.png" alt="push-githubdesktop" title="push-githubdesktop" style="max-width:175px"/>
+				<p style="text-align: center" class="reference">Captura Botón push Origin - Github Desktop (08 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p class="title-important">Publicando Proyecto en Github Pages</p>
+			<p>
+				la propia plataforma de Github nos ofrece un servicio de Hosting para alojar nuestros repositorios en una pagina web de una manera muy sencilla y sin necesidad de tener conocimientos en administración de servidores o clientes FTP.
+			</p>
+			<p>
+				este servicios es denominado <span class="init"><a href="https://pages.github.com/" target="_blank">Github Pages</a></span>.
+			</p>	
+			<p>
+				para poder publicar nuestro repositorio en Github pages, la rama que será publicada debe contener un archivo <b><span class="parametro">index.html</span></b>. de lo contrario el servidor nos arrojara un mensaje de <span class="parametro">error 404</span> Indicando que no se encuentra el archivo <span class="parametro">index.html</span>.
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/error-404.png" alt="error-404" title="error-404" style="max-width:600px"/>
+				<p style="text-align: center" class="reference">Error 404 - Github Pages (08 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p>
+				lo primero que tendremos que hacer es ir a la opción <span class="clave">settings</span> en la pagina de Github de nuestro repositorio remoto.
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/settings-github.png" alt="settings-github" title="settings-github"/>
+				<p style="text-align: center" class="reference">settings - github (08 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p>
+				desde allí dirigirnos al apartado <span class="init">Github Pages</span> y dar click en la lista desplegable llamada <span class="parametro">Source</span>, por defecto estara seleccionada la opcion <b>None</b>.
+			</p>
+			<p>
+				al hacer click se abrirá la lista desplegable y nos mostrara las ramas que tenemos en nuestro proyecto, en mi caso solo existe la rama <b>Master</b>, por lo tando dentro de <b>Master</b> debe existir un archivo <span class="parametro">index.html</span>, seleccionamos la rama (en el ejemplo <b>Master branch</b>) y damos click en el boton <span class="clave">save</span>.
+			</p>
+			<p>
+				primero aparecera un mensaje indicando que nuestro sitio web esta listo para ser publicado, tendremos que recargar la pagina y esperar a que el mensaje cambie a <span class="clave"><span class="icon-checkmark"></span> Your site is published</span>. 	
+			</p>
+			<div class="image-center">
+				<img src="Imagenes/published.githubpages.png" alt="published.githubpages" title="published.githubpages" style="max-width:600px"/>
+				<p style="text-align: center" class="reference">settings - github (08 de Abril del 2018) “elaboración propia”</p>
+			</div>
+			<p class="title">URL del proyecto publicado en Github Pages</p>
+			<p>
+				si bien Github pages nos permite modificar el dominio, por defecto la URL de un proyecto publicado en Github pages se organiza de la siguiente manera:
+			</p>
+			<div class="code">
+				<p>
+					<span class="init">https://</span><span class="clave">Nombre_De_Usuario_Github</span>.github.io/<span class="parametro">Nombre_del_repositorio_Remoto</span>/
+				</p>
+			</div>
+			<p>Ejemplo: <a href="https://bryanjosueossessichaca.github.io/pagina_Web/">https://bryanjosueossessichaca.github.io/pagina_Web/</a></p>
+		</article>
+	</div>
+</body>
+</html>

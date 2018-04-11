@@ -6,7 +6,10 @@ Este es el código fuente realizado para la actividad Unidad 1 y 2: Fase de Cons
 
 El proyecto esta publicado en Github Pages a traves de esta [*URL*](https://bryanjosueossessichaca.github.io/GRUPO_301122_51-OVI/) 
 
+**Mirrors:**
+
 * *https://bryanjosueossessichaca.github.io/GRUPO_301122_51-OVI/*
+* *https://jdavidmguzman96.github.io/GRUPO_301122_51-OVI/*
 
 # Contribución
 
@@ -21,9 +24,12 @@ Del listado de cursos disponible para realizar el contenido y actividades del OV
 
 **por lo tanto el OVI cuenta con apartados para el contenido de:**
 
-* Git
-* HTML5
-* CSS3
+* Git y Github - [Bryan Josue Osses Sichaca](https://github.com/BryanJosueOssesSichaca)
+* HTML5 - [Andres Camilo Tautiva Vargas](https://github.com/Camilo159) / [Jose David Mejia Guzman](https://github.com/JDavidMGuzman96)
+* CSS3 - [Laura Marcela Blanco Huertas](https://github.com/451arual)
+* Editores de codigo - [Jose David Mejia Guzman](https://github.com/JDavidMGuzman96)
+
+El contenido de la pagina web se carga a través de un **script en jQuery** llamado [Script_agregar_contenido.js](Javascript/Script_agregar_contenido.js) el contenido tiene que ser visualizado a través del **Index** del OVI ya que desde el index se **cargan los demas archivos .html, archivos .js (Javascript) y archivos .css necesarios para el correcto funcionamiento**
 
 # Como editar
 
@@ -37,8 +43,9 @@ El código fuente esta almacenado en la plataforma Github, el [Fork & Pull workf
 
 * **¡Importante Actualizar periódicamente el Fork o copia realizado del repositorio, para tener la versión más actual disponible!**
 
+
 # Requisitos
 
 * Una [cuenta de Github](https://github.com)
-* Tener instalado Git, en caso de estar familiarizado con los comandos de Git solo hace falta la linea de comandos (Git bash) de otra manera puede descargar herramientas que le ofrezcan una interfaz grafica para trabajar con Git como [Github Desktop](https://desktop.github.com/) o [sourceTree](https://www.sourcetreeapp.com/)
+* Tener instalado Git, en caso de estar familiarizado con los comandos de Git solo hace falta la linea de comandos (Git bash) de otra manera puede descargar herramientas que le ofrezcan una interfaz grafica para trabajar con Git como [Github Desktop](https://desktop.github.com/) o [SourceTree](https://www.sourcetreeapp.com/)
 
