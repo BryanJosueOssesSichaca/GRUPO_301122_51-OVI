@@ -41,6 +41,8 @@
 		cargarContenido("#Articulo1-HTML5","Principal_HTML5.html");
 		/* Agregar contenido de CSS */
 		cargarContenido("#Articulo1-CSS3","Principal_CSS3.html");
+		/* Agregar contenido intro editores */
+		cargarContenido("#intro_editores","Principal_editores.html");		
 		/* Agregar contenido de Editores de codigo */
 		cargarContenido("#editor_notepad","EditorNotepad_HTML5.html");
 	});
