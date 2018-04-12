@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad Git y Github</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box; 
+		}
+		
+		body{
+			font-family: monospace, Arial;
+		}
+		
+		h3{
+			text-align: justify;
+			padding: 10px;
+			color: #6a6a6a;
+		}
+
+		main{
+			max-width:1000px;
+			width:100%;
+			margin:auto;
+			border:1px solid #3b5998;
+			padding: 10px;
+			border-radius: 5px;
+			background:  #e6ecff;
+		}
+
+		label{
+			display: block;
+			padding: 0 25px;
+			padding-top: 5px;
+			margin:5px 0;
+			text-align: justify;
+			
+		}
+		
+		label:hover{
+			background: #F1F1F1;
+			border-radius: 5px;
+			border: 1px solid #cccbcb;
+			cursor: pointer;
+		}
+
+		input[type=button]{
+			padding: 10px;
+			background: #0f4979;
+			border-style: none;
+			color:#fff;
+			cursor: pointer;
+			font-size: 1.5em;
+			display: block;
+			margin:auto; 
+			margin-top: 20px;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			box-shadow: 2px 2px #125893;
+			transition: 0.3s ease;
+		}
+			
+		input[type=button]:hover{
+			font-size: 1.6em
+		}
+
+		.wrong{
+			background: #f9d2d2;
+			border: 1px solid #ad1616;
+			padding:10px;
+			color: #ad1616;
+			border-radius: 5px;
+			text-align: center;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		.good{
+			background: #e6ffe6;
+			border: 1px solid #006600;
+			padding:10px;
+			color: #006600;
+			border-radius: 5px;
+			text-align: center;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		
+		.question{
+			background: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #cccbcb;
+			margin-bottom: 15px;
+		}
+
+		.imagen{
+			text-align: center;
+			margin:10px 0;
+			width: 100%;
+		}
+
+		.clave{
+			color: #009900;
+			font-weight: bold;
+		}
+
+		@media screen and (max-width: 620px){
+			.imagen img{
+				width:100%;
+				height: auto;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<form id="actividad" name="actividad">
+			<div id="question1" class="question">
+				<h3 class="title">1. existen diferentes tipos de sistemas de control de versiones, Git es un sistema gestor de versionamiento:</h3>
+				<label><input type="radio" id="radio-question1" name="question1" value="1"> <strong>Local</strong> - ya que se trata unicamente de un base de datos simple que contiene el registro de todos los cambios realizados, guardando un conjunto de parches con la diferencia entre los archivos de una version u otra.</label>
+				<label><input type="radio" id="radio-question1" name="question1" value="2"> <strong>Centralizado</strong> - ya que existe un unico repositorio central al cual debemos estar conectados para realizar cambios, del cual es responsable un unico usuario y unicamente este usuario es quien puede tomar decisiones sobre el repositorio.</label>
+				<label><input type="radio" id="radio-question1" name="question1" value="3"> <strong>Distribuido</strong> - ya que cada uno de los clientes puede tener una copia completa con todos los archivos e historial de confirmaciones del proyecto de manera local, asi como trabajar sobre el mismo sin necesidad de estar conectado siempre.</label>
+				<label><input type="radio" id="radio-question1" name="question1" value="4"> <strong>Ninguna de las anteriores.</strong></label>
+			</div>
+			<div id="question2" class="question">
+				<h3 class="title">2. cuales de las siguientes opciones son afirmaciones del sistema de control de versiones Git (Seleccione unicamente 2 opciones si selecciona mas de 2 automaticamente la pregunta queda invalidada).</h3>
+				<label><input type="checkbox" value="1" name="question2-check1"> Git es un sistema de control de versiones, diseñado originalmente por Richard Stallman creador de la Free Software Foundation.</label>
+				<label><input type="checkbox" value="2" name="question2-check2"> Para trabajar con Git podemos utilizar la terminal del sistema (Mac Os y distribuciones de Linux) o Git Bash en windows.</label>
+				<label><input type="checkbox" value="3" name="question2-check3"> Podemos utilizar el comando cd para movernos entre los diferentes directorios del sistema.</label>
+				<label><input type="checkbox" value="3" name="question2-check4"> Con git podemos trabajar en nuestra propia copia local sin necesidad de estar conectados con el respositorio remoto.</label>
+			</div>
+			<div id="question3" class="question">
+				<h3 class="title">3. cual de las siguientes opciones es una respuesta valida del comando <span class="clave">$ git status</span></h3>
+				<label><input type="radio" id="radio-question3" name="question3" value="respuesta 1">
+				On branch master
+				<br>
+				No commits yet
+				<br>
+				nothing to commit (create/copy files and use "git add" to track)
+				</label>
+				<label><input type="radio" id="radio-question3" name="question3" value="respuesta 2"> 
+				[master (root-commit) f021a89] agregando Index
+				</br>
+		 		1 file changed, 2 insertions(+)
+		 		</br>
+		 		create mode 100644 documento.txt
+				</label>
+				<label><input type="radio" id="radio-question3" name="question3" value="respuesta 2">
+				commit f021a8926828b803b02dfbfba6f5d9a9fef954ce (HEAD -> master)
+				<br/>
+				Author: Bryan  Josue Osses Sichaca &lt;megamitensei1994@gmail.com&gt;
+				<br/>
+				Date:   Thu Apr 12 00:08:29 2018 -0500
+				<br/>
+				</label>
+				<label><input type="radio" id="radio-question3" name="question3" value="respuesta 2">
+				user.name=Bryan  Josue Osses Sichaca
+				<br>
+				user.email=megamitensei1994@gmail.com
+				<br>
+				github.user=BryanJosueOssesSichaca
+				<br>
+				github.token=ff657hfbsbfjd7y493h4fndsj28
+				<br>
+				filter.lfs.clean=git-lfs clean -- %f
+				<br>
+				filter.lfs.smudge=git-lfs smudge -- %f
+				<br>
+				filter.lfs.process=git-lfs filter-process
+				<br>
+				filter.lfs.required=true
+				<br>
+				core.autocrlf=true
+				<br>
+				core.excludesfile=C:\repo\gitignore_global.txt
+				</label>
+			</div>
+			<div id="question4" class="question">
+				<h3 class="title">4. ¿para que se utiliza el/los comando mostrado/s en la siguiente imagen?</h3>
+				<div class="imagen">
+					<img src="../Imagenes/git-origin.png" alt="git-origin"/>
+				</div>	
+				<label><input type="radio" id="radio-question4" name="question4" value="1"> Se utiliza para eliminar el repositorio remoto que tenemos vinculado a nuestro repositorio local.</label>
+				<label><input type="radio" id="radio-question4" name="question4" value="2"> Se utiliza para vincular el repositorio remoto con el repositorio local.</label>
+				<label><input type="radio" id="radio-question4" name="question4" value="3"> Se utiliza para vincular el repositorio remoto y revisar la URL del repositorio remoto vinculado.</label>
+				<label><input type="radio" id="radio-question4" name="question4" value="4"> Se utiliza para ver el historial de commits existentes en el repositorio remoto.</label>
+			</div>
+			<div id="question5" class="question">
+				<h3>5. cuales de las siguientes opciones son programas que podemos descagar e instalar en nuestro computador para utilizar Git a través de una interfaz grafica (Seleccione unicamente 2 opciones si selecciona mas de 2 automaticamente la pregunta queda invalidada). </h3>
+				<label><input type="checkbox" value="1" name="question5-check1"> GitLab</label>
+				<label><input type="checkbox" value="2" name="question5-check2"> Git Kraken</label>
+				<label><input type="checkbox" value="3" name="question5-check3"> Github Desktop</label>
+				<label><input type="checkbox" value="4" name="question5-check4"> BitBucket</label>
+			</div>
+			<input type="button" value="Finalizar Cuestionarío">
+		</form>
+	</main>
+</body>
+</html>
