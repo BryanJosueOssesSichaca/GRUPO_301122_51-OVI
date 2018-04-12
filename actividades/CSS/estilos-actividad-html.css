@@ -79,7 +79,7 @@ nav ul > li{
 
 }
 
-nav input[type="button"],nav input[type="file"]{
+nav input[type="button"],nav input[type="file"], nav select{
 	font-family: "Raleway";
 	padding: 10px;
 	border-radius: 3px;

@@ -1,6 +1,7 @@
 (function(){
 	window.addEventListener("load",function(){
-
+		console.log("Autor: Bryan Josue Osses Sichaca - OVI diseño web - Grupo 51");
+		
 		function check(){
 			//stopCrono();
 
