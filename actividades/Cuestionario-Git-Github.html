@@ -20,6 +20,58 @@
 			color: #6a6a6a;
 		}
 
+		header{   
+		    overflow: hidden;
+		    color: #fff;
+		    width:100%;
+		    margin-bottom: 30px;
+		}
+		
+		header div.logo{
+		    display: inline-block;
+		    max-width: 450px;
+		    height: 100%;
+		    padding: 10px;
+		    vertical-align: top;
+		    transition: 1s all ease;
+		}
+
+		header div.logo img{
+		    width: 100%;
+		    height: auto;
+		    display: block;
+		}
+
+		header div.principal{
+		    display:inline-block;
+		    vertical-align: top;
+		    transition: 1s all ease;
+		}
+
+		header div.principal h1{
+		    color: #fff;
+		    text-shadow: 2px 2px #0c3d66;
+		    box-shadow: 2px 2px #082b47;
+		    background:linear-gradient(#1a75c0,#1667aa);
+		    padding: 10px;
+		    border-radius: 5px;
+		    cursor: pointer;
+		    display: inline-block;
+		    vertical-align: top;
+		    font-family: 'Mina',Arial, Helvetica, sans-serif;
+		    margin-top:25px;
+		}
+
+		header div.principal h1:hover{
+		    border-radius: 5px;
+		    background: #125893;
+		}
+
+		header div.principal h1 a{
+			text-decoration: none;
+			color: #fff;
+		}
+
 		main{
 			max-width:1000px;
 			width:100%;
@@ -28,6 +80,8 @@
 			padding: 10px;
 			border-radius: 5px;
 			background:  #e6ecff;
+			margin-top: 25px ;
+			margin-bottom: 25px ;
 		}
 
 		label{
@@ -107,6 +161,27 @@
 			font-weight: bold;
 		}
 
+		@media screen and (max-width: 950px){
+		    header div.logo{
+		        display:block;
+		        width: 100%;
+		        max-width: none;
+		        text-align: center;
+		    }
+
+		    header div.logo img{
+		        display: inline;
+		        max-width: 400px;
+		    }
+
+		    header div.principal{
+		        width:100%;
+		        text-align: center;
+		        padding: 10px;
+		        padding-top: 0;
+		    }
+		}
+
 		@media screen and (max-width: 620px){
 			.imagen img{
 				width:100%;
@@ -117,6 +192,13 @@
 </head>
 <body>
 	<main>
+		<header>
+	        <div class="logo">
+	            <a href="https://www.unad.edu.co/" target="blank" title="Universidad Nacional abierta y a distancia"><img src="../Imagenes/logoUNAD2015.png" alt="Logo de la pagina web"></a>
+	        </div><div class="principal">
+	            <h1><a href="../index.html" target="_blank"> O.V.I Diseño Web - Grupo 51</a></h1>
+	        </div> 
+		</header>
 		<form id="actividad" name="actividad">
 			<div id="question1" class="question">
 				<h3 class="title">1. existen diferentes tipos de sistemas de control de versiones, Git es un sistema gestor de versionamiento:</h3>
