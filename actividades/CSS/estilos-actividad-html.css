@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Mina');
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+body{
+	font-family: "Mina",Arial, sans-serif;
+	font-size: 16px;
+}
+
+header{   
+    overflow: hidden;
+    color: #fff;
+    width:100%;
+    margin-bottom: 30px;
+}
+
+header div.logo{
+    display: inline-block;
+    max-width: 400px;
+    height: 100%;
+    padding: 10px;
+    vertical-align: top;
+    transition: 1s all ease;
+}
+
+header div.logo img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+header div.principal{
+    display:inline-block;
+    vertical-align: top;
+    transition: 1s all ease;
+}
+
+header div.principal h1{
+    color: #fff;
+    text-shadow: 2px 2px #0c3d66;
+    box-shadow: 2px 2px #082b47;
+    background:linear-gradient(#1a75c0,#1667aa);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Mina',Arial, Helvetica, sans-serif;
+    margin-top:15px;
+}
+
+header div.principal h1:hover{
+    border-radius: 5px;
+    background: #125893;
+}
+
+header div.principal h1 a{
+	text-decoration: none;
+	color: #fff;
+}
+
+nav{
+	overflow: hidden;
+	padding: 0 1%;
+}
+
+nav ul > li{
+    float: left;
+    padding: 5px;
+
+}
+
+nav input[type="button"],nav input[type="file"]{
+	font-family: "Raleway";
+	padding: 10px;
+	border-radius: 3px;
+	cursor:pointer;
+	border-style:none;
+	background:#f1f1f1;
+	border:1px solid #cccbcb;
+	font-weight: bold;
+	transition: 0.2s;
+}
+
+nav input[type="file"]{
+	padding: 8px;
+}
+
+nav input[type="button"]:hover{
+	background: #cccbcb;
+}
+
+.editor{
+	padding: 1%;
+	overflow: hidden;
+}
+
+.editor div{
+	float:left;
+	width:49%;
+	height:380px;
+	margin: 0  0.5%;
+	overflow: hidden;
+}
+
+.editor div #HTML, .editor div #CSS{
+	width: 100%;
+	resize:none;
+	height:330px;
+	border-radius: 5px;
+	padding:10px;
+}
+
+.editor h2{
+	padding-bottom: 10px;
+}
+
+.resultados{
+	width:100%;
+	padding: 1%;
+}
+
+.resultados h2{
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+iframe{
+	width: 100%;
+	height:500px;
+}
