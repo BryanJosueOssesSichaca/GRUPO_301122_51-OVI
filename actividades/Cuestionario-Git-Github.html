@@ -36,7 +36,7 @@
 				<label><input type="checkbox" value="4" name="question2"> Con git podemos trabajar en nuestra propia copia local sin necesidad de estar conectados con el respositorio remoto.</label>
 			</div>
 			<div id="question3" class="question">
-				<h3 class="title">3. cual de las siguientes opciones es una respuesta valida del comando <strong><span class="clave">1 git status</span></h3></strong>
+				<h3 class="title">3. cual de las siguientes opciones es una respuesta valida del comando <strong><span class="clave">$ git status</span></h3></strong>
 				<label><input type="radio" id="radio-question3" name="question3" value="1">
 				On branch master
 				<br>
@@ -97,6 +97,114 @@
 				<label><input type="checkbox" value="2" name="question5"> Git Kraken</label>
 				<label><input type="checkbox" value="3" name="question5"> Github Desktop</label>
 				<label><input type="checkbox" value="4" name="question5"> BitBucket</label>
+			</div>
+			<div id="question6" class="question">
+				<h3>6. de las siguientes opciones cual es una manera correcta de configurar nuestros datos con Git</h3>
+				<label><input type="radio" id="radio-question6" name="question6" value="1"> 
+				$ git config --global name “NombreDeUsuario”
+				<br>
+				$ git config --global email CorreoElectornico@ejemplo.com
+				</label>
+				<label><input type="radio" id="radio-question6" name="question6" value="2"> 
+				$ git config -global user.name NombreDeUsuario
+				<br>
+				$ git config -global user.email CorreoElectornico@ejemplo.com
+				</label>
+				<label><input type="radio" id="radio-question6" name="question6" value="3"> 
+				$ git config --global user.name NombreDeUsuario
+				<br>
+				$ git config --global user.email CorreoElectornico@ejemplo.com
+				</label>
+				<label><input type="radio" id="radio-question6" name="question6" value="4"> 
+				$ git cfg --global name “NombreDeUsuario”
+				<br>
+				$ git cfg --global email CorreoElectornico@ejemplo.com
+				</label>
+			</div>
+			<div id="question7" class="question">
+				<h3 class="title">7. cual de las siguientes opciones es una respuesta valida del comando <strong><span class="clave">$ git config --global --list</span></strong></h3>
+				<label><input type="radio" id="radio-question7" name="question7" value="1">
+				commit f021a8926828b803b02dfbfba6f5d9a9fef954ce (HEAD -> master)
+				<br/>
+				Author: Bryan  Josue Osses Sichaca &lt;megamitensei1994@gmail.com&gt;
+				<br/>
+				Date:   Thu Apr 12 00:08:29 2018 -0500
+				<br/>
+				</label>
+				<label><input type="radio" id="radio-question7" name="question7" value="2">
+				user.name=Bryan  Josue Osses Sichaca
+				<br>
+				user.email=megamitensei1994@gmail.com
+				<br>
+				github.user=BryanJosueOssesSichaca
+				<br>
+				github.token=ff657hfbsbfjd7y493h4fndsj28
+				<br>
+				filter.lfs.clean=git-lfs clean -- %f
+				<br>
+				filter.lfs.smudge=git-lfs smudge -- %f
+				<br>
+				filter.lfs.process=git-lfs filter-process
+				<br>
+				filter.lfs.required=true
+				<br>
+				core.autocrlf=true
+				<br>
+				core.excludesfile=C:\repo\gitignore_global.txt
+				</label>
+				<label><input type="radio" id="radio-question7" name="question7" value="3">
+				origin  https://github.com/BryanJosueOssesSichaca/GRUPO_301122_51-OVI (fetch)
+				<br/>
+				origin  https://github.com/BryanJosueOssesSichaca/GRUPO_301122_51-OVI (push)
+				</label>
+				<label><input type="radio" id="radio-question7" name="question7" value="4"><strong> Ninguna de las anteriores</strong></label>
+			</div>
+			<div id="question8" class="question">
+				<h3 class="title">8. cual de las siguientes opciones es la mas correcta cuando nos referimos a las ramas o bifurcaciones.</strong></h3>
+				<label><input type="radio" id="radio-question8" name="question8" value="1">
+				Una rama representa una linea del tiempo en nuestro proyecto, son caminos independientes que pueden evolucionar de manera distinta, en la practica representan diferentes estados que nuestro proyecto puede tener.
+				</label>
+				<label><input type="radio" id="radio-question8" name="question8" value="2">
+				 Cuando creamos una rama a partir de un repositorio estamos haciendo una copia exacta de ese repositorio, lo cual nos permite experimentar y realizar cambios sin afectar el repositorio original, este proceso dará como resultado dos repositorios independientes que pueden evolucionar de manera individual cada uno. 
+				</label>
+				<label><input type="radio" id="radio-question8" name="question8" value="3">
+				Cuando nuestro repositorio local esta vinculado con un repositorio remoto, es muy importante que antes de empezar a trabajar o hacer cambios en el proyecto tengamos la ultima version con todos los commits del repositorio remoto, para esto creamos una nueva rama con los cambios actualizados.
+				</label>
+				<label><input type="radio" id="radio-question8" name="question8" value="4">
+				A través de la creacion de una rama podemos trabajar de manera local con Git sin la necesidad de estar conectados al repositorio central.
+				</label>
+			</div>
+			
+			<div id="question9" class="question">
+				<h3 class="title">9. de estas opciones, cuales son validas para publicar un repositorio alojado en Github en <strong><span class="clave">GithubPages</span> (Seleccione unicamente 2 opciones si selecciona mas de 2 automaticamente la pregunta queda invalidada).</strong> </h3>
+				<label><input type="checkbox" value="1" name="question9"> Creando una rama con el nombre gh-pages y dentro de la misma un archivo index.html</label>
+				<label><input type="checkbox" value="2" name="question9">
+				al crear un archivo index.html automaticamente github nos publica el proyecto en Github Pages
+				</label>
+				<label><input type="checkbox" value="3" name="question9">
+				desde el menú settings de la pagina principal del repositorio -> branches -> y en el apartado Github pages dar click en <strong>publish this repository</strong>. 
+				</label>
+				<label><input type="checkbox" value="4" name="question9"> 
+				desde el menú settings de la pagina principal del repositorio ->  y en el apartado Github pages, seleccionar la rama que contenga el archivo index.html en la lista desplegable llamada <strong>source</strong> finalmente dar click en <strong>save</strong>.
+				</label>
+			</div>
+			<div class="question" id="question10">
+				<h3>10. según la imagen, ¿por que no fue posible hacer push con los cambios realizados en el repositorio local?</h3>
+				<div class="imagen">
+					<img src="../Imagenes/fetch-fail.png" alt="push-fail"/>
+				</div>
+				<label><input type="radio" id="radio-question10" name="question10" value="1">
+				porque el repositorio local contenia archivos que no estaban en el staging area y por lo tanto aun no habian sido confirmados los cambios, siempre que queramos hacer push debemos tener todos los cambios confirmados en nuestro repositorio local.
+				</label>
+				<label><input type="radio" id="radio-question10" name="question10" value="2">
+				porque en el repositorio remoto se habian confirmado cambios que nuestro repositorio local no tenía, y por lo tanto la versión de nuestro repositorio local no coincidia con la del repositorio remoto, primero tenemos que integrar esos cambios con el comando pull.
+				</label>
+				<label><input type="radio" id="radio-question10" name="question10" value="3">
+				porque en mitad de la subida de archivos al repositorio remoto se perdio la conexion a Internet, siempre que trabajemos con repositorios remotos debemos tener conexión a Internet.
+				</label>
+				<label><input type="radio" id="radio-question10" name="question10" value="4">
+				porque siempre que vamos a hacer push a un repositorio remoto debemos haber confirmado todos nuestros cambios en el repositorio local y tener conexion a Internet estable.
+				</label>	
 			</div>
 			<input type="button" value="Finalizar Cuestionarío" id="button"/>
 		</form>

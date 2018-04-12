@@ -9,10 +9,15 @@
 			var question3 = $("input[type=radio][name=question3]:checked");
 			var question4 = $("input[type=radio][name=question4]:checked");
 			var question5 =  $("input[type=checkbox][name=question5]:checked");
+			var question6 = $("input[type=radio][name=question6]:checked");
+			var question7 = $("input[type=radio][name=question7]:checked");
+			var question8 = $("input[type=radio][name=question8]:checked"); 
+			var question9 = $("input[type=checkbox][name=question9]:checked");;
+ 			var question10 = $("input[type=radio][name=question10]:checked");;
 			var correcto = 0;
 			//console.log(question1[0].value);
 
-			if(question1[0] && question2[0] && question3[0] && question4[0] && question5[0]){
+			if(question1[0] && question2[0] && question3[0] && question4[0] && question5[0] && question6[0] && question7[0] && question8[0] && question9[0] && question10[0]){
 				//console.log(question1 +"\n" + question2 +"\n" + question3 +"\n" + question4 +"\n" + question5);
 
 				if(question1[0].value == "3"){
@@ -65,6 +70,49 @@
 							question5[i].parentElement.classList.add("good");
 						}
 					}
+				}
+
+				if(question6[0].value == "3"){
+					correcto++;
+					question6.parent().addClass("good");
+				}else{
+					question6.parent().addClass("wrong");
+				}
+
+				if(question7[0].value == "2"){
+					correcto++;
+					question7.parent().addClass("good");
+				}else{
+					question7.parent().addClass("wrong");
+				}
+
+				if(question8[0].value == "1"){
+					correcto++;
+					question8.parent().addClass("good");
+				}else{
+					question8.parent().addClass("wrong");
+				}
+
+				if(question9.length < 3){
+					for(i = 0; i < question9.length; i++){
+
+						question9[i].parentElement.classList.add("wrong");
+
+						if(question9[i].value == "1"){
+							correcto = correcto + 0.5;
+							question9[i].parentElement.classList.add("good");
+						}else if(question9[i].value == "4"){
+							correcto = correcto + 0.5;
+							question9[i].parentElement.classList.add("good");
+						}
+					}
+				}
+
+				if(question10[0].value == "2"){
+					correcto++;
+					question10.parent().addClass("good");
+				}else{
+					question10.parent().addClass("wrong");
 				}
 
 				//alert(correcto);
