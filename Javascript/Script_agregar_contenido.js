@@ -45,5 +45,9 @@
 		cargarContenido("#intro_editores","Principal_editores.html");		
 		/* Agregar contenido de Editores de codigo */
 		cargarContenido("#editor_notepad","EditorNotepad_HTML5.html");
+		/* Agregar contenido de Editores de codigo */
+		cargarContenido("#editor_brackets","EditorBrackets.html");
+		/* Agregar contenido de Editores de codigo */
+		cargarContenido("#editor_sublime","EditorSublime.html");
 	});
 })();
