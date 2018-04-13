@@ -129,12 +129,12 @@
 				var answer = document.getElementById("answer");
 				
 
-				if(correcto < 6){
+				if(correcto < 7){
 					puntaje = 2;
 					message.classList.add("parametro");
 					promedio.classList.add("parametro");
 				}
-				if(correcto > 6 && correcto < 9){
+				if(correcto > 6 && correcto < 10){
 					puntaje = 1;
 					message.classList.add("init");
 					promedio.classList.add("init");
