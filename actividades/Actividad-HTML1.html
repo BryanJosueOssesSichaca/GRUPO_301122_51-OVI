@@ -3,148 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Actividad HTML 1</title>
-	<style>
-		@import url('https://fonts.googleapis.com/css?family=Raleway');
-		@import url('https://fonts.googleapis.com/css?family=Mina');
-
-		*{
-			margin:0;
-			padding: 0;
-			box-sizing:border-box;
-		}
-		
-		ul, ol{
-		    list-style: none;
-		}
-
-		body{
-			font-family: "Mina",Arial, sans-serif;
-			font-size: 16px;
-		}
-		
-		header{   
-		    overflow: hidden;
-		    color: #fff;
-		    width:100%;
-		    margin-bottom: 30px;
-		}
-		
-		header div.logo{
-		    display: inline-block;
-		    max-width: 400px;
-		    height: 100%;
-		    padding: 10px;
-		    vertical-align: top;
-		    transition: 1s all ease;
-		}
-
-		header div.logo img{
-		    width: 100%;
-		    height: auto;
-		    display: block;
-		}
-
-		header div.principal{
-		    display:inline-block;
-		    vertical-align: top;
-		    transition: 1s all ease;
-		}
-
-		header div.principal h1{
-		    color: #fff;
-		    text-shadow: 2px 2px #0c3d66;
-		    box-shadow: 2px 2px #082b47;
-		    background:linear-gradient(#1a75c0,#1667aa);
-		    padding: 10px;
-		    border-radius: 5px;
-		    cursor: pointer;
-		    display: inline-block;
-		    vertical-align: top;
-		    font-family: 'Mina',Arial, Helvetica, sans-serif;
-		    margin-top:15px;
-		}
-
-		header div.principal h1:hover{
-		    border-radius: 5px;
-		    background: #125893;
-		}
-
-		header div.principal h1 a{
-			text-decoration: none;
-			color: #fff;
-		}
-		
-		nav{
-    		overflow: hidden;
-    		padding: 0 1%;
-		}
-
-		nav ul > li{
-		    float: left;
-		    padding: 5px;
-
-		}
-
-		nav input[type="button"],nav input[type="file"]{
-			font-family: "Raleway";
-			padding: 10px;
-			border-radius: 3px;
-			cursor:pointer;
-			border-style:none;
-			background:#f1f1f1;
-			border:1px solid #cccbcb;
-			font-weight: bold;
-			transition: 0.2s;
-		}
-		
-		nav input[type="file"]{
-			padding: 8px;
-		}
-
-		nav input[type="button"]:hover{
-			background: #cccbcb;
-		}
-		
-		.editor{
-			padding: 1%;
-			overflow: hidden;
-		}
-
-		.editor div{
-			float:left;
-			width:49%;
-			height:380px;
-			margin: 0  0.5%;
-			overflow: hidden;
-		}
-		
-		.editor div #HTML, .editor div #CSS{
-			width: 100%;
-			resize:none;
-			height:330px;
-			border-radius: 5px;
-			padding:10px;
-		}
-		
-		.editor h2{
-			padding-bottom: 10px;
-		}
-
-		.resultados{
-			width:100%;
-			padding: 1%;
-		}
-
-		.resultados h2{
-			text-align: center;
-			padding-bottom: 10px;
-		}
-
-		iframe{
-			width: 100%;
-			height:500px;
-		}
-	</style>
+	<link rel="stylesheet" href="CSS/estilos-actividad-html.css"/>
+	<link rel="stylesheet" href="../CSS/fonts.css"/>
 </head>
 <body>
 	<main>
@@ -158,28 +18,93 @@
     	<nav>
     		<ul>
     			<li><input type="button" id="runCodeButton" value="Prueba tus cambios!"></li>
-    			<li><input type="button" id="saveFileButton" value="Guardar los cambios"></li>
-    			<li><input type="file" id="fileLoaderButton" value="Cargar tu propio Archivo" accept="text/*"></li>
+    			<li><input type="button" id="saveFileButton" value="Guardar los cambios" style="display:none"></li>
+    			<li><input type="file" id="fileLoaderButton" value="Cargar tu propio Archivo" accept="text/*" style="display:none"></li>
+    			<li>
+    				Ejemplos HTML5 <span class="icon-html-five"></span> :
+    				<select id="ejemplos">
+    					<option value="0" selected="selected" disabled="disabled">Seleccionar Etiqueta</option>
+    					<option value="1" >Encabezados HTML</option>
+    					<option value="2">Parrafos HTML</option>
+    					<option value="3">formularios HTML</option>
+    					<option value="4">Botones HTML</option>
+    				</select>
+    			</li>
     		</ul>
     	</nav>
 		<section class="editor">
 			<div id="html">
 				<h2>Editor HTML:</h2>
-				<textarea id="HTML"><!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8"/>
-		<title>Actividad</title>	
-	</head>
-	<body>
-		<h1>Hola Mundo</h1>
-		<p>Write Html, Javascript or CSS Here</p>
-	</body>
+<textarea id="HTML"><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividad HTML5 - OVI diseño web - Grupo 51</title>
+</head>
+<body>
+	<main>
+		<h1>Bienvenido a la actividad de HTML5</h1>
+		<p>Estimado estudiante sea bienvenido a la actividad de HTML5 del OVI de diseño web del grupo 51, este mensaje tiene la función de guiarlo en la utilización del editor</p>
+		<ul>
+			<li><strong>Prueba tus cambios!</strong> el boton prueba tus cambios le permite probar en linea y en tiempo real los cambios realizados sobre las areas de texto disponibles</li>
+			<li><strong>Ejemplos HTML5</strong> la lista desplegable Ejemplos HTML5 le ofrece ejemplos sobre las distintas etiquetas que componen el lenguaje HTML como encabezados, parrafos, etiquetas de formularios etc...</li>
+		</ul>
+		<p>
+			en el area de texto titulada <strong>Editor HTML</strong> puede escribir codigo HTML, mientras que en el area de texto titulada <strong>Editor CSS</strong> puede escribir codigo CSS. los cambios se mostrarán en el area inferior titulada <strong>Visualización</strong> una vez que de click en el boton <strong>Prueba tus cambios!</strong>
+		</p>
+	</main>
+</body>
 </html></textarea>
 			</div>
 			<div id="css">
 				<h2>Editor CSS:</h2>
-				<textarea id="CSS">p { color: red; }</textarea>
+<textarea id="CSS">
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: monospace, Arial;
+}
+
+ul, ol{
+	list-style: none;
+	text-align: justify;
+	padding: 10px;
+}
+
+ul li{
+	padding: 5px;
+}
+
+ul li:hover{
+	color:#5900b3;
+}
+
+main{
+	width: 800px;
+	margin: auto;
+	text-align:center;
+	padding: 10px;
+	border: 1px solid #000;
+	box-shadow: 2px 2px 3px #ccc;
+	margin-top: 50px;
+	border-radius: 10px;
+}
+
+h1{
+	color: #b30000;
+}
+
+p{
+	text-align: justify;
+	margin: 10px 0;
+	color: #1f2e2e;
+}
+
+</textarea>
 			</div>
 		</section>
 		<section class="resultados">
@@ -208,17 +133,48 @@
 		//console.log(iframe.contentWindow);
 		//console.log(iframe.contentDocument.document);
 
-		documento.open();
-		documento.write(content);
-		documento.close();
-
-		console.log(documento.head);
+			documento.open();
+			documento.write(content);
+			documento.close();	
+		
 		var styles = document.createElement("style");
 		styles.innerHTML = "\n" + contentStyles + "\n";
 		documento.head.append(styles);
 	}
 	botonCodigo.addEventListener("click",runCode);
 	runCode();
+
+	function cargarEjemplo(){
+		var html = document.getElementById("HTML");
+		var css = document.getElementById("CSS");
+		var documentHtml = ["<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>", "</title>\r\t</head>\n\t<body>","\n\t</body>\n</html>"];
+		var saveText;
+		var styles;
+
+		switch(this.value){
+			case "1":
+				saveText = documentHtml[0]+"Ejemplo Encabezados"+documentHtml[1]+"\n\t\t<h1>Encabezado de primer nivel</h1>\n\t\t<h2>Encabezado de segundo nivel</h2>\n\t\t<h3>Encabezado de tercer nivel</h3>\n\t\t<h4>Encabezado de cuarto nivel</h4>\n\t\t<h5>Encabezado de quinto nivel</h5>\n\t\t<h6>Encabezado de sexto nivel</h6>" + documentHtml[2];
+
+				styles = "h1{color:#990000}\n\nh2{color:#cc3300}\n\nh3{color:#cc9900}\n\nh4{color:#86b300}\n\nh5{color:#66ff33}\n\nh6{color:#000}";
+				break;
+			case "2":
+				saveText = documentHtml[0] + "Ejemplo parrafos" + documentHtml[1] + "\n\t\t<p> los parrafos en HTML5 se realizan con la etiqueta &lt;p&gt;"
+				styles = "p {color: #0080ff}"
+				break;
+			case "3":
+				break;
+		}
+
+		html.innerHTML = saveText;
+		html.value = saveText;
+
+		css.innerHTML = styles;
+		css.value = styles;
+
+		runCode();
+	}
+
+	document.getElementById("ejemplos").addEventListener("change",cargarEjemplo);
 
 	/** Guardar archivo HTML **/
 	function saveFile(){
@@ -262,7 +218,7 @@
 	}
 
 	saveFileButton.addEventListener("click",saveFile);
-
+	console.log("Autor: Bryan Josue Osses Sichaca - OVI diseño web - Grupo 51");
 
 	/** Subir propio archivo HTML **/
 	document.getElementById("fileLoaderButton").onchange = function(e){
@@ -284,6 +240,7 @@
 	}
 
 
+	
 
 	//Permitir tabulación en textarea
 	var textareas = document.getElementsByTagName('textarea');

@@ -29,6 +29,8 @@
 		cargarContenido("#index","contenido_principal.html");
 		//contenido autores.html
 		cargarContenido("#autores","autores.html");
+		//contenido de actividades
+		cargarContenido("#actividades","actividades.html")
 
 		/* Agregar contenido de Github */
 		cargarContenido("#Articulo-Git","Principal_git.html");
