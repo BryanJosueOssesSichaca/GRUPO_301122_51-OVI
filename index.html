@@ -1,130 +1,346 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <!-- etiquetas meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>O.V.I Diseño Web - Grupo 51</title>
-    <!-- vinculos a archivos css -librerias -->
-    <link rel="stylesheet" href="CSS/fonts.css"/>
-    <link rel="stylesheet" href="CSS/normalize.css"/>
-    <!-- vinculos a archivos css - creados -->
-    <link rel="stylesheet" href="CSS/autores.css"/>
-    <link rel="stylesheet" href="CSS/contenido.css"/>
-    <link rel="stylesheet" href="CSS/estilos.css"/>
-    <link rel="stylesheet" href="CSS/slider.css">    
-    <!-- vinculos a archivos .js (Javascript) - librerias -->
-    <script src="Javascript/jQuery_3.3.1.js"></script>
-    <script src="Javascript/prefixfree.js"></script>   
-    <script src="Javascript/modernizr.js"></script>
-    <!-- Archivos .js Creados -->
-    <script src="Javascript/Script_agregar_contenido.js"></script>
-    <script src="Javascript/menu.js"></script>    
-</head>
-<body>
-    <!-- Header de la pagina web, Logo, Titulo, barra de navegación principal, barra social -->
-    <header>
-        <div class="logo">
-            <a href="https://www.unad.edu.co/" target="blank" title="Universidad Nacional abierta y a distancia"><img src="Imagenes/logoUNAD2015.png" alt="Logo de la pagina web"></a>
-        </div><div class="principal">
-            <h1>O.V.I Diseño Web - Grupo 51</h1>
-        </div> 
-        <div class="social">
-            <ul>
-                <li><a href="#" class="icon-facebook" title="Ir a Facebook" target="_blank"></a></li>
-                <li><a href="https://github.com/BryanJosueOssesSichaca/GRUPO_301122_51-OVI" class="icon-github" title="Ir a GitHub" target="_blank"></a></li>
-                <li><a href="https://twitter.com/UniversidadUNAD" class="icon-twitter" title="Ir a Twitter" target="_blank"></a></li>
-                <li><a href="#" class="icon-youtube" title="Ir a Youtube" target="_blank"></a></li>
-            </ul>
-        </div>
-        <div class="menu">
-            <h3>Menu</h3>
-            <button class="menu-toggle icon-menu"></button>
-        </div>
-        <nav class="pane">
-            <ul>
-                <li><a href="#" id="index"><span class="icon-home" title="Inicio"></span> Inicio</a></li>
-                <li><a href="#" id="actividades"><span class="icon-books"> </span>Actividades</a>
+    <head>
+        <!-- etiquetas meta -->
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <meta content="ie=edge" http-equiv="X-UA-Compatible">
+                    <title>
+                        O.V.I Diseño Web - Grupo 51
+                    </title>
+                    <!-- vinculos a archivos css -librerias -->
+                    <link href="CSS/fonts.css" rel="stylesheet"/>
+                    <link href="CSS/normalize.css" rel="stylesheet"/>
+                    <!-- vinculos a archivos css - creados -->
+                    <link href="CSS/autores.css" rel="stylesheet"/>
+                    <link href="CSS/contenido.css" rel="stylesheet"/>
+                    <link href="CSS/estilos.css" rel="stylesheet"/>
+                    <link href="CSS/slider.css" rel="stylesheet">
+                        <!-- vinculos a archivos .js (Javascript) - librerias -->
+                        <script src="Javascript/jQuery_3.3.1.js">
+                        </script>
+                        <script src="Javascript/prefixfree.js">
+                        </script>
+                        <script src="Javascript/modernizr.js">
+                        </script>
+                        <!-- Archivos .js Creados -->
+                        <script src="Javascript/Script_agregar_contenido.js">
+                        </script>
+                        <script src="Javascript/menu.js">
+                        </script>
+                    </link>
+                </meta>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <!-- Header de la pagina web, Logo, Titulo, barra de navegación principal, barra social -->
+        <header>
+            <div class="logo">
+                <a href="https://www.unad.edu.co/" target="blank" title="Universidad Nacional abierta y a distancia">
+                    <img alt="Logo de la pagina web" src="Imagenes/logoUNAD2015.png"/>
+                </a>
+            </div>
+            <div class="principal">
+                <h1>
+                    O.V.I Diseño Web - Grupo 51
+                </h1>
+            </div>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a class="icon-facebook" href="#" target="_blank" title="Ir a Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon-github" href="https://github.com/BryanJosueOssesSichaca/GRUPO_301122_51-OVI" target="_blank" title="Ir a GitHub">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon-twitter" href="https://twitter.com/UniversidadUNAD" target="_blank" title="Ir a Twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon-youtube" href="#" target="_blank" title="Ir a Youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h3>
+                    Menu
+                </h3>
+                <button class="menu-toggle icon-menu">
+                </button>
+            </div>
+            <nav class="pane">
+                <ul>
+                    <li>
+                        <a href="#" id="index">
+                            <span class="icon-home" title="Inicio">
+                            </span>
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="actividades">
+                            <span class="icon-books">
+                            </span>
+                            Actividades
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="actividades/Cuestionario-Git-Github.html" target="_blank">
+                                    <span class="icon-github">
+                                    </span>
+                                    Git y Github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="actividades/Actividad-HTML1.html" target="_blank">
+                                    <span class="icon-html-five">
+                                    </span>
+                                    HTML5
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-css3">
+                                    </span>
+                                    CSS3
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" id="autores">
+                            <span class="icon-users">
+                            </span>
+                            Autores
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/BryanJosueOssesSichaca/GRUPO_301122_51-OVI" target="_blank" title="Repositorio GitHub">
+                            <span class="icon-github">
+                            </span>
+                            Repositorio GitHub
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Contenedor principal de la pagina web -->
+        <main>
+            <!-- Barra lateral, menú acordeon y widgets (Contador de visitas y feed de Twitter) -->
+            <aside>
+                <h3 class="title">
+                    Lecturas y videos
+                </h3>
+                <button class="acordeon">
+                    <span class="icon-minus">
+                    </span>
+                    Git y Github
+                </button>
+                <div class="panel">
                     <ul>
-                        <li><a href="actividades/Cuestionario-Git-Github.html" target="_blank"><span class="icon-github" ></span> Git y Github</a></li>
-                        <li><a href="actividades/Actividad-HTML1.html" target="_blank"><span class="icon-html-five"></span> HTML5</a></li>
-                        <li><a href="#"><span class="icon-css3"></span> CSS3</a></li>
+                        <!-- Modificar vinculos (link) titulo y logo de acuerdo al contenido creado-->
+                        <li>
+                            <a href="#" id="Articulo-Git">
+                                <span class="icon-pencil">
+                                </span>
+                                Introducción
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="configuracion-Git">
+                                <span class="icon-file-text">
+                                </span>
+                                Configuración Inicial de Git
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="inicial-Git">
+                                <span class="icon-file-text">
+                                </span>
+                                Crear y Clonar repositorios con Git
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="gitWork-Git">
+                                <span class="icon-file-text">
+                                </span>
+                                Trabajando con Git (Local)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="gitHubWork-Git">
+                                <span class="icon-file-text">
+                                </span>
+                                Trabajando con GitHub (Remoto)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="github-video">
+                                <span class="icon-file-play">
+                                </span>
+                                <b>
+                                    video
+                                </b>
+                                Fork y Pull request
+                            </a>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="#" id="autores"><span class="icon-users"> </span>Autores</a></li>
-                <li><a href="https://github.com/BryanJosueOssesSichaca/GRUPO_301122_51-OVI" target="_blank" title="Repositorio GitHub"><span class="icon-github"> </span>Repositorio GitHub</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Contenedor principal de la pagina web -->
-    <main>
-        <!-- Barra lateral, menú acordeon y widgets (Contador de visitas y feed de Twitter) -->
-        <aside>
-            <h3 class="title">Lecturas y videos</h3>
-            <button class="acordeon"><span class="icon-minus"></span> Git y Github</button>
-            <div class="panel">
-                <ul>
-                    <!-- Modificar vinculos (link) titulo y logo de acuerdo al contenido creado-->
-                    <li><a href="#" id="Articulo-Git"><span class="icon-pencil"></span> Introducción</a></li>
-                    <li><a href="#" id="configuracion-Git"><span class="icon-file-text"></span> Configuración Inicial de Git</a></li>
-                    <li><a href="#" id="inicial-Git"><span class="icon-file-text"></span> Crear y Clonar repositorios con Git</a></li>
-                    <li><a href="#" id="gitWork-Git"><span class="icon-file-text"></span> Trabajando con Git (Local)</a></li>
-                    <li><a href="#" id="gitHubWork-Git"><span class="icon-file-text"></span> Trabajando con GitHub (Remoto)</a></li>
-                    <li><a href="#" id="github-video"><span class="icon-file-play"></span> <b>video</b> Fork y Pull request</a></li>
-                </ul>
-            </div>
-            <button class="acordeon"><span class="icon-minus"></span> HTML5</button>
-            <div class="panel">
-                <ul>
-                    <li><a href="#" id="Articulo1-HTML5"><span class="icon-pencil"></span> Introducción</a></li>
-                    <li><a href="#"><span class="icon-file-text"></span> Articulo 2</a></li>
-                    <li><a href="#"><span class="icon-file-text"></span> Articulo 3</a></li>
-                    <li><a href="#"><span class="icon-file-play"></span> Articulo 4</a></li>
-                </ul>
-            </div>
-            <button class="acordeon"><span class="icon-minus"></span> CSS3</button>
-            <div class="panel">
-                <ul>
-                    <li><a href="#" id="Articulo1-CSS3"><span class="icon-pencil"></span> Introducción</a></li>
-                    <li><a href="#"><span class="icon-file-text"></span> Articulo 2</a></li>
-                    <li><a href="#"><span class="icon-file-text"></span> Articulo 3</a></li>
-                    <li><a href="#"><span class="icon-file-play"></span> Articulo 4</a></li>
-                </ul>
-            </div>
-            <button class="acordeon"><span class="icon-minus"></span> Editores de Codigo</button>
-            <div class="panel">
-                <ul>
-                    <li><a href="#" id="intro_editores"><span class="icon-pencil"></span> Introducción</a></li>
-                    <li><a href="#" id="editor_notepad"><span class="icon-file-play"></span> Notepadd ++</a></li>
-                    <li><a href="#" id="editor_brackets"><span class="icon-file-play"></span> Brackets </a></li>
-                    <li><a href="#" id="editor_sublime"><span class="icon-file-play"></span> Sublime Text 3 </a></li>
-                </ul>
-            </div>
-            <div class="contador">
-                <h3>Contador de visitas</h3>
-                <div id="sfcqf6gxsulnz53cn75nk6z5enrmeeep81s"></div>
-                <script type="text/javascript" src="https://counter10.allfreecounter.com/private/counter.js?c=qf6gxsulnz53cn75nk6z5enrmeeep81s&down=async" async></script>
-                <noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter10.allfreecounter.com/private/contadorvisitasgratis.php?c=qf6gxsulnz53cn75nk6z5enrmeeep81s" border="0" title="contador de visitas" alt="contador de visitas"></a></noscript>
-            </div>
-            <div class="twitter-feed">
-                <a class="twitter-timeline" data-lang="es" data-link-color="#2B7BB9" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-        </aside>
+                </div>
+                <button class="acordeon">
+                    <span class="icon-minus">
+                    </span>
+                    HTML5
+                </button>
+                <div class="panel">
+                    <ul>
+                        <li>
+                            <a href="#" id="Articulo1-HTML5">
+                                <span class="icon-pencil">
+                                </span>
+                                Introducción
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="Novedades-HTML5">
+                                <span class="icon-file-text">
+                                </span>
+                                Novedades
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="Sintaxis-HTML5">
+                                <span class="icon-file-play">
+                                </span>
+                                Sintaxis y Estructura
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-file-play">
+                                </span>
+                                Articulo 4
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="acordeon">
+                    <span class="icon-minus">
+                    </span>
+                    CSS3
+                </button>
+                <div class="panel">
+                    <ul>
+                        <li>
+                            <a href="#" id="Articulo1-CSS3">
+                                <span class="icon-pencil">
+                                </span>
+                                Introducción
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-file-text">
+                                </span>
+                                Articulo 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-file-text">
+                                </span>
+                                Articulo 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-file-play">
+                                </span>
+                                Articulo 4
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="acordeon">
+                    <span class="icon-minus">
+                    </span>
+                    Editores de Codigo
+                </button>
+                <div class="panel">
+                    <ul>
+                        <li>
+                            <a href="#" id="intro_editores">
+                                <span class="icon-pencil">
+                                </span>
+                                Introducción
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="editor_notepad">
+                                <span class="icon-file-play">
+                                </span>
+                                Notepadd ++
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="editor_brackets">
+                                <span class="icon-file-play">
+                                </span>
+                                Brackets
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="editor_sublime">
+                                <span class="icon-file-play">
+                                </span>
+                                Sublime Text 3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contador">
+                    <h3>
+                        Contador de visitas
+                    </h3>
+                    <div id="sfcqf6gxsulnz53cn75nk6z5enrmeeep81s">
+                    </div>
+                    <script async="" src="https://counter10.allfreecounter.com/private/counter.js?c=qf6gxsulnz53cn75nk6z5enrmeeep81s&down=async" type="text/javascript">
+                    </script>
+                    <noscript>
+                        <a href="https://www.contadorvisitasgratis.com" title="contador de visitas">
+                            <img alt="contador de visitas" border="0" src="https://counter10.allfreecounter.com/private/contadorvisitasgratis.php?c=qf6gxsulnz53cn75nk6z5enrmeeep81s" title="contador de visitas"/>
+                        </a>
+                    </noscript>
+                </div>
+                <div class="twitter-feed">
+                    <a class="twitter-timeline" data-lang="es" data-link-color="#2B7BB9" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">
+                        Tweets by UniversidadUNAD
+                    </a>
+                    <script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js">
+                    </script>
+                </div>
+            </aside>
             <!-- Section, articles de la pagina de web, Contenido principal de la pagina -->
-    
-        <section class="content" id="contenido" >
-            <!--No agregar codigo aqui, ir al archivo Script_agregar_contenido.js y referenciar el contenido a través de la funcion cargarContenido() -->  
-        </section>
-
-    </main>
-
-    <!-- Footer de la pagina web -->
-    <footer>        
-        <div class="licence">
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Licencia Creative Commons Atribución-NoComercial 4.0 Internacional</a>
-        </div>
-    </footer>
-
-</body>
+            <section class="content" id="contenido">
+                <!--No agregar codigo aqui, ir al archivo Script_agregar_contenido.js y referenciar el contenido a través de la funcion cargarContenido() -->
+            </section>
+        </main>
+        <!-- Footer de la pagina web -->
+        <footer>
+            <div class="licence">
+                <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">
+                    <img alt="Licencia Creative Commons" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" style="border-width:0"/>
+                </a>
+                <br/>
+                Esta obra está bajo una
+                <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">
+                    Licencia Creative Commons Atribución-NoComercial 4.0 Internacional
+                </a>
+            </div>
+        </footer>
+    </body>
 </html>
