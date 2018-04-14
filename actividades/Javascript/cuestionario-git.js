@@ -151,7 +151,7 @@
 				message.id = "message";
 				message.textContent = messages[puntaje];
 				puntuacion.id = "score";
-				puntuacion.textContent = "Estimado estudiante ha obtenido " + correcto + " puntos de 10 maximos posibles";
+				puntuacion.textContent = "Estimad@ estudiante ha obtenido " + correcto + " puntos de 10 maximos posibles";
 				promedio.id= "avg";
 				promedio.innerHTML = "<span class='big'>Promedio "+ average +"%</span>";
 				answer.appendChild(puntuacion);
