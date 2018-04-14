@@ -15,21 +15,27 @@
 	            <h1><a href="../index.html" target="_blank"> O.V.I Diseño Web - Grupo 51</a></h1>
 	        </div> 
     	</header>
+    	<section id="informacion" class="sinCuerpo">
+    		
+    	</section>
     	<nav>
     		<ul>
     			<li><input type="button" id="runCodeButton" value="Prueba tus cambios!"></li>
-    			<li><input type="button" id="saveFileButton" value="Guardar los cambios" style="display:none"></li>
-    			<li><input type="file" id="fileLoaderButton" value="Cargar tu propio Archivo" accept="text/*" style="display:none"></li>
+    			<li><input type="button" id="saveFileButton" value="Guardar los cambios"></li>
+    			<li><input type="file" id="fileLoaderButton" value="Cargar tu propio Archivo" accept="text/*" class="sinCuerpo"></li>
     			<li>
     				Ejemplos HTML5 <span class="icon-html-five"></span> :
     				<select id="ejemplos">
     					<option value="0" selected="selected" disabled="disabled">Seleccionar Etiqueta</option>
-    					<option value="1" >Encabezados HTML</option>
-    					<option value="2">Parrafos HTML</option>
-    					<option value="3">formularios HTML</option>
-    					<option value="4">Botones HTML</option>
+    					<option value="1">Estructura basica documento HTML5</option>
+    					<option value="2">Etiquetas Semanticas HTML5</option>
+    					<option value="3">Encabezados HTML</option>
+    					<option value="4">Parrafos HTML</option>
+    					<option value="5">formularios HTML</option>
+    					<option value="6">Botones HTML</option>
     				</select>
     			</li>
+    			<li><input type="button" id="eraseButton" value="limpiar editores"></li>
     		</ul>
     	</nav>
 		<section class="editor">
@@ -46,8 +52,9 @@
 		<h1>Bienvenido a la actividad de HTML5</h1>
 		<p>Estimado estudiante sea bienvenido a la actividad de HTML5 del OVI de diseño web del grupo 51, este mensaje tiene la función de guiarlo en la utilización del editor</p>
 		<ul>
-			<li><strong>Prueba tus cambios!</strong> el boton prueba tus cambios le permite probar en linea y en tiempo real los cambios realizados sobre las areas de texto disponibles</li>
+			<li><strong>Prueba tus cambios!</strong> el botón prueba tus cambios le permite probar en linea y en tiempo real los cambios realizados sobre las areas de texto disponibles</li>
 			<li><strong>Ejemplos HTML5</strong> la lista desplegable Ejemplos HTML5 le ofrece ejemplos sobre las distintas etiquetas que componen el lenguaje HTML como encabezados, parrafos, etiquetas de formularios etc...</li>
+			<li><strong>Guardar los cambios</strong> el botón guardar los cambios le permite descargar un archivo .HTML	con el codigo HTML y CSS que haya escrito en los editores o guardar los ejemplos prediseñados! <span class="parametro"><strong>Nota:</strong> se recomienda utilizar Google Chrome para hacer uso de esta función</span></li>
 		</ul>
 		<p>
 			en el area de texto titulada <strong>Editor HTML</strong> puede escribir codigo HTML, mientras que en el area de texto titulada <strong>Editor CSS</strong> puede escribir codigo CSS. los cambios se mostrarán en el area inferior titulada <strong>Visualización</strong> una vez que de click en el boton <strong>Prueba tus cambios!</strong>
@@ -104,6 +111,9 @@ p{
 	color: #1f2e2e;
 }
 
+.parametro{
+	color: #cc0000;
+}
 </textarea>
 			</div>
 		</section>
@@ -119,7 +129,7 @@ p{
 	var botonCodigo = document.getElementById("runCodeButton");
 	var botonGuardar = document.getElementById("saveFileButton");
 
-	function runCode(){
+	function cargar(){
 		var content = document.getElementById("HTML").value;
 		var contentStyles = document.getElementById("CSS").value;
 		var iframe = document.getElementById("targetCode");
@@ -141,27 +151,90 @@ p{
 		styles.innerHTML = "\n" + contentStyles + "\n";
 		documento.head.append(styles);
 	}
-	botonCodigo.addEventListener("click",runCode);
-	runCode();
+	botonCodigo.addEventListener("click",cargar);
+	cargar();
 
+	//cargar ejemplos lista desplegable
 	function cargarEjemplo(){
 		var html = document.getElementById("HTML");
 		var css = document.getElementById("CSS");
-		var documentHtml = ["<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>", "</title>\r\t</head>\n\t<body>","\n\t</body>\n</html>"];
+		var info = document.getElementById("informacion");
+		var contenido = [];
+		var documentHtml = ["<!DOCTYPE html>\n<html lang='es'>\n\t<head>\n\t\t<meta charset='UTF-8'/>\n\t\t<title>", "</title>\r\t</head>\n\t<body>","\n\t</body>\n</html>"];
 		var saveText;
 		var styles;
 
 		switch(this.value){
 			case "1":
+				saveText = documentHtml[0] + "Estructura basica documento HTML5" +  documentHtml[1] + documentHtml[2];
+				styles = "";
+
+				contenido = [
+					"<strong>&lt;!DOCTYPE html&gt;:</strong> la primer linea de un documento HTML siempre debería corresponder a la declaración del tipo de documento (DTD). el DOCTYPE sirve para indicar qué versión del lenguaje HTML se utiliza, la declaración del tipo de documento en HTML5<span class='icon-html-five'></span> se ha simplificado con respecto a sus versiones anteriores solamente basta con copiar &lt;!DOCTYPE html&gt;.",
+					"<strong>&lt;html&gt;</strong> es el elemento raíz de todo documento HTML o XHTML, indica el inicio de la pagina HTML y todos los demas elementos del documento deben de estar contenidos adentro del elemento &lt;html&gt;.",
+					"<strong>&lt;head&gt;:</strong> en esta sección se incluye la información (metadatos) del documento, como enlaces a archivos css, scripts etc... la información contenida en &lt;head&gt; no es renderizada por el navegador.",
+					"<strong>&lt;meta&gt;:</strong> define información acerca del documento (metadatos), como el juego de caracteres utilizado, palabras clave, autor, descripción etc... esta información normalmente es utilizada por los buscadores.",
+					"<strong>&lt;title&gt;:</strong> define el titilo de la pagina web el cual es mostrado en las pestañas del navegador.",
+					"<strong>&lt;body&gt;:</strong> representa el contenido principal de la pagina web (cuerpo),aquí definimos la estructura de la pagina web ya que esta sección del documento es la que será renderizada por el navegador."
+				];	
+
+				cargarContenidoNodo(contenido,info,"list");
+				var titulo = document.createElement("h2");
+				titulo.innerHTML = "Estructura basica documento HTML 5 <span class='icon-html-five'></span>";
+				info.insertBefore(titulo,info.childNodes[0]);
+				info.classList.remove("sinCuerpo");
+				break;
+
+			case "2":
+				saveText = documentHtml[0] + "Etiquetas semanticas HTML5" + documentHtml[1] + "\n\t\t<header>\n\t\t\t<h1>&lt;Header&gt; &lt;/Header&gt;</h1>\n\t\t</header>\n\t\t<nav>\n\t\t\t<h2>&lt;nav&gt; &lt;/nav&gt;</h2>\n\t\t</nav>\n\t\t<section>\n\t\t\t<article><h2>\n\t\t\t\t&lt;article&gt; &lt;/article&gt;</h2>\n\t\t\t</article>\n\t\t\t<aside>\n\t\t\t\t<h2>&lt;aside&gt; &lt;/aside&gt;</h2>\n\t\t\t</aside>\n\t\t</section>\n\t\t<footer>\n\t\t\t<h2>&lt;footer&gt; &lt;/footer&gt;</h2>\n\t\t</footer>" + documentHtml[2];
+
+				styles = "*{\n\tpadding:0;\n\tmargin:0;\n\tbox-sizing:border-box;\n\tfont-family:monospace, Arial;\n\ttext-align:center\n}\n\n";
+				styles += "header{\n\tbackground:#ccffcc;\n\theight:100px;\n\twidth:60%;\n\tmargin:auto;\n\tmargin-bottom:20px;\n\tmargin-top:20px;\n\tborder: 1px solid #009900;\n}\n\n";
+				styles += "nav{\n\tbackground:#99ccff;\n\theight:50px;\n\twidth:60%;\n\tmargin:auto;\n\tmargin-bottom:20px;\n\tborder: 1px solid #0059b3;\n}\n\n";
+				styles += "section{\n\tbackground:#ffffb3;\n\theight:300px;\n\twidth:60%;\n\tmargin:auto;\n\tmargin-bottom:20px;\n\tborder: 1px solid #b3b300;\n\tpadding:1%;\n}\n\n";
+				styles += "aside{\n\tbackground: #ffb366;\n\theight:100%;\n\twidth:28%;\n\tborder: 1px solid #b35900;\n\tdisplay:inline-block;\n\tvertical-align:top;\n}\n\n";
+				styles += "article{\n\tbackground:#ffb3e6;\n\theight:100%;\n\twidth:70%;\n\tmargin-right:1%;\n\tborder: 1px solid #b30077;\n\tdisplay:inline-block;\n\tvertical-align:top;\n}\n\n";
+				styles += "footer{\n\tbackground: #a6a6a6;\n\theight:75px;\n\twidth:60%;\n\tmargin:auto;\n\tmargin-bottom:20px;\n\tborder: 1px solid #4d4d4d;\n}\n\n";
+				styles += "h1{\n\tmargin-top:25px;\n}\n\n";
+				styles += "nav h2{\n\tmargin-top:10px;\n}\n\n";
+				styles += "section h2{\n\tmargin-top:140px;\n}\n\n";
+				styles += "footer h2{\n\tmargin-top:20px;\n}\n\n";
+
+				contenido = [
+					"<h2>Etiquetas semanticas HTML5 <span class='icon-html-five'></span></h2><p class='list'><strong>&lt;header&gt;:</strong> la función del header es actuar como contenedor del contenido introductorio de la pagina web (Logo, Titulo &lt;h1&gt; etc...), tambien puede ser colocado como cabecera dentro algunas etiquetas como article.</p><p class='list'><strong>&lt;nav&gt;:</strong> nav representa una serie de vinculos que actuan como barrá de navegación, puede ser colocada en cualquier parte del documento HTML.</p><p class='list'><strong>&lt;section&gt;:</strong> se utiliza para agrupar contenido que esta relacionado semanticamente, pueden haber varias etiquetas &lt;section&gt; dentro de la pagina web representando diferentes secciones con contenido relacionado.</p><p class='list'><strong>&lt;aside&gt;:</strong>se utiliza como contenedor de datos relacionados con la información principal pero que normalmente no tienen la misma relevancia o son menos importantes como contenido de apoyo.</p><p class='list'><strong>&lt;article;&gt:</strong>representa una composición auto-contenida dentro de un documento, forma una unidad en si misma desde el punto de vista semantico, quiere decir que puede ser publicado o reutilizado de manera indipendiente, pueden representar por ejemplo entradas de un blog, mensajes de foros etc...</p><p class='list'><strong>&lt;footer&gt;:</strong>representa al pie de pagina, le otorga un final al cuerpo del documento sin embargo puede ser utilizado dentro de otras secciones de la pagina para representar el final de esa sección</p>"
+				];
+				cargarContenidoHTML(contenido,info);
+				info.classList.remove("sinCuerpo");
+				break;
+
+			case "3":
 				saveText = documentHtml[0]+"Ejemplo Encabezados"+documentHtml[1]+"\n\t\t<h1>Encabezado de primer nivel</h1>\n\t\t<h2>Encabezado de segundo nivel</h2>\n\t\t<h3>Encabezado de tercer nivel</h3>\n\t\t<h4>Encabezado de cuarto nivel</h4>\n\t\t<h5>Encabezado de quinto nivel</h5>\n\t\t<h6>Encabezado de sexto nivel</h6>" + documentHtml[2];
 
 				styles = "h1{color:#990000}\n\nh2{color:#cc3300}\n\nh3{color:#cc9900}\n\nh4{color:#86b300}\n\nh5{color:#66ff33}\n\nh6{color:#000}";
+					info.innerHTML = "";
+
+				contenido = [
+					"<h2>Encabezados HTML</h2><p>los elementos de encabezado describen el contenido que presentan (Titulos), facilitan la lectura y comprensión de los contenidos, se dividen en seis niveles de importancia (1 a 6).</p><p>Estas etiquetas son importantes para el posicionamiento de la pagina web, el encabezado <strong>&lt;h1&gt;</strong> debe guardar relación con el titulo de nuestra pagina web y solo debe haber uno por pagina.</p>"
+				];
+
+				cargarContenidoHTML(contenido,info);
+				info.classList.remove("sinCuerpo");
 				break;
-			case "2":
-				saveText = documentHtml[0] + "Ejemplo parrafos" + documentHtml[1] + "\n\t\t<p> los parrafos en HTML5 se realizan con la etiqueta &lt;p&gt;"
-				styles = "p {color: #0080ff}"
+
+			case "4":
+				saveText = documentHtml[0] + "Ejemplo parrafos" + documentHtml[1] + "\n\t\t<p> los parrafos en HTML5 se realizan con la etiqueta &lt;p&gt;</p></p>\n\t\t<p>Por defecto son elementos de tipo bloque asi que ocupan el 100% del espació disponible</p>\n\t\t<p>Puedes comprobarlo oprimiendo f12 e inspeccionando los estilos del elemento</p>" + documentHtml[2];
+				styles = "p {\n\tcolor: #0080ff;\n\tfont-size: 1.5em;\n}";
+
+				contenido = [
+					"<h2>Parrafos</h2><p>los parrafos son simples bloques de texto dentro del documento, cualquier espació o salto de linea dentro de la etiqueta &lt;p&gt; es conciderado como un espació simple."
+				];
+
+				cargarContenidoHTML(contenido,info);
+				info.classList.remove("sinCuerpo");
 				break;
-			case "3":
+
+			case "5":
+
 				break;
 		}
 
@@ -171,10 +244,27 @@ p{
 		css.innerHTML = styles;
 		css.value = styles;
 
-		runCode();
+		cargar();
 	}
 
 	document.getElementById("ejemplos").addEventListener("change",cargarEjemplo);
+
+	//cargar contenido en Informacion
+	function cargarContenidoNodo(contenido,contenedor,clase){
+		contenedor.innerHTML = "";
+
+		for(i in contenido){
+			
+			var nodo = document.createElement("p");
+			nodo.classList.add(clase);
+			nodo.innerHTML = contenido[i];
+			contenedor.appendChild(nodo);
+		}	
+	}
+
+	function cargarContenidoHTML(contenido,contenedor){
+		contenedor.innerHTML = contenido[0];
+	}
 
 	/** Guardar archivo HTML **/
 	function saveFile(){
@@ -193,7 +283,7 @@ p{
 
 		var blob = new Blob([saveText],{type: "text/html"});
 		var fileName = prompt("Ingresar Nombre del archivo (sin extensión .html)");
-		console.log(fileName);
+		
 		if(fileName){
 			var link = document.createElement("a");
 			link.download = fileName;
@@ -208,6 +298,8 @@ p{
 				document.body.appendChild(link);
 			}
 			link.click();
+		}else{
+			alert("Para guardar el documento debes agregar un titulo");
 		}
 
 		
@@ -222,7 +314,10 @@ p{
 
 	/** Subir propio archivo HTML **/
 	document.getElementById("fileLoaderButton").onchange = function(e){
-		
+		var css = document.getElementById("CSS");
+		css.innerHTML = "";
+		css.textContent = "";
+
 		var file = this.files[0];
 
 		if(file.type == "text/html" || file.type == "text/plain"){
@@ -240,6 +335,17 @@ p{
 	}
 
 
+	document.getElementById("eraseButton").addEventListener("click",function(e){
+		var content = document.getElementById("HTML");
+		var contentStyles = document.getElementById("CSS");
+
+		content.value = "";
+		content.innerHTML = "";
+		contentStyles.value = "";
+		contentStyles.innerHTML = "";
+
+		cargar();
+	});
 	
 
 	//Permitir tabulación en textarea
