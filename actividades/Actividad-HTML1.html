@@ -22,7 +22,6 @@
     		<ul>
     			<li><input type="button" id="runCodeButton" value="Prueba tus cambios!"></li>
     			<li><input type="button" id="saveFileButton" value="Guardar los cambios"></li>
-    			<li><input type="file" id="fileLoaderButton" value="Cargar tu propio Archivo" accept="text/*" class="sinCuerpo"></li>
     			<li>
     				Ejemplos HTML5 <span class="icon-html-five"></span> :
     				<select id="ejemplos">
@@ -31,8 +30,9 @@
     					<option value="2">Etiquetas Semanticas HTML5</option>
     					<option value="3">Encabezados HTML</option>
     					<option value="4">Parrafos HTML</option>
-    					<option value="5">formularios HTML</option>
-    					<option value="6">Botones HTML</option>
+    					<option value="5">Listas HTML</option>
+    					<option value="6">enlaces HTML</option>
+    					<option value="7">Imagenes HTML</option>
     				</select>
     			</li>
     			<li><input type="button" id="eraseButton" value="limpiar editores"></li>
@@ -50,7 +50,7 @@
 <body>
 	<main>
 		<h1>Bienvenido a la actividad de HTML5</h1>
-		<p>Estimad@ estudiante sea bienvenido a la actividad de HTML5 del OVI de diseño web del grupo 51, este mensaje tiene la función de guiarlo en la utilización del editor</p>
+		<p>Estimad@ estudiante sea bienvenido a la actividad de HTML5 del OVI de diseño web del grupo 51, este mensaje tiene la función de guiarlo en la utilización del editor.</p>
 		<ul>
 			<li><strong>Prueba tus cambios!</strong> el botón prueba tus cambios le permite probar en linea y en tiempo real los cambios realizados sobre las areas de texto disponibles</li>
 			<li><strong>Ejemplos HTML5</strong> la lista desplegable Ejemplos HTML5 le ofrece ejemplos sobre las distintas etiquetas que componen el lenguaje HTML como encabezados, parrafos, etiquetas de formularios etc...</li>
@@ -58,6 +58,9 @@
 		</ul>
 		<p>
 			en el area de texto titulada <strong>Editor HTML</strong> puede escribir codigo HTML, mientras que en el area de texto titulada <strong>Editor CSS</strong> puede escribir codigo CSS. los cambios se mostrarán en el area inferior titulada <strong>Visualización</strong> una vez que de click en el boton <strong>Prueba tus cambios!</strong>
+		</p>
+		<p class="init">
+			El/La estudiante es libre de copiar/guardar los diferentes ejemplos expuestos en esta pagina web y modificarlos o experimentar a su gusto, de hecho ese es el principal objetivo de esta actividad ir aprendiendo y practicando. 
 		</p>
 	</main>
 </body>
@@ -114,6 +117,10 @@ p{
 .parametro{
 	color: #cc0000;
 }
+
+.init{
+	color: #944dff;
+}
 </textarea>
 			</div>
 		</section>
@@ -121,11 +128,15 @@ p{
 			<h2>Visualización</h2>	
 			<iframe id="targetCode"></iframe>
 		</section>
+		 <footer>        
+        <div class="licence">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Licencia Creative Commons Atribución-NoComercial 4.0 Internacional</a>
+        </div>
+    </footer>
 	</main>
 
 <script>
 	/** Editor en linea **/
-
 	var botonCodigo = document.getElementById("runCodeButton");
 	var botonGuardar = document.getElementById("saveFileButton");
 
@@ -133,6 +144,11 @@ p{
 		var content = document.getElementById("HTML").value;
 		var contentStyles = document.getElementById("CSS").value;
 		var iframe = document.getElementById("targetCode");
+		var info = document.getElementById("informacion");
+
+		if(content == ""){
+			info.classList.add("sinCuerpo");
+		}
 
 		var documento = (iframe.contentWindow || iframe.contentDocument);
 
@@ -201,7 +217,7 @@ p{
 				styles += "footer h2{\n\tmargin-top:20px;\n}\n\n";
 
 				contenido = [
-					"<h2>Etiquetas semanticas HTML5 <span class='icon-html-five'></span></h2><p class='list'><strong>&lt;header&gt;:</strong> la función del header es actuar como contenedor del contenido introductorio de la pagina web (Logo, Titulo &lt;h1&gt; etc...), tambien puede ser colocado como cabecera dentro algunas etiquetas como article.</p><p class='list'><strong>&lt;nav&gt;:</strong> nav representa una serie de vinculos que actuan como barrá de navegación, puede ser colocada en cualquier parte del documento HTML.</p><p class='list'><strong>&lt;section&gt;:</strong> se utiliza para agrupar contenido que esta relacionado semanticamente, pueden haber varias etiquetas &lt;section&gt; dentro de la pagina web representando diferentes secciones con contenido relacionado.</p><p class='list'><strong>&lt;aside&gt;:</strong>se utiliza como contenedor de datos relacionados con la información principal pero que normalmente no tienen la misma relevancia o son menos importantes como contenido de apoyo.</p><p class='list'><strong>&lt;article;&gt:</strong>representa una composición auto-contenida dentro de un documento, forma una unidad en si misma desde el punto de vista semantico, quiere decir que puede ser publicado o reutilizado de manera indipendiente, pueden representar por ejemplo entradas de un blog, mensajes de foros etc...</p><p class='list'><strong>&lt;footer&gt;:</strong>representa al pie de pagina, le otorga un final al cuerpo del documento sin embargo puede ser utilizado dentro de otras secciones de la pagina para representar el final de esa sección</p>"
+					"<h2>Etiquetas semanticas estructurales HTML5 <span class='icon-html-five'></span></h2><p class='good'>Las semantica busca darle un significado a las diferentes partes que componen un documento HTML (que son y que función representan).<br>la principal ventaja de las etiquetas semanticas de HTML5 radica en que los robots o algoritmos de indexación de buscadores como Google son capaces de leer el documento e identificar las diferentes partes que lo componen (la cabecera, la barra de navegación, el pie de pagina etc...) sabrán identificar las partes de mayor importancia y las de menor importancia que componen el documento, lo cual trae ventajas a la hora de posicionar mejor una pagina web en estos buscadores.</p><p class='list'><strong>&lt;header&gt;:</strong> la función del header es actuar como contenedor del contenido introductorio de la pagina web (Logo, Titulo &lt;h1&gt; etc...), tambien puede ser colocado como cabecera dentro algunas etiquetas como article.</p><p class='list'><strong>&lt;nav&gt;:</strong> nav representa una serie de vinculos que actuan como barrá de navegación, puede ser colocada en cualquier parte del documento HTML.</p><p class='list'><strong>&lt;section&gt;:</strong> se utiliza para agrupar contenido que esta relacionado semanticamente, pueden haber varias etiquetas &lt;section&gt; dentro de la pagina web representando diferentes secciones con contenido relacionado.</p><p class='list'><strong>&lt;aside&gt;:</strong>se utiliza como contenedor de datos relacionados con la información principal pero que normalmente no tienen la misma relevancia o son menos importantes como contenido de apoyo.</p><p class='list'><strong>&lt;article;&gt:</strong>representa una composición auto-contenida dentro de un documento, forma una unidad en si misma desde el punto de vista semantico, quiere decir que puede ser publicado o reutilizado de manera indipendiente, pueden representar por ejemplo entradas de un blog, mensajes de foros etc...</p><p class='list'><strong>&lt;footer&gt;:</strong>representa al pie de pagina, le otorga un final al cuerpo del documento sin embargo puede ser utilizado dentro de otras secciones de la pagina para representar el final de esa sección</p>"
 				];
 				cargarContenidoHTML(contenido,info);
 				info.classList.remove("sinCuerpo");
@@ -234,7 +250,41 @@ p{
 				break;
 
 			case "5":
+				saveText = documentHtml[0] + "Ejemplo Listas HTML" + documentHtml[1] + "\n\t\t<ul>\n\t\t\t<li>Item 1</li>\n\t\t\t<li>Item 2</li>\n\t\t\t<li>Item 3</li>\n\t\t\t<li>Item 4</li>\n\t\t\t<li>Item 5</li>\n\t\t</ul>\n\t\t<ol>\n\t\t\t<li>\n\t\t\t\t<ul>\n\t\t\t\t\t<li>SubItem1</li>\n\t\t\t\t\t<li>SubItem2</li>\n\t\t\t\t\t<li>SubItem3</li>\n\t\t\t\t</ul>\n\t\t\t</li>\n\t\t\t<li>Item 2</li>\n\t\t\t<li>Item 3</li>\n\t\t\t<li>Item 4</li>\n\t\t\t<li>Item 5</li>\n\t\t</ol>" + documentHtml[2];
 
+				styles = "body{\n\tfont-size:1.3em\n}\n\nol li{\n\tcolor:skyblue\n}\n\nul li{\n\tcolor:darkred\n}\n\nol li ul li{\n\tcolor:purple\n}";
+
+				contenido = [
+					"<h2>Listas ordenadas y desordenadas</h2><p class='list'><strong>Listas desordenadas:</strong> son conjuntos de elementos que guardan relación pero que no siguen ningun orden especifico, para definir este tipo de lista en HTML utilizamos la etiqueta <strong>&lt;ul&gt;</strong> este tipo de listas por defecto utilizan un icono circular por cada elemento dentro de la lista.</p><p class='list'><strong>Listas ordenadas:</strong> son conjuntos de elementos que guardan relación entre si y aparte tienen un orden especificado, para definir este tipo de listas en HTML utilizamos la etiqueta <strong>&lt;ol&gt;</strong> este tipo de listas por defecto utilizan una numeración ordenada a partir de 1 por cada elemento.</p><p class='list'>Los elementos de una lista tienen que ser definidos dentro de la etiqueta <strong>&lt;li&gt;</strong>(List Item).</p><p class='good'>Las listas pueden estar anidadas entre si creando estructuras de multiples niveles.</p>"
+				];
+
+				cargarContenidoHTML(contenido,info);
+				info.classList.remove("sinCuerpo");
+				break;
+
+			case "6":
+				saveText = documentHtml[0] + "Ejemplo enlaces HTML" + documentHtml[1] + "\n\t\t<a href='https://github.com/BryanJosueOssesSichaca/GRUPO_301122_51-OVI' target='_blank'>Ir al repositorio</a>" + documentHtml[2];
+				cargarContenidoHTML(contenido,info);
+				styles = "a{\n\tfont-size: 2em;\n\ttext-decoration:none\n}\n\na:hover{\n\ttext-decoration:underline;\n}"
+
+				contenido = [
+					"<h2>Enlaces o Hypervinculos</h2><p> algunas etiquetas HTML contienen <strong>atributos</strong> en su declaración, estos atributos ajustan o modifican el comportamiento por defecto que tienen, en el caso de los enlaces 2 de los atributos mas importantes son:</p><p class='list'><strong>href=''</strong> especifica el recurso o dirección(URL) a la que apunta el enlace <strong>Tambien puede apuntar a una parte de la pagina</strong></p><p class='list'><strong>target=''</strong> especifica en donde debe renderizar o desplegar el recurso o dirección(URL) enlazada, puede tener multiples valores: </p><ul class='listado'><li><strong>_blank</strong> carga el enlace en un nuevo contexto, puede ser una nueva pestaña o ventana del navegador.</li><li><strong>_parent</strong> carga el enlace o recurso en el contexto o frame padre.</li><li><strong>_top</strong> carga el enlace o recurso en el cuerpo completo de la pagina</li></ul>"
+				];
+
+				cargarContenidoHTML(contenido,info);
+				info.classList.remove("sinCuerpo");
+				break;
+
+			case "7":
+				saveText = documentHtml[0] + "Ejemplo Imagenes HTML" + documentHtml[1] + "\n\t\t<img src='https://upload.wikimedia.org/wikipedia/commons/d/de/HTML5_oval_logo.png' alt='Imagen HTML5' title='Imagen obtenida de commons.wikimedia.org' >'\n\t\t<i><p>File:HTML5 oval logo.png - Wikimedia Commons. (2011). Commons.wikimedia.org. Retrieved 14 April 2018, from <a href='https://commons.wikimedia.org/wiki/File:HTML5_oval_logo.png' target='_blank'>https://commons.wikimedia.org/wiki/File:HTML5_oval_logo.png</a></p></i>" + documentHtml[2];
+				styles = "body{\n\tfont-family: monspace, Arial;\n\ttext-align:center\n}\n\n";
+
+				contenido = [
+					"<h2>Imagenes</h2><p>No todas las etiquetas HTML tienen una etiqueta de cierre, a estos elementos se les denomina <strong>void</strong> o vacios ya que no contienen a otros elementos, entre ellos podemos encontrar:</p><ul class='listado'><li><strong>&lt;br&gt;</strong> produce un salto de linea</li><li><strong>&lt;hr&gt;</strong>representa un cambio de tematica en la pagina, es utilizado para separar contenido</li><li><strong>&lt;img&gt;</strong> define una imagen dentro del documento</li><li><strong>&lt;meta&gt;</strong> utilizada para definir metadata del documento HTML como palabras clave, autor, juego de caracteres utilizado en la pagina etc...</li></ul><p> y muchas otras etiquetas mas...<br><br>por lo tanto la etiqueta <strong>&lt;img&gt;</strong> no tiene una etiqueta de cierre<strong>&lt;/img&gt;</strong>, para cumplir con el estandar de XHTML podemos colocar un slash <strong>/</strong> al final de la etiqueta para cerrarla aunque en el estandar HTML5 no es necesario.</p><p class='list'>la etiqueta img tiene varios atributos pero 2 de los mas importantes son:</p><ul class='listado'><li><strong>src=''</strong> especifica la URL de la imagen</li><li><strong>alt=''</strong> especifica un texto alternativo que se mostrará en caso de que no pueda ser renderizada la imagen por el navegador</li></ul><p class='good'>el atributo title='texto' es un atributo global que puede ser aplicado a cualquier etiqueta HTML, el cual especifica información extra del elemento al cual pertenece, al pasar el mouse o raton por encima del elemento con el atributo title='texto' aparecera una pequeña label o etiqueta con el valor del atributo.</p>"
+				];
+
+				cargarContenidoHTML(contenido,info);
+				info.classList.remove("sinCuerpo");
 				break;
 		}
 
@@ -310,44 +360,23 @@ p{
 	}
 
 	saveFileButton.addEventListener("click",saveFile);
-	console.log("Autor: Bryan Josue Osses Sichaca - OVI diseño web - Grupo 51");
-
-	/** Subir propio archivo HTML **/
-	document.getElementById("fileLoaderButton").onchange = function(e){
-		var css = document.getElementById("CSS");
-		css.innerHTML = "";
-		css.textContent = "";
-
-		var file = this.files[0];
-
-		if(file.type == "text/html" || file.type == "text/plain"){
-
-			var fileReader = new FileReader();
-
-			fileReader.onload = function(e){
-				var text = e.target.result;
-				document.getElementById("HTML").value = text; 
-			}
-			fileReader.readAsText(file,"UTF-8");
-		}else{
-			alert("Solo se pueden subir archivos con extensión .html .htm o .txt");
-		}	
-	}
 
 
+	//limpiar editores
 	document.getElementById("eraseButton").addEventListener("click",function(e){
 		var content = document.getElementById("HTML");
 		var contentStyles = document.getElementById("CSS");
+		var info = document.getElementById("informacion"); 
 
 		content.value = "";
 		content.innerHTML = "";
 		contentStyles.value = "";
 		contentStyles.innerHTML = "";
 
+		info.classList.add("sinCuerpo");
 		cargar();
 	});
 	
-
 	//Permitir tabulación en textarea
 	var textareas = document.getElementsByTagName('textarea');
 	var count = textareas.length;
@@ -366,6 +395,7 @@ p{
 	    }
 	}
 
+	console.log("Autor: Bryan Josue Osses Sichaca - OVI diseño web - Grupo 51");
 </script>
 </body>
 </html>
