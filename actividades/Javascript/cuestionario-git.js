@@ -1,10 +1,20 @@
+//Autor Bryan Josue Osses Sichaca
+
+/*
+	se declara una función auto-invocada para crear un espacio de nombres independiente y evitar que
+	puedan existir coliciones de nombres.
+*/
 (function(){
+	/*se le asigna una función anonima al objeto window en el evento load, para evitar que el codigo se eejcute antes
+	de que cargue la pagina por completo*/
 	window.addEventListener("load",function(){
 		console.log("Autor: Bryan Josue Osses Sichaca - OVI diseño web - Grupo 51");
 		
+		//esta función se encarga de comprobar absolutamente todo el cuestionario
 		function check(){
 			//stopCrono();
 
+			//primero selecciono todos los input type=radio o type=checkbox y que esten seleccionados (checked).
 			var question1 = $("input[type=radio][name=question1]:checked");
 			var question2 = $("input[type=checkbox][name=question2]:checked");
 			var question3 = $("input[type=radio][name=question3]:checked");
@@ -18,9 +28,15 @@
 			var correcto = 0;
 			//console.log(question1[0].value);
 
+			//con un bloque condicional if compruebo que tengan valor los objetos jQuery que se encargan de seleccionar los checkbox y radiobuttons
 			if(question1[0] && question2[0] && question3[0] && question4[0] && question5[0] && question6[0] && question7[0] && question8[0] && question9[0] && question10[0]){
 				//console.log(question1 +"\n" + question2 +"\n" + question3 +"\n" + question4 +"\n" + question5);
 
+				/*
+					a través de un bloque condicional if compruebo si el valor del radio button o checkbox es el indicado
+					y en caso de ser el indicado se incrementa la variable correcto y le asigno la clase good de lo contrario
+					solo se asigna la clase wrong (esto aplica para los radio buttons). 
+				*/
 				if(question1[0].value == "3"){
 					correcto++;
 					question1.parent().addClass("good");
@@ -28,6 +44,12 @@
 					question1.parent().addClass("wrong");
 				}
 
+				/*
+					a través de un bloque condicional if compruebo si se marcaron menos de 3 checkbox y en tal caso,
+					a través de un bucle for recorro los checkobox y compruebo si su valor es el indicado en caso 
+					de ser el indicado le agrego la clase good sino la clase wrong y correcto se incrementa 0.5.
+					(Esto solo aplica para los checkbox).
+				*/
 				if(question2.length < 3){
 					for(i = 0; i < question2.length; i++){
 
@@ -118,17 +140,27 @@
 
 				//alert(correcto);
 
+				/*
+					el array messages contiene los mensajes que serán mostrados una vez que se califique el cuestionario
+				*/
 				var messages = ["Excelente trabajo has obtenido un puntaje perfecto, pero el aprendizaje de Git no termina aquí se recomienda seguir aprendiendo y experimentado con Git y Github.",
 				"Muy bien, has obtenido un puntaje sobresaliente, es importante estudiar los temas en los que aun hay vaciós.", 
 				"Has obtenido una nota baja, es importante comprender la importancia que tienen los sistemas de control de versiones en el desarrollo de software actual y seguir estudiando ya que existen muchos vaciós sobre Git y Github."];
 				var puntaje;
 
+				/*
+					creo una seríe de elementos HTML que contendrán los resultados del cuestionario en el elemento 
+					con el identificador aswer. 
+				*/
 				var message = document.createElement("p");
 				var puntuacion = document.createElement("h2");
 				var promedio = document.createElement("h2");
 				var answer = document.getElementById("answer");
 				
-
+				/* a traves de condicionales if compruebo en rango la cantidad de puntos obtenidos y dependiendo
+					de eso selecciono del array messages uno u otro mensaje a ser mostrado asi como le asigno
+					una clase con un color diferente.
+				*/
 				if(correcto < 7){
 					puntaje = 2;
 					message.classList.add("parametro");
@@ -145,6 +177,10 @@
 					promedio.classList.add("clave");
 				}
 
+				/*
+					agrego todo los resultados de las variables correcto, average, messages a answer con el 
+					método appendChild. y finalmente le agrego la propiedad visible de css para que se muestre
+				*/
 				var average = correcto / 10 * 100;
 
 				answer.classList.add("score");
@@ -161,7 +197,7 @@
 				//document.getElementById("number_correct").innerHTML = "tienes " + correct + " respuestas correctas.";
 				this.setAttribute("disabled","disabled");
 				$('html, body').animate({scrollTop:0}, 'slow');
-
+			/* en caso de que no esten todos los valores de los checkbox o radio buttons se mostrará este mensaje */
 			}else{
 				alert("Debes responder todas las preguntas para continuar");
 			}

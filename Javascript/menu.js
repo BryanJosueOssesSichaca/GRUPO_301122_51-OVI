@@ -1,7 +1,7 @@
 //Autor Bryan Josue Osses Sichaca
 
 /*
-	se declara una función auto-invocada para crear un espacio de nombre independiente y evitar que
+	se declara una función auto-invocada para crear un espacio de nombres independiente y evitar que
 	puedan existir coliciones de nombres.
 */
 (function(){
