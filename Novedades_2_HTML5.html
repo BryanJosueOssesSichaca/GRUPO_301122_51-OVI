@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Novedades 2 HTML5
+        </title>
+    </head>
+    <body>
+        <div class="scroll">
+            <article>
+                <header>
+                    <h2>
+                        Novedades HTML5
+                        <span class="icon-html-five">
+                        </span>
+                    </h2>
+                    <p>
+                        Publicado el 15/04/2018 a las 01:00
+                    </p>
+                </header>
+            </article>
+            <article>
+                <p>
+                    Continuando con las novedades.
+                </p>
+                <br/>
+                <h3>
+                    FORMULARIOS
+                </h3>
+                <hr/>
+                <br/>
+                <p>
+                    Los formularios son ocupados bastante en las paginas web al momento de requerir informacion para luego ser guardada en una base de datos.
+                    <br/>
+                    Los elementos y atributos son mas semanticos y se hace mas facil el diseñarlos. Las funcionalidades brindan una experiencia diferente para los usuarios al permitir se comporten de la misma forma en diferentes sitios web y que de manera instantanea se devuelva la informacion ingresada.
+                    <br/>
+                </p>
+                <p>
+                    <span class="icon-checkmark">
+                    </span>
+                    Elementos
+                </p>
+                <br/>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="etiqueta">
+                                    < input >
+                                </span>
+                            </p>
+                        </div>
+                        : para crear controles.
+                    </li>
+                </ol>
+                <br/>
+                <p>
+                    Se agregaron nuevos atributos:
+                    <br/>
+                </p>
+                <br/>
+                <p class="title">
+                    List
+                </p>
+                <p>
+                    <span class="resaltado">
+                        list
+                    </span>
+                    funciona como identificador para la lista y
+                    <span class="resaltado">
+                        datalist
+                    </span>
+                    muestra sugerencias en una lista a partir de un identificador en un elemento < datalist >.
+                    <br/>
+                    Por ejemplo:
+                </p>
+                <br/>
+                <div class="image-zoom">
+                    <img alt="input-list" src="Imagenes/input-list-code.png" style="max-width:75%" title="input List Frutas"/>
+                    <p class="reference" style="text-align: center">
+                        Input List Frutas(14 de Abril del 2018) “elaboración propia”
+                    </p>
+                    <br/>
+                </div>
+                <p>
+                    El resultado sera una lista de sugerencias con las frutas que puede digitar, como se muestra a continuacion
+                </p>
+                <br/>
+                <div class="image-center">
+                    <img alt="input-list-result" src="Imagenes/input-list-result.png" style="max-width:50%" title="input List Frutas Resultado"/>
+                    <p class="reference" style="text-align: center">
+                        Input List Frutas Resultado(14 de Abril del 2018) “elaboración propia”
+                    </p>
+                    <br/>
+                </div>
+                <br/>
+                <p class="title">
+                    Pattern
+                </p>
+                <p>
+                    Valida los valores type del control como: text, tel, search, url y email.
+                    <br/>
+                    Por ejemplo:
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < input
+                        </span>
+                        <span class="propiedad">
+                            type
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "text"
+                        </span>
+                        <span class="propiedad">
+                            name
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "telefono"
+                        </span>
+                        <span class="propiedad">
+                            pattern
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "[0-9]{7}"
+                        </span>
+                        <span class="propiedad">
+                            title
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "7 digitos telefono fijo"
+                        </span>
+                        <span class="etiqueta">
+                            >
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    <span class="resaltado">
+                        TITLE
+                    </span>
+                    ayuda al usuario a saber que es lo que tiene que digitar
+                </p>
+                <br/>
+                <p>
+                    <span class="">
+                        Cuando se obedece el la instruccion indicada.
+                    </span>
+                </p>
+                <br/>
+                <div class="image-center">
+                    <img alt="input" src="Imagenes/input-pattern_ok.png" style="max-width:40%" title="input Pattern Ok"/>
+                    <p class="reference" style="text-align: center">
+                        Input Pattern Ok(13 de Abril del 2018) “elaboración propia”
+                    </p>
+                    <br/>
+                </div>
+                <p>
+                    <span class="">
+                        Cuando no se obedece el la instruccion indicada.
+                    </span>
+                </p>
+                <br/>
+                <div class="image-center">
+                    <img alt="input" src="Imagenes/input-pattern_bad.png" style="max-width:40%" title="input Pattern Bad"/>
+                    <p class="reference" style="text-align: center">
+                        Input Pattern Ok(13 de Abril del 2018) “elaboración propia”
+                    </p>
+                    <br/>
+                </div>
+                <p class="title">
+                    Formmethod
+                </p>
+                <p>
+                    Cuando
+                    <span class="resaltado">
+                        < input >
+                    </span>
+                    es de tipo submit (entrada) o image (imagen), se especifica el metodo HTTP, bien sea POST o GET.
+                </p>
+                <br/>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < input
+                        </span>
+                        <span class="propiedad">
+                            id
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "image"
+                        </span>
+                        <span class="propiedad">
+                            type
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "image"
+                        </span>
+                        <span class="propiedad">
+                            alt
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "Comprar"
+                        </span>
+                        <span class="propiedad">
+                            src
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "src="ruta/imagen.png/jpg"
+                        </span>
+                        <span class="etiqueta">
+                            >
+                        </span>
+                    </p>
+                </div>
+                <div class="image-center">
+                    <img alt="input" src="Imagenes/input-image.png" style="max-width:25%" title="input image"/>
+                    <p class="reference" style="text-align: center">
+                        Input Image (13 de Abril del 2018) “elaboración propia”
+                    </p>
+                    <p class="reference" style="text-align: center">
+                        File: Button Buy - pixabay.com. (2017). pixabay.com. Recuperado el 14 de Abril de 2018, desde
+                        <a href="https://cdn.pixabay.com/photo/2017/02/26/18/15/buy-2100944_960_720.png" target="_blank">
+                            https://pixabay.com/es/comprar-bot%C3%B3n-clave-icono-carrito-2100944/
+                        </a>
+                    </p>
+                </div>
+                <br/>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < input
+                        </span>
+                        <span class="propiedad">
+                            id
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "submit"
+                        </span>
+                        <span class="propiedad">
+                            type
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "submit"
+                        </span>
+                        <span class="propiedad">
+                            alt
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "Submit"
+                        </span>
+                        <span class="propiedad">
+                            src
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="etiqueta">
+                            />
+                        </span>
+                    </p>
+                </div>
+                <div class="image-center">
+                    <img alt="input" src="Imagenes/input-submit.png" style="max-width:25%" title="input submit"/>
+                    <p class="reference" style="text-align: center">
+                        Input Submit (13 de Abril del 2018) “elaboración propia”
+                    </p>
+                    <br/>
+                </div>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="etiqueta ">
+                                    < form >
+                                </span>
+                            </p>
+                        </div>
+                        : crea el formulario.
+                    </li>
+                </ol>
+                <br/>
+                <p>
+                    Se añade el atributo
+                    <span class="resaltado">
+                        novalidate
+                    </span>
+                    y evita que se valide el formulario antes de ser enviado.
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < form
+                        </span>
+                        <span class="propiedad">
+                            novalidate
+                        </span>
+                        <span class="etiqueta">
+                            >
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <br/>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="etiqueta">
+                                    < output >
+                                </span>
+                            </p>
+                        </div>
+                        : para mostrar el resultado de un calculo.
+                        <br/>
+                    </li>
+                </ol>
+                <p>
+                    Su sintaxis es la siguiente:
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < output
+                        </span>
+                        <span class="propiedad">
+                            name
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            ""
+                        </span>
+                        <span class="propiedad">
+                            for
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            ""
+                        </span>
+                        <span class="etiqueta">
+                            < /output >
+                        </span>
+                        <
+                    </p>
+                </div>
+                <p>
+                    Para comprender mejor esta etiqueta he modificado un clasico ejemplo.
+                    <br/>
+                </p>
+                <h4>
+                    Linea 13:
+                </h4>
+                <p>
+                    En el form se coloca el atributo
+                    <span class="resaltado">
+                        oninput
+                    </span>
+                    y a este se le establece un calculo de la siguiente forma: la variable "x" sera igual valor entero obtenido del identificador a mas el valor entero obtenido del identificador b.
+                    <br/>
+                </p>
+                <h4>
+                    Linea 16:
+                </h4>
+                <p>
+                    Se establece un input de tipo numero, identificador a y con valor de 50, esto muestra un selector de numeros con un valor establecido de 50.
+                    <br/>
+                </p>
+                <h4>
+                    Linea 22:
+                </h4>
+                <p>
+                    Antes de abrir la etiqueta se coloca un numero 0 y al finalizar la intruccion imput se coloca un numero 100, se establece un input de tipo rango, identificador b y con valor de 50, esto muestra un slide con rango de 0 a 100 y con un valor establecido de 50.
+                    <br/>
+                </p>
+                <h4>
+                    Linea 28:
+                </h4>
+                <p>
+                    se obtiene el resultado gracias a los parametros establecidos dentro de la etiqueta
+                    <span class="resaltado">
+                        < output >
+                    </span>
+                    . en name se coloca el valor establecido en oninput y en for los dos identificadores.
+                    <br/>
+                </p>
+                <h4>
+                    Linea 19 y 25:
+                </h4>
+                <p>
+                    establecen el calculo a realizar, para esta ocasion una suma.
+                </p>
+                <br/>
+                <br/>
+                <br/>
+                <div class="image-zoom">
+                    <img alt="output-code" src="Imagenes/output-code.png" style="max-width:75%" title="etiqueta output"/>
+                </div>
+                <p class="reference" style="text-align: center">
+                    Etiqueta Output (14 de Abril del 2018) “elaboración propia”
+                </p>
+                <br/>
+                <p>
+                    Cuando el navegador interprete el codigo, al moverme entre los numeros del selector y el slide el resultado cambiara.
+                </p>
+                <br/>
+                <div class="image-center">
+                    <img alt="output-result" src="Imagenes/output-result.png" style="max-width:35%" title="etiqueta output result"/>
+                </div>
+                <p class="reference" style="text-align: center">
+                    Etiqueta Output Resultado (14 de Abril del 2018) “elaboración propia”
+                </p>
+                <br/>
+                <br/>
+                <p>
+                    <span class="icon-checkmark">
+                    </span>
+                    Atributos
+                </p>
+                <br/>
+                <ol class="lista">
+                    <li>
+                        < placeholder > : indica al usuario de la pagina web lo que debe ingresar en un campo. Aplica para los elementos
+                        <span class="resaltado">
+                            < input >
+                        </span>
+                        y
+                        <span class="resaltado">
+                            < textarea >.
+                        </span>
+                    </li>
+                </ol>
+                <br/>
+                <p>
+                    Por ejemplo un campo para registrar un correo electronico:
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < input
+                        </span>
+                        <span class="propiedad">
+                            type
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "email"
+                        </span>
+                        <span class="propiedad">
+                            id
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "correo_usuario"
+                        </span>
+                        <span class="propiedad">
+                            placeholder
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "ej: jdmejia@gmail.com"
+                        </span>
+                        <span class="etiqueta">
+                            />
+                        </span>
+                    </p>
+                </div>
+                <p>
+                    Se muestra lo siguiente
+                    <br/>
+                </p>
+                <div class="image-center">
+                    <img alt="placeholder" src="Imagenes/placeholder.png" style="max-width:60%" title="atributo placeholder"/>
+                    <p class="reference" style="text-align: center">
+                        Atributo Placeholder (14 de Abril del 2018) “elaboración propia”
+                    </p>
+                    <br/>
+                </div>
+                <br/>
+                <ol class="lista">
+                    <li>
+                        < autofocus > : permite establecer donde se debe ubicar el cursor para insertar informacion al cargar la pagina.
+                    </li>
+                </ol>
+                <br/>
+                <p>
+                    Sólo un elemento del formulario en puede tener el atributo autofocus, que es de tipo boolean (true o false). Este atributo puede ser aplicado a los elementos < input >, < button >, < select > y < textarea >.
+                    <br/>
+                    Con < input > existe una excepcion, si el atributo type hidden esta seleccionado no se puede enfocar porque esta escondico.
+                    <br/>
+                    Por ejemplo:
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < input
+                        </span>
+                        <span class="propiedad">
+                            type
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "text"
+                        </span>
+                        <span class="propiedad">
+                            id
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "p_nombre"
+                        </span>
+                        <span class="propiedad">
+                            autofocus
+                        </span>
+                        <span class="etiqueta">
+                            />
+                        </span>
+                        <br/>
+                        <span class="etiqueta">
+                            < input
+                        </span>
+                        <span class="propiedad">
+                            type
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "text"
+                        </span>
+                        <span class="propiedad">
+                            id
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "p_apellido"
+                        </span>
+                        <span class="propiedad">
+                        </span>
+                        <span class="etiqueta">
+                            />
+                        </span>
+                        <br/>
+                    </p>
+                </div>
+                <p>
+                    Se asigna al campo de texto el autoenfoque
+                    <br/>
+                </p>
+                <div class="image-center">
+                    <img alt="autofocus" src="Imagenes/autofocus1.png" style="max-width:40%" title="atributo autofocus"/>
+                    <p class="reference" style="text-align: center">
+                        Atributo Autofocus (14 de Abril del 2018) “elaboración propia”
+                    </p>
+                    <br/>
+                </div>
+                <br/>
+                <p>
+                    <span class="icon-checkmark">
+                    </span>
+                    Propiedades
+                </p>
+                <br/>
+                <p class="title">
+                    Label.control
+                    <br/>
+                </p>
+                <p>
+                    Devuelve el controlador para quien está hecha la etiqueta, determinado por el atributo for.
+                    <br/>
+                    Por ejemplo se tiene un formulario con dos cajas de texto, una para el primer nombre y otra para el primer apellido, a traves del atributo
+                    <span class="resaltado">
+                        for
+                    </span>
+                    se asocia el control con su etiqueta correspondiente.
+                    <br/>
+                    Tambien es valido colocar dentro de la etiqueta label el control y se obtendra el mismo resultado.
+                    <br/>
+                    <div class="code">
+                        <p>
+                            < ! - - Utilizando la etiqueta for - - >
+                            <br/>
+                            <br/>
+                            < ! - - Primer Nombre - - >
+                            <br/>
+                            <span class="etiqueta">
+                                < label
+                            </span>
+                            <span class="propiedad">
+                                for
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "P_Nombre"
+                            </span>
+                            <span class="etiqueta">
+                                >
+                            </span>
+                            Primer Nombre:
+                            <span class="etiqueta">
+                                < /label >
+                            </span>
+                            <br/>
+                            <span class="etiqueta">
+                                < input
+                            </span>
+                            <span class="propiedad">
+                                type
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "text"
+                            </span>
+                            <span class="propiedad">
+                                id
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "P_Nombre"
+                            </span>
+                            <span class="propiedad">
+                                name
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "P_Nombre"
+                            </span>
+                            <span class="etiqueta">
+                                />
+                            </span>
+                            <br/>
+                            <br/>
+                            < ! - - Primer Apellido - - >
+                            <br/>
+                            <span class="etiqueta">
+                                < label
+                            </span>
+                            <span class="propiedad">
+                                for
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "P_Apellido"
+                            </span>
+                            <span class="etiqueta">
+                                >
+                            </span>
+                            Primer Apellido:
+                            <span class="etiqueta">
+                                < /label >
+                            </span>
+                            <br/>
+                            <span class="etiqueta">
+                                < input
+                            </span>
+                            <span class="propiedad">
+                                type
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "text"
+                            </span>
+                            <span class="propiedad">
+                                id
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "P_Apellido"
+                            </span>
+                            <span class="propiedad">
+                                name
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "P_Apellido"
+                            </span>
+                            <span class="etiqueta">
+                                />
+                            </span>
+                            <br/>
+                            <br/>
+                            < ! - - Colocando control dentro de label - - >
+                            <br/>
+                            <span class="etiqueta">
+                                < label >
+                            </span>
+                            Primer Nombre:
+                            <span class="etiqueta">
+                                < input
+                            </span>
+                            <span class="propiedad">
+                                type
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "text"
+                            </span>
+                            <span class="propiedad">
+                                id
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "p_nombre"
+                            </span>
+                            <span class="propiedad">
+                                autofocus
+                            </span>
+                            <span class="etiqueta">
+                                />
+                            </span>
+                            <span class="etiqueta">
+                                < /label >
+                            </span>
+                            <br/>
+                            <span class="etiqueta">
+                                < label >
+                            </span>
+                            Primer Apellido:
+                            <span class="etiqueta">
+                                < input
+                            </span>
+                            <span class="propiedad">
+                                type
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "text"
+                            </span>
+                            <span class="propiedad">
+                                id
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "p_apellido"
+                            </span>
+                            <span class="propiedad">
+                            </span>
+                            <span class="etiqueta">
+                                />
+                            </span>
+                            <span class="etiqueta">
+                                < /label >
+                            </span>
+                        </p>
+                    </div>
+                    <div class="image-center">
+                        <img alt="label" src="Imagenes/label.png" style="max-width:60%" title="Propiedad Label"/>
+                        <p class="reference" style="text-align: center">
+                            Propiedad Label (14 de Abril del 2018) “elaboración propia”
+                        </p>
+                    </div>
+                    <br/>
+                </p>
+                <p>
+                    <span class="icon-checkmark">
+                    </span>
+                    Validacion Restringida
+                </p>
+                <br/>
+                <p>
+                    Dentro de los formularios siempre se deben validar los campos y se restringe el tipo de datos, la cantidad de caracteres, el formato y demas.
+                    <br/>
+                    Dentro de las restricciones se encuentran:
+                </p>
+                <p class="title">
+                    Pattern
+                    <br/>
+                </p>
+                <p>
+                    El dato ingresado debe coincidir con unos parametros en especifico.
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < input
+                        </span>
+                        <span class="propiedad">
+                            type
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "text"
+                        </span>
+                        <span class="propiedad">
+                            name
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "Celular"
+                        </span>
+                        <span class="propiedad">
+                            pattern
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "[0-9]{11}"
+                        </span>
+                        <span class="propiedad">
+                            title
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "11 digitos para telefono celular"
+                        </span>
+                        <span class="etiqueta">
+                            >
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <div class="image-center">
+                    <img alt="pattern" src="Imagenes/pattern.png" style="max-width:60%" title="Restriccion Pattern"/>
+                    <p class="reference" style="text-align: center">
+                        Restriccion Parttern (14 de Abril del 2018) “elaboración propia”
+                    </p>
+                </div>
+                <br/>
+                <p class="title">
+                    Min y Max
+                    <br/>
+                </p>
+                <p>
+                    La cantidad minima y maxima de datos ingresados.
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < input
+                        </span>
+                        <span class="propiedad">
+                            type
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "range"
+                        </span>
+                        <span class="propiedad">
+                            name
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "rango"
+                        </span>
+                        <span class="propiedad">
+                            min
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "2"
+                        </span>
+                        <span class="propiedad">
+                            max
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "10"
+                        </span>
+                        <span class="propiedad">
+                            title
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "Rango desde 2 hasta 10"
+                        </span>
+                        <span class="etiqueta">
+                            >
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <div class="image-center">
+                    <img alt="minmax" src="Imagenes/minmax.png" style="max-width:60%" title="Restriccion Min y Max"/>
+                    <p class="reference" style="text-align: center">
+                        Restriccion Min y Max (14 de Abril del 2018) “elaboración propia”
+                    </p>
+                </div>
+                <br/>
+                <p class="title">
+                    Step
+                    <br/>
+                </p>
+                <p>
+                    Al combinarse con los atributos anteriores establece un intervalo de datos permitidos.
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < input
+                        </span>
+                        <span class="propiedad">
+                            type
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "number"
+                        </span>
+                        <span class="propiedad">
+                            name
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "puntaje"
+                        </span>
+                        <span class="propiedad">
+                            step
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "2"
+                        </span>
+                        <span class="propiedad">
+                            title
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "Puntaje en multiplos de 2"
+                        </span>
+                        <span class="etiqueta">
+                            >
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <div class="image-center">
+                    <img alt="step" src="Imagenes/step.png" style="max-width:60%" title="Restriccion step"/>
+                    <p class="reference" style="text-align: center">
+                        Restriccion Step (14 de Abril del 2018) “elaboración propia”
+                    </p>
+                </div>
+                <br/>
+                <p class="title">
+                    MaxLength
+                    <br/>
+                </p>
+                <p>
+                    La cantidad maxima de caracteres ingresados.
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < input
+                        </span>
+                        <span class="propiedad">
+                            type
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "password"
+                        </span>
+                        <span class="propiedad">
+                            name
+                        </span>
+                        <span class="puntaje">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "clave"
+                        </span>
+                        <span class="propiedad">
+                            maxLength
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "8"
+                        </span>
+                        <span class="propiedad">
+                            title
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "8 caracteres maximo para la clave"
+                        </span>
+                        <span class="etiqueta">
+                            >
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <div class="image-center">
+                    <img alt="maxlength" src="Imagenes/maxlength.png" style="max-width:60%" title="Restriccion Maxlength"/>
+                    <p class="reference" style="text-align: center">
+                        Restriccion Maxlength (14 de Abril del 2018) “elaboración propia”
+                    </p>
+                </div>
+                <br/>
+                <p class="title">
+                    Required
+                    <br/>
+                </p>
+                <p>
+                    Establece un campo obligatorio.
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < input
+                        </span>
+                        <span class="propiedad">
+                            type
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "text"
+                        </span>
+                        <span class="propiedad">
+                            name
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "cedula"
+                        </span>
+                        <span class="propiedad">
+                            required
+                        </span>
+                        <span class="propiedad">
+                            title
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "Campo de cedula obligatorio"
+                        </span>
+                        <span class="etiqueta">
+                            >
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <div class="image-center">
+                    <img alt="required" src="Imagenes/required.png" style="max-width:60%" title="Restriccion Required"/>
+                    <p class="reference" style="text-align: center">
+                        Restriccion Required (14 de Abril del 2018) “elaboración propia”
+                    </p>
+                </div>
+                <br/>
+                <p class="title">
+                    Valores URL y EMAIL dentro de type
+                    <br/>
+                </p>
+                <p>
+                    Para las direcciones de paginas web y correos electronicos.
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < input
+                        </span>
+                        <span class="propiedad">
+                            type
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "url"
+                        </span>
+                        <span class="propiedad">
+                            name
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "pagina"
+                        </span>
+                        <span class="propiedad">
+                            required
+                        </span>
+                        <span class="propiedad">
+                            title
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "digite su pagina web"
+                        </span>
+                        <br/>
+                        <span class="propiedad">
+                            placeholder
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "http://www.pagina.com"
+                        </span>
+                        <span class="etiqueta">
+                            >
+                        </span>
+                    </p>
+                </div>
+                <div class="image-center">
+                    <img alt="required" src="Imagenes/url.png" style="max-width:60%" title="Restriccion URL"/>
+                    <p class="reference" style="text-align: center">
+                        Restriccion URL (14 de Abril del 2018) “elaboración propia”
+                    </p>
+                </div>
+                <p>
+                    Lo mismo aplica para los correos electronicos, deben tener un formato en especifico para ser validados.
+                </p>
+                <br/>
+                <h3>
+                    RESPONSIVE
+                </h3>
+                <hr/>
+                <br/>
+                <p>
+                    Responsive se refiere a la adaptabildiad de la pagina web a diferentes resoluciones de pantalla. Esto se implemento para que la pagina pueda visualizarse en diferentes dispositivos: computadores, tablets, smartphones y otros.
+                    <br/>
+                    HTML5 se relaciona con el diseño web responsive de la siguiente manera:
+                    <br/>
+                    <ol class="lista">
+                        <li>
+                            Se mantienen en el navegador.
+                        </li>
+                        <li>
+                            Son independientes de cualquier plataforma.
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    El diseño web responsive es flexible y HTML5 con sus nuevas funcionalidades brinda un codigo liviano que permite una interpretacion de codigo mas eficaz y por ende las paginas que se abran por ejemplo en cualquier dispositivo movil cargaran rapido.
+                </p>
+                <br/>
+                <h3>
+                    CANVAS
+                </h3>
+                <hr/>
+                <br/>
+                <p>
+                    Es un contenedor usado para dibujar gráficos en una página web con el uso de JavaScript.
+                    <br/>
+                    <br/>
+                    Cuenta con varios métodos para dibujar rutas, cuadros, círculos, texto y agregar imágenes.
+                    <br/>
+                    El tamaño por defecto es de 300 pixeles de ancho por 150 pixeles de alto.
+                    <br/>
+                    A continuacion se muestra un ejemplo de un canvas basico, adandole un borde con estilos css.
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < canvas
+                        </span>
+                        <span class="propiedad">
+                            id
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "MiCanvas   "
+                        </span>
+                        <span class="propiedad">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "border:1px solid #000000;"
+                        </span>
+                        <span class="etiqueta">
+                            >< /canvas>
+                        </span>
+                    </p>
+                </div>
+                <div class="image-center">
+                    <img alt="required" src="Imagenes/canvas1.png" style="max-width:60%" title="Canvas Basico"/>
+                    <p class="reference" style="text-align: center">
+                        Canvas Basico (15 de Abril del 2018) “elaboración propia”
+                    </p>
+                </div>
+                <p>
+                    Siempre se deb asignar un
+                    <span class="resaltado">
+                        id
+                    </span>
+                    al canvas para poder trabajar con el codigo JavaScript
+                </p>
+                <br/>
+                <p>
+                    Ahora,si se desea dibujar un rombo por ejemplo se debe trabajar de la siguiente forma:
+                    <br/>
+                    Primero se le asigna un tamaño nuevo al canvas con los atributos
+                    <span class="resaltado">
+                        width
+                    </span>
+                    y
+                    <span class="resaltado">
+                        height
+                    </span>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < canvas
+                        </span>
+                        <span class="propiedad">
+                            id
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "MiCanvas   "
+                        </span>
+                        <span class="propiedad">
+                            width
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "200"
+                        </span>
+                        <span class="propiedad">
+                            height
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "100"
+                        </span>
+                        <span class="propiedad">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "border:1px solid #000000;"
+                        </span>
+                        <span class="etiqueta">
+                            >< /canvas>
+                        </span>
+                    </p>
+                </div>
+                <p>
+                    Despues se utiliza el siguiente codigo JavaScript para empezar a dibujar. Se utiliza un sistema de coordenadas.
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < script >
+                        </span>
+                        <br/>
+                        <span class="etiqueta">
+                            var
+                        </span>
+                        <span class="valor">
+                            can
+                        </span>
+                        <span class="etiqueta">
+                            =
+                        </span>
+                        <span class="resaltado">
+                            document.
+                        </span>
+                        <span class="funcion">
+                            getElementById
+                        </span>
+                        <span class="resaltado">
+                            (
+                        </span>
+                        <span class="atributo">
+                            "MiCanvas"
+                        </span>
+                        <span class="resaltado">
+                            );
+                        </span>
+                        <br/>
+                        <span class="etiqueta">
+                            var
+                        </span>
+                        <span class="valor">
+                            linea
+                        </span>
+                        <span class="etiqueta">
+                            =
+                        </span>
+                        <span class="resaltado">
+                            can.
+                        </span>
+                        <span class="funcion">
+                            getContext
+                        </span>
+                        <span class="resaltado">
+                            (
+                        </span>
+                        <span class="atributo">
+                            "2d"
+                        </span>
+                        <span class="resaltado">
+                            );
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            linea.
+                        </span>
+                        <span class="funcion">
+                            moveTo
+                        </span>
+                        <span class="resaltar">
+                            (
+                        </span>
+                        <span class="coordenada">
+                            50
+                        </span>
+                        <span class="resaltar">
+                            ,
+                        </span>
+                        <span class="coordenada">
+                            50
+                        </span>
+                        <span class="resaltar">
+                            );
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            linea.
+                        </span>
+                        <span class="funcion">
+                            lineTo
+                        </span>
+                        <span class="resaltar">
+                            (
+                        </span>
+                        <span class="coordenada">
+                            100
+                        </span>
+                        <span class="resaltar">
+                            ,
+                        </span>
+                        <span class="coordenada">
+                            100
+                        </span>
+                        <span class="resaltar">
+                            );
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            linea.
+                        </span>
+                        <span class="funcion">
+                            moveTo
+                        </span>
+                        <span class="resaltar">
+                            (
+                        </span>
+                        <span class="coordenada">
+                            50
+                        </span>
+                        <span class="resaltar">
+                            ,
+                        </span>
+                        <span class="coordenada">
+                            50
+                        </span>
+                        <span class="resaltar">
+                            );
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            linea.
+                        </span>
+                        <span class="funcion">
+                            lineTo
+                        </span>
+                        <span class="resaltar">
+                            (
+                        </span>
+                        <span class="coordenada">
+                            100
+                        </span>
+                        <span class="resaltar">
+                            ,
+                        </span>
+                        <span class="coordenada">
+                            0
+                        </span>
+                        <span class="resaltar">
+                            );
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            linea.
+                        </span>
+                        <span class="funcion">
+                            moveTo
+                        </span>
+                        <span class="resaltar">
+                            (
+                        </span>
+                        <span class="coordenada">
+                            100
+                        </span>
+                        <span class="resaltar">
+                            ,
+                        </span>
+                        <span class="coordenada">
+                            0
+                        </span>
+                        <span class="resaltar">
+                            );
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            linea.
+                        </span>
+                        <span class="funcion">
+                            lineTo
+                        </span>
+                        <span class="resaltar">
+                            (
+                        </span>
+                        <span class="coordenada">
+                            150
+                        </span>
+                        <span class="resaltar">
+                            ,
+                        </span>
+                        <span class="coordenada">
+                            50
+                        </span>
+                        <span class="resaltar">
+                            );
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            linea.
+                        </span>
+                        <span class="funcion">
+                            moveTo
+                        </span>
+                        <span class="resaltar">
+                            (
+                        </span>
+                        <span class="coordenada">
+                            50
+                        </span>
+                        <span class="resaltar">
+                            ,
+                        </span>
+                        <span class="coordenada">
+                            150
+                        </span>
+                        <span class="resaltar">
+                            );
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            linea.
+                        </span>
+                        <span class="funcion">
+                            lineTo
+                        </span>
+                        <span class="resaltar">
+                            (
+                        </span>
+                        <span class="coordenada">
+                            150
+                        </span>
+                        <span class="resaltar">
+                            ,
+                        </span>
+                        <span class="coordenada">
+                            50
+                        </span>
+                        <span class="resaltar">
+                            );
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            linea.
+                        </span>
+                        <span class="funcion">
+                            stroke
+                        </span>
+                        <span class="resaltado">
+                            ();
+                        </span>
+                        <br/>
+                        <span class="etiqueta">
+                            < /script>
+                        </span>
+                    </p>
+                </div>
+                <p>
+                    Se obtiene lo siguiente:
+                    <br/>
+                </p>
+                <div class="image-center">
+                    <img alt="required" src="Imagenes/canvas2.png" style="max-width:60%" title="Canvas Dibujo Rombo"/>
+                    <p class="reference" style="text-align: center">
+                        Canvas Dibujo Rombo (15 de Abril del 2018) “elaboración propia”
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    Este es un ejemplo de lo que se puede lograr con canvas.
+                    <br/>
+                </p>
+                <div class="image-center">
+                    <img alt="required" src="Imagenes/canvas3.png" style="max-width:40%" title="Canvas Dibujo Personalizado"/>
+                    <p class="reference" style="text-align: center">
+                        Canvas Dibujo Personalizado (15 de Abril del 2018) “elaboración propia”
+                    </p>
+                </div>
+            </article>
+        </div>
+    </body>
+</html>
