@@ -17,11 +17,14 @@
 }
 
 .content table{
-    width:80%;
+    width:90%;
     margin:auto;
     border: 1px solid #000;
     border-collapse: collapse;
-    font-size: 1.2em;
+    font-size: 1.05em;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease;
 }
 
 .content table th, .content table td {
@@ -166,6 +169,10 @@ p.title-important{
     }
 
     div.image-center{
+        width: 100%;
+    }
+
+       .content table{
         width: 100%;
     }
 }

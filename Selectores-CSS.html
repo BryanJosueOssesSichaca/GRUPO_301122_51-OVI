@@ -9,11 +9,13 @@
 	<title>Selectores CSS</title>
 </head>
 <body>
+<div class="scroll">	
 	<article>
 		<header>
-			<h2>Selectores y media queries CSS <span class="icon-css3"></span></h2>
+			<h2>Selectores CSS <span class="icon-css3"></span></h2>
 			<p>Publicado el 15/04/2018 a las 00:37</p>
 		</header>
+		<p>Los selectores son una serie de patrones que se utilizan para indicar a que elemento HTML deseamos aplicar los estilos CSS definidos, existen multiples selectores en CSS los cuales podemos combinar para realizar selecciones mucho mas especificas y complejas.</p>
 		<p class="title">Selector universal</p>
 		<p>
 			Para seleccionar todos los elementos de una página solo se utiliza el símbolo <span class="clave">* (asterisco)</span>, normalmente se utiliza para resetear los estilos predefinidos por los navegadores sin embargo cuando se combina con otros selectores, también puede hacer referencia a todos los elementos dentro de otro elemento.
@@ -131,6 +133,176 @@
 		<p>
 			Teniendo en cuenta esta estructura jerárquica podemos crear selectores que encajen con cierta jerarquía dentro del documento.
 		</p>
+		<table>
+			<caption>Selectores Jerarquicos</caption>	
+			<tr>
+				<th>Sintaxis</th>
+				<th>Explicación</th>
+			</tr>
+			<tr>
+				<td><span class="init">elemento1</span>  <span class="clave">elemento2</span></td>
+				<td>Los estilos son aplicados al elemento2 cuando es hijo  del elemento1.</td>
+			</tr>
+			<tr>
+				<td><span class="init">elemento1</span> > <span class="clave">elemento2</span></td>
+				<td>Los estilos son aplicados al elemento2 cuando es hijo directo del elemento1.</td>
+			</tr>
+			<tr>
+				<td><span class="init">elemento1</span> + <span class="clave">elemento2</span></td>
+				<td>Los estilos son aplicados al elemento2 cuando es hermano del elemento1 y ademas el elemento1 precede al elemento2.</td>
+			</tr>
+			<tr>
+				<td><span class="init">elemento1</span> - <span class="clave">elemento2</span></td>
+				<td>Los estilos son aplicados al elemento2 cuando es hermano del elemento1 y le precede.</td>
+			</tr>
+			<tr>
+				<td><span class="init">elemento</span><span class="clave">:first-child</span></td>
+				<td>Los estilos son aplicados cuando el elemento es el primer hijo de su padre.</td>
+			</tr>
+			<tr>
+				<td><span class="init">elemento</span><span class="clave">:last-child</span></td>
+				<td>Los estilos son aplicados cuando el elemento es el ultimo hijo de su padre.</td>
+			</tr>
+			<tr>
+				<td><span class="init">elemento</span><span class="clave">:only-child</span></td>
+				<td>Los estilos son aplicados cuando el elemento es el unico hijo.</td>
+			</tr>
+			<tr>
+				<td><span class="init">elemento</span><span class="clave">:nth-child<span class="parametro">(n)</span></span></td>
+				<td>Los estilos son aplicados al elemento hijo numero <span class="parametro">n</span> de su elemento padre.</td>
+			</tr>
+			<tr>
+				<td><span class="init">elemento</span><span class="clave">:last-child<span class="parametro">(n)</span></span></td>
+				<td>Los estilos son aplicados al elemento hijo numero <span class="parametro">n</span> de su elemento padre pero contando en orden inverso.</td>
+			</tr>
+		</table>
+		<br/>
+		<strong><span class="parametro"><p>Ejemplos:</p></span></strong>
+		<br/>
+		<div class="code">
+			<p>
+			<span class="init">section article</span> {
+			<br><br>
+				<span class="clave" style="margin-left:20px;">color: <span class="parametro">#000;</span></span><br>
+				<span class="clave" style="margin-left:20px;">padding: <span class="parametro">10px;</span></span><br>
+				<span class="clave" style="margin-left:20px;">border: <span class="parametro">1px solid #ccc;</span></span>
+			<br><br>
+			}
+			</p>
+		</div>
+		<p>
+			los estilos CSS serán aplicados a los elementos <span class="parametro">article</span> que sean hijos de los elementos <span class="parametro">section</span> del documento.
+		</p>
+		<br/>
+		<div class="code">
+			<p>
+			<span class="init">header <span class="parametro">></span> h1</span> {
+			<br><br>
+				<span class="clave" style="margin-left:20px;">color: <span class="parametro">#000;</span></span><br>
+				<span class="clave" style="margin-left:20px;">padding: <span class="parametro">10px;</span></span><br>
+				<span class="clave" style="margin-left:20px;">border: <span class="parametro">1px solid #ccc;</span></span>
+			<br><br>
+			}
+			</p>
+		</div>
+		<p>
+			los estilos CSS serán aplicados a los elementos <span class="parametro">header</span> que sean hijos directos de los elementos <span class="parametro">header</span> del documento.
+		</p>
+		<p class="title">Selectores Compuestos</p>
+		<p>
+			Podemos combinar todos los selectores vistos anteriormente para hacer selecciones mucho mas específicas, por ejemplo podemos seleccionar los elementos <span class="parametro">p</span> del documento cuyo padre sea un elemento <span class="parametro">article</span>, cuya <span class="parametro">clase</span> sea parrafo y que utilicen el atributo <span class="parametro">lang</span> con el valor <span class="parametro">es</span>.   
+		</p>
+		<div class="code">
+			<p>
+			<span class="init">article</span> > p<span class="clave">.parrafo</span>[<span class="parametro">lang="es"</span>] {
+			<br><br>
+				<span class="clave" style="margin-left:20px;">color: <span class="parametro">#f1f1f1;</span></span><br>
+				<span class="clave" style="margin-left:20px;">font-size: <span class="parametro">1em;</span></span>
+			<br><br>
+			}
+			</p>
+		</div>
+		<p class="title">Pseudoclases</p>
+		<p>
+			las pseudoclases permiten aplicar estilos CSS a un selector especifico cuando ocurre una determinada circunstancia (evento), algunas de las pseudoclases mas utilziadas son:
+		</p>
+		<table>
+			<caption>Pseudoclases</caption>
+			<tr>
+				<th>Pseudoclase</th>
+				<th>Explicación</th>
+			</tr>
+			<tr>
+				<td><span class="init">:focus</span></td>
+				<td>se aplica cuando el elemento obtiene el foco.</td>
+			</tr>
+			<tr>
+				<td><span class="init">:enabled</span></td>
+				<td>se aplica cuando elemento esta habilitado.</td>
+			</tr>
+			<tr>
+				<td><span class="init">:disabled</span></td>
+				<td>se aplica cuando el elemento esta deshabilitado.</td>
+			</tr>
+			<tr>
+				<td><span class="init">:checked</span></td>
+				<td>se aplica normalmente a controles de formularios (input) de tipo radio o checkbox, cuando estén seleccionados <span class="icon-checkmark"></span>.</td>
+			</tr>
+			<tr>
+				<td><span class="init">:hover</span></td>
+				<td>se aplica cuando el mouse o ratón pasa por encima del elemento</td>
+			</tr>
+			<tr>
+				<td><span class="init">:active</span></td>
+				<td>Se utiliza comúnmente en elementos &lt;a&gt; o elementos &lt;button&gt;, Los estilos son aplicados al elemento en el momento en que se da click sobre el mismo y se eliminan cuando suelta el botón del ratón.</td>
+			</tr>
+		</table>
+		<br>
+		<table>
+			<caption>algunas pseudoclases son solo aplicables a los enlaces &lt;a&gt;</caption>
+			<tr>
+				<th>Pseudoclase</th>
+				<th>Explicación</th>
+			</tr>
+			<tr>
+				<td><span class="init">a</span><span class="parametro">:link</span></td>
+				<td>Los estilos CSS son aplicados a los enlaces que no han sido abiertos o visitados.</td>
+			</tr>
+			<tr>
+				<td><span class="init">a</span><span class="parametro">:visited</span></td>
+				<td>Los estilos CSS son aplicados a los enlaces que han sido visitados.</td>
+			</tr>
+		</table>
+		<br>
+		<strong><span class="parametro"><p>Ejemplos:</p></span></strong>
+		<br>
+		<div class="code">
+			<p>
+			<span class="init">header<span class="parametro">:hover</span></span> {
+			<br><br>
+				<span class="clave" style="margin-left:20px;">background: <span class="parametro">hsl(300, 100%, 90%);</span></span><br>
+				<span class="clave" style="margin-left:20px;">border: <span class="parametro">1px solid #660066;</span></span>
+			<br><br>
+			}
+			</p>
+		</div>
+		<p>
+			Los estilos serán aplicados a los elementos <span class="parametro">header</span> cuando el ratón pase por encima de los mismos.
+		</p>
+		<br>
+		<div class="code">
+			<p>
+			<span class="init">form input</span>[type="radio"]<span class="parametro">:checked</span> + <span class="clave">p</span> {
+			<br><br>
+				<span class="clave" style="margin-left:20px;">background: <span class="parametro">#goldenrod;</span></span>
+			<br><br>
+			}
+			</p>
+		</div>
+		<p>
+			Los estilos serán aplicados a los elementos <span class="parametro">p</span> que sean hermanos de los elementos <span class="parametro">input</span> con el atributo <span class="parametro">type="radio"</span> los cuales preceden al elemento <span class="parametro">p</span> cuando se marca o selecciona <span class="icon-checkmark"></span> el elemento <span class="parametro">input</span>.
+		</p>
 	</article>
+</div>	
 </body>
 </html>
