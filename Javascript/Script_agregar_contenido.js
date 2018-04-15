@@ -1,13 +1,30 @@
+//Autor Bryan Josue Osses Sichaca
+
+/*
+	se declara una función auto-invocada para crear un espacio de nombre independiente y evitar que
+	puedan existir coliciones de nombres.
+*/
 (function(){
+	//la función .ready() de jQuery indica que el codigo solo se ejecutará en el momento que document este cargado por completo
 	$(document).ready(function(){
 
+		/*
+			La función cargarContenido se encarga de cargar el contenido de los documentos HTML en un div con
+			el identificador contenido en el index.html.
+		*/
 		function cargarContenido(id,contenido){
 			$(id).click(function(){
 				$("#contenido").load(contenido);
 
+				//selecciono el padre del elemento id que se pasa como parametro a la función
 				var padre = $(id).parent()[0];
+				//cambio la propiedad css background de los li que estan dentro de div.panel a blanco
 				$("div.panel ul li").css({"background":"#fff"});
-
+				/*
+					recorro cada uno de los li que estan dentro de div.panel y en caso de que el padre
+					del elemento id que es pasado como parametro sea uno de esos li cambio la propiedad
+					css background a gris claro.
+				*/ 
 				for(i = 0; i < $("div.panel ul li").length; i++){
 
 					if(padre == $("div.panel ul li")[i]){
