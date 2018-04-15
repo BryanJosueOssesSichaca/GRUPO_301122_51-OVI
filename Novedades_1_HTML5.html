@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Novedades 1 HTML5
+        </title>
+        <style>
+            table {
+                border="1";
+                margin: 0 auto;
+                border-collapse: separate;
+            }
+            td {
+                border: 1px solid black;
+                width: 15%; 
+                word-wrap: 
+                break-word;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="scroll">
+            <article>
+                <header>
+                    <h2>
+                        Novedades HTML5
+                        <span class="icon-html-five">
+                        </span>
+                    </h2>
+                    <p>
+                        Publicado el 13/04/2018 a las 03:00
+                    </p>
+                </header>
+            </article>
+            <article>
+                <p>
+                    HTML5  ha revolucionado la forma en que se solia esribir codigo.
+                Aparte de las etiquetas mencionadas en la introduccion, se destacan ciertas caracteristicas que no dejan de asombrar:
+                </p>
+                <br/>
+                <h3>
+                    DOCTYPE
+                </h3>
+                <hr/>
+                <br/>
+                <p>
+                    Esta declaracion indica en que lenguaje se interpretara el codigo fuente en la pagina web.
+                    <br/>
+                    La declaracion doctype le ordena al navegador la version del lenguaje html utilizado en la pagina. Se hace referencia a la marcacion Document Type Definition (DTD). La DTD especifica las reglas usadas por el lenguaje de marcación correctas para que el navegador pueda presentar el contenido de manera aducuada.
+                    <br/>
+                    A contnuacion se relacionan los tipos de Doctype ocupados en HTML
+                    <b>
+                    </b>
+                </p>
+                <table>
+                    <tr>
+                        <th>
+                            HTML 4.01 estricto
+                            <br/>
+                            <br/>
+                            Permite todos los elementos y atributos HTML, pero no permite etiquetas de presentación, como la etiqueta de fuente. No se permiten conjuntos de marcos.
+                            <th>
+                                HTML 4.01 transicional
+                                <br/>
+                                <br/>
+                                Igual que HTML estricto, pero permite el uso de elementos en desuso, como la etiqueta de fuente. No se permiten conjuntos de marcos.
+                                <th>
+                                    HTML 4.01 conjunto de marcos
+                                    <br/>
+                                    <br/>
+                                    Igual al HTML transicional, pero permite conjuntos de marcos.
+                                    <th>
+                                        XHTML 1.0 estricto
+                                        <br/>
+                                        <br/>
+                                        Igual al HTML estricto, pero todo el contenido debe estar escrito como XML bien formateado. Por ejemplo, todas las etiquetas de apertura deben tener etiquetas de cierre. No se permiten conjuntos de marcos.
+                                        <th>
+                                            XHTML 1.0 transicional
+                                            <br/>
+                                            <br/>
+                                            Igual al HTML transicional, pero todo el contenido debe estar escrito como XML bien formateado. No se permiten conjuntos de marcos.
+                                            <th>
+                                                XHTML 1.0 conjunto de marcos
+                                                <br/>
+                                                <br/>
+                                                Igual al XHTML transicional, pero permite conjuntos de marcos.
+                                                <th>
+                                                    XHTML 1.1
+                                                    <br/>
+                                                    <br/>
+                                                    Igual al XHTML estricto, pero también proporciona capacidades para módulos, como soporte Ruby para idiomas orientales-asiáticos.
+                                                    <th>
+                                                    </th>
+                                                </th>
+                                            </th>
+                                        </th>
+                                    </th>
+                                </th>
+                            </th>
+                        </th>
+                    </tr>
+                </table>
+                <br/>
+                <p>
+                    La declaración de doctype debe ser el primer elemento en un documento HTML, antes que html.
+                    <br/>
+                    Se muestra de la siguiente forma:
+                    <span class="resaltado">
+                        < !DOCTYPE  HTML>
+                    </span>
+                </p>
+                <br/>
+                <h3>
+                    INSERCION MULTIMEDIA
+                </h3>
+                <hr/>
+                <br/>
+                <p>
+                    La integracion de audio y video es mas facil de llevar a cabo. Este tipo de archivos se suelen encontrar en muchas paginas web.
+                    <br/>
+                </p>
+                <h2>
+                    <span class="resaltado">
+                        AUDIO
+                    </span>
+                    <span class="icon-file-music">
+                    </span>
+                </h2>
+                <br/>
+                <p>
+                    Se ocupan las siguientes etiquetas:
+                </p>
+                <br/>
+                <ol class="lista">
+                    <li>
+                        < embed > : embeber contenido de otra web sin necesidad de plugins.
+                    </li>
+                    <br/>
+                    <li>
+                        < audio > : inserta archivos de audio en la pagina web
+                    </li>
+                    <br/>
+                    <li>
+                        < video > : inserta clips de video en la pagina web
+                    </li>
+                    <br/>
+                    <li>
+                        < track > : brinda la posibilidad de especificar una o varias pistas de audio y video para los elementos
+                        <span class="resaltado">
+                            AUDIO
+                        </span>
+                        y
+                        <span class="resaltado">
+                            VIDEO
+                        </span>
+                    </li>
+                    <br/>
+                    <li>
+                        < source > : brinda la posibilidad de especificar fuenets diferentes cuendo se insertan elementos
+                        <span class="resaltado">
+                            AUDIO
+                        </span>
+                        y
+                        <span class="resaltado">
+                            VIDEO
+                        </span>
+                    </li>
+                    <br/>
+                </ol>
+                <p>
+                    El soporte de los archivos en los navegadores depende de su formato. A continuacion se relaciona una tabla con los formatos y los navegadores mas ocupados:
+                </p>
+                <table>
+                    <tr align="middle">
+                        <td>
+                            <span class="resaltado">
+                                NAVEGADOR/CODEC
+                            </span>
+                        </td>
+                        <td>
+                            <span class="resaltado">
+                                MP3
+                            </span>
+                        </td>
+                        <td>
+                            <span class="resaltado">
+                                AAC
+                            </span>
+                        </td>
+                        <td>
+                            <span class="resaltado">
+                                WAV
+                            </span>
+                        </td>
+                        <td>
+                            <span class="resaltado">
+                                OGG VORBIS
+                            </span>
+                        </td>
+                        <td>
+                            <span class="resaltado">
+                                SPEEX
+                            </span>
+                        </td>
+                    </tr>
+                    <tr align="middle">
+                        <td>
+                            <span class="resaltado">
+                                INTERNET EXPLORER
+                            </span>
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                    </tr>
+                    <tr align="middle">
+                        <td>
+                            <span class="resaltado">
+                                MOZILLA FIREFOX
+                            </span>
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                    </tr>
+                    <tr align="middle">
+                        <td>
+                            <span class="resaltado">
+                                GOOGLE CHROME
+                            </span>
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            <span class="resaltado">
+                                SI
+                            </span>
+                        </td>
+                        <td>
+                            <span class="resaltado">
+                                SI
+                            </span>
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            <span class="resaltado">
+                                SI
+                            </span>
+                        </td>
+                    </tr>
+                    <tr align="middle">
+                        <td>
+                            <span class="resaltado">
+                                SAFARI
+                            </span>
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                    </tr>
+                    <tr align="middle">
+                        <td>
+                            <span class="resaltado">
+                                OPERA
+                            </span>
+                        </td>
+                        <td>
+                            EN LINUX Y FREEBSD
+                        </td>
+                        <td>
+                            EN LINUX Y FREEBSD
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <h4 style="color:red;">
+                    Nota
+                    <br/>
+                </h4>
+                <p>
+                    Como tal Google Chrome no soporta todos los formatos de forma nativa , para ellos requiere del uso de Quicktime y FFmpeg, pero si se compila la version libre de Chrome Chronium con soporte FFmpeg (conjunto de software de codigo abierto que  brinda la posibilidad de grabar, convertir y streaming es decir utilizar y descargar, archivos de audio y video ) si estaran disponibles todos los formatos.
+                    <br/>
+                    Por esta razon se resaltan unas casillas en la fila de Google Chrome.
+                    <br/>
+                </p>
+                <h3>
+                    Sintaxis y Atributos
+                    <br/>
+                </h3>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < audio
+                        </span>
+                        <span class="propiedad">
+                            src
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "archivo.mp3"
+                        </span>
+                        <span class="etiqueta">
+                            > < /audio >
+                        </span>
+                    </p>
+                </div>
+                <p>
+                    <span class="icon-checkmark">
+                    </span>
+                    Para reproduccion automatica se agrega
+                    <span class="resaltado">
+                        autoplay
+                    </span>
+                    :
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < audio
+                        </span>
+                        <span class="propiedad">
+                            src
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "archivo.mp3"
+                        </span>
+                        <span class="propiedad">
+                            autoplay
+                        </span>
+                        <span class="etiqueta">
+                            > < /audio >
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    <span class="icon-checkmark">
+                    </span>
+                    Para una reproduccion sin fin se agrega
+                    <span class="resaltado">
+                        loop
+                    </span>
+                    :
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < audio
+                        </span>
+                        <span class="propiedad">
+                            src
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "archivo.mp3"
+                        </span>
+                        <span class="propiedad">
+                            autoplay
+                        </span>
+                        <span class="propiedad">
+                            loop
+                        </span>
+                        <span class="etiqueta">
+                            > < /audio >
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    <span class="icon-checkmark">
+                    </span>
+                    Controles
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < audio
+                        </span>
+                        <span class="propiedad">
+                            src
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "archivo.mp3"
+                        </span>
+                        <span class="propiedad">
+                            controls
+                        </span>
+                        <span class="etiqueta">
+                            > < /audio >
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    Los controles dependean del navegador:
+                </p>
+                <div class="image-center">
+                    <img alt="controls" src="Imagenes/controls-html5.png" style="max-width:50%" title="control audio"/>
+                    <p class="reference" style="text-align: center">
+                        Control Audio HTML5 (13 de Abril del 2018) “elaboración propia”
+                    </p>
+                </div>
+                <p>
+                    Tambien se pueden trabajar controles personalizados con un poco de codigo javascript
+                </p>
+                <br/>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < audio
+                        </span>
+                        <span class="propiedad">
+                            id
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "reproductor"
+                        </span>
+                        <span class="propiedad">
+                            src
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "archivo.mp3"
+                        </span>
+                        <span class="etiqueta">
+                            > < /audio >
+                        </span>
+                        <br/>
+                        <span class="etiqueta">
+                            < div >
+                        </span>
+                        <br/>
+                        <span class="etiqueta">
+                            < button
+                        </span>
+                        <span class="propiedad">
+                            onclick
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "document.getElementById('player').volume -= 0.1;"
+                        </span>
+                        <span class="etiqueta">
+                            >
+                        </span>
+                        <span class="resaltado">
+                            Vol -
+                        </span>
+                        <span class="etiqueta">
+                            < /button >
+                        </span>
+                        <br/>
+                        <span class="etiqueta">
+                            < button
+                        </span>
+                        <span class="propiedad">
+                            onclick
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "document.getElementById('player').play();"
+                        </span>
+                        <span class="etiqueta">
+                            >
+                        </span>
+                        <span class="resaltado">
+                            Play
+                        </span>
+                        <span class="etiqueta">
+                            < /button >
+                        </span>
+                        <br/>
+                        <span class="etiqueta">
+                            < button
+                        </span>
+                        <span class="propiedad">
+                            onclick
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "document.getElementById('player').pause();"
+                        </span>
+                        <span class="etiqueta">
+                            >
+                        </span>
+                        <span class="resaltado">
+                            Pause
+                        </span>
+                        <span class="etiqueta">
+                            < /button >
+                        </span>
+                        <br/>
+                        <span class="etiqueta">
+                            < button
+                        </span>
+                        <span class="propiedad">
+                            onclick
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "document.getElementById('player').volume += 0.1;"
+                        </span>
+                        <span class="etiqueta">
+                            >
+                        </span>
+                        <span class="resaltado">
+                            Vol +
+                        </span>
+                        <span class="etiqueta">
+                            < /button >
+                        </span>
+                        <br/>
+                        <span class="etiqueta">
+                            < /div >
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    Se muestra lo siguiente:
+                </p>
+                <br/>
+                <div class="image-center">
+                    <img alt="controls1" src="Imagenes/controls2-html5.png" style="max-width:75%" title="control audio javascript"/>
+                    <p class="reference" style="text-align: center">
+                        Control Audio Javascript HTML5 (13 de Abril del 2018) “elaboración propia”
+                    </p>
+                </div>
+                <p>
+                    <span class="icon-checkmark">
+                    </span>
+                    Precarga de archivos
+                </p>
+                <br/>
+                <p>
+                    Cuando se desea que un archivo se almacene en segundo plano se puede ocupar el atributo
+                    <span class="resaltado">
+                        preload
+                    </span>
+                    . A este atributo le pueden ser asignados tres valores:
+                    <br/>
+                    <p>
+                        <u>
+                            none :
+                        </u>
+                        no hay almacenamiento. Recomendado cuando una pagina tiene muchos archivos.
+                    </p>
+                    <br/>
+                    <p>
+                        <u>
+                            auto :
+                        </u>
+                        hay almacenamiento automatica. Recomendado cuando la pagina tiene pocos archivos
+                    </p>
+                    <br/>
+                    <p>
+                        <u>
+                            metadata :
+                        </u>
+                        solo hay almacenamiento de metadados de los archivos.
+                    </p>
+                    <br/>
+                    <div class="code">
+                        <p>
+                            <span class="etiqueta">
+                                < audio
+                            </span>
+                            <span class="propiedad">
+                                src
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "archivo.mp3"
+                            </span>
+                            <span class="propiedad">
+                                preload
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "none/auto/matadata"
+                            </span>
+                            <span class="etiqueta">
+                                > < /audio >
+                            </span>
+                        </p>
+                    </div>
+                    <br/>
+                </p>
+                <p>
+                    <span class="icon-checkmark">
+                    </span>
+                    Formato Multiple
+                </p>
+                <br/>
+                <p>
+                    La etiqueta
+                    <span class="resaltado">
+                        < source >
+                    </span>
+                    permite definir varios archivos de audio en diferentes formatos:
+                    <br/>
+                    <div class="code">
+                        <p>
+                            <span class="etiqueta">
+                                < audio
+                            </span>
+                            <span class="propiedad">
+                                controls
+                            </span>
+                            <span class="etiqueta">
+                                >
+                            </span>
+                            <br/>
+                            <span class="etiqueta">
+                                < source
+                            </span>
+                            <span class="propiedad">
+                                src
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "archivo/mpeg"
+                            </span>
+                            <span class="propiedad">
+                                type
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "audio/mpeg"
+                            </span>
+                            <span class="etiqueta">
+                                />
+                            </span>
+                            <br/>
+                            <span class="etiqueta">
+                                < source
+                            </span>
+                            <span class="propiedad">
+                                src
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "archivo/wav"
+                            </span>
+                            <span class="propiedad">
+                                type
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "audio/mpeg"
+                            </span>
+                            <span class="etiqueta">
+                                />
+                                <br/>
+                                <span class="etiqueta">
+                                    < /audio >
+                                </span>
+                            </span>
+                        </p>
+                    </div>
+                    <br/>
+                    <p>
+                    </p>
+                    Esto depende del navegador, si no soporta un tipo de archivo, busca la siguiente etiqueta source.
+                </p>
+                <br/>
+                <h2>
+                    <span class="resaltado">
+                        VIDEO
+                    </span>
+                    <span class="icon-file-video">
+                    </span>
+                </h2>
+                <br/>
+                <p>
+                    El soporte de los archivos en los navegadores depende de su formato. A continuacion se relaciona una tabla con los formatos y los navegadores mas ocupados:
+                </p>
+                <table>
+                    <tr align="middle">
+                        <td>
+                            <span class="resaltado">
+                                NAVEGADOR/CODEC
+                            </span>
+                        </td>
+                        <td>
+                            <span class="resaltado">
+                                OGG THEORA
+                            </span>
+                        </td>
+                        <td>
+                            <span class="resaltado">
+                                H.264 (MP4)
+                            </span>
+                        </td>
+                        <td>
+                            <span class="resaltado">
+                                VP8
+                            </span>
+                        </td>
+                    </tr>
+                    <tr align="middle">
+                        <td>
+                            <span class="resaltado">
+                                INTERNET EXPLORER
+                            </span>
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                    </tr>
+                    <tr align="middle">
+                        <td>
+                            <span class="resaltado">
+                                MOZILLA FIREFOX
+                            </span>
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                    </tr>
+                    <tr align="middle">
+                        <td>
+                            <span class="resaltado">
+                                GOOGLE CHROME
+                            </span>
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                    </tr>
+                    <tr align="middle">
+                        <td>
+                            <span class="resaltado">
+                                SAFARI
+                            </span>
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                    </tr>
+                    <tr align="middle">
+                        <td>
+                            <span class="resaltado">
+                                OPERA
+                            </span>
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                        <td>
+                            NO
+                        </td>
+                        <td>
+                            SI
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <h3>
+                    Sintaxis y Atributos
+                </h3>
+                <br/>
+                <p>
+                    Es similar al elemento audio. Se permiten los atributos
+                    <span class="resaltado">
+                        autoplay, loop
+                    </span>
+                    y
+                    <span class="resaltado">
+                        preload
+                    </span>
+                    . La fuente del archivo se especifica con
+                    <span class="resaltado">
+                        src
+                    </span>
+                    o
+                    <span class="resaltado">
+                        source
+                    </span>
+                    . Los controles se ocupan a traves del atributo
+                    <span class="resaltado">
+                        controls
+                    </span>
+                    o se personalizan con un poo de ayuda de javascript.
+                </p>
+                <p>
+                    <span class="icon-checkmark">
+                    </span>
+                    Controles
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < video
+                        </span>
+                        <span class="propiedad">
+                            src
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "archivo.mp4"
+                        </span>
+                        <span class="propiedad">
+                            controls
+                        </span>
+                        <span class="etiqueta">
+                            > < /video >
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    Los controles dependean del navegador:
+                </p>
+                <div class="image-center">
+                    <img alt="controls3" src="Imagenes/controlsvideo-html5.png" style="max-width:50%" title="control video"/>
+                    <p class="reference" style="text-align: center">
+                        Control Video HTML5 (13 de Abril del 2018) “elaboración propia”
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    <span class="icon-checkmark">
+                    </span>
+                    Se utilizan los atributos
+                    <span class="resaltado">
+                        width
+                    </span>
+                    y
+                    <span class="resaltado">
+                        height
+                    </span>
+                    para definir tamaño a la ventana, ancho y alto respectivamente
+                </p>
+                <br/>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < video
+                        </span>
+                        <span class="propiedad">
+                            src
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "archivo.mp4"
+                        </span>
+                        <span class="propiedad">
+                            controls
+                        </span>
+                        <span class="propiedad">
+                            width
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "480"
+                        </span>
+                        <span class="propiedad">
+                            height
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "360"
+                        </span>
+                        <span class="etiqueta">
+                            > < /video >
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    <span class="icon-checkmark">
+                    </span>
+                    El atributo
+                    <span class="resaltado">
+                        poster
+                    </span>
+                    permite definir una portada o caratula para el video.
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < video
+                        </span>
+                        <span class="propiedad">
+                            src
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "archivo.mp4"
+                        </span>
+                        <span class="propiedad">
+                            controls
+                        </span>
+                        <span class="propiedad">
+                            width
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "480"
+                        </span>
+                        <span class="propiedad">
+                            height
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "360"
+                        </span>
+                        <span class="propiedad">
+                            poster
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "imagen.jpg/png"
+                        </span>
+                        <span class="etiqueta">
+                            > < /video >
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <div class="image-center">
+                    <img alt="controls4" src="Imagenes/controlsvideo2-html5.png" style="max-width:50%" title="control video con poster"/>
+                    <p class="reference" style="text-align: center">
+                        Control Video con Poster HTML5 (13 de Abril del 2018) “elaboración propia”
+                    </p>
+                </div>
+                <br/>
+                <h3>
+                    INDEPENDENCIA DE PLUGINS
+                </h3>
+                <hr/>
+                <br/>
+                <p>
+                    Para los archivos de audio y video se solia ocupar un plugin Flash en las paginas web para poder reproducir estos archivos. Se presentaban fallos constantemente y habia que cerrar el navegador y volverlo abrir para que funcionara. Ahora, con las nuevas implementaciones, este pluginn ya no se utiliza.
+                    Al reproducir estos archivos a traves de HTML5 se obtienen ciertas ventajas:
+                    <br/>
+                    <ol class="lista">
+                        <li>
+                            Consume menos recursos
+                        </li>
+                        <li>
+                            Mejor rendimiento: tanto en la apertura como la reproduccion.
+                        </li>
+                        <li>
+                            Versatil: funciona con videos incrustados en otras paginas web.
+                        </li>
+                    </ol>
+                    <br/>
+                    <h3>
+                        ACCESO OFFLINE
+                    </h3>
+                    <hr/>
+                    <br/>
+                    <p>
+                        Para trabajar son html no se debe tener conexion a internet de por vida. Se implementaron unas funciones que permiten dar a luz aplicaciones wweb sin necesidad de conexion.
+                        <br/>
+                        Las funciones se listan acontinuacion:
+                        <br/>
+                        <ol class="lista">
+                            <li>
+                                Caché de aplicaciones
+                            </li>
+                            <li>
+                                LocalStorage
+                            </li>
+                            <li>
+                                Web SQL e Indexed Database
+                            </li>
+                        </ol>
+                        <br/>
+                        <p>
+                            <span class="icon-checkmark">
+                            </span>
+                            Interfaz Application Cache o Cache de aplicaciones.
+                        </p>
+                        <br/>
+                        <p>
+                            Esta
+                            <span class="resaltado">
+                                Tecnologia sin conexion
+                            </span>
+                            se caracteriza por:
+                        </p>
+                        <br/>
+                        <ol class="lista">
+                            <li>
+                                Mejorar el rendimiento de una aplicacion
+                            </li>
+                            <li>
+                                Conservar datos de sesiones de usuario
+                            </li>
+                            <li>
+                                Exploracion del sitio web sin conexion
+                            </li>
+                            <li>
+                                Descaga de recursos del servidor que han cambiado
+                            </li>
+                        </ol>
+                        <br/>
+                        <p>
+                            Para conseguir esto, una aplicacion requiere del famoso archivo
+                            <span class="resaltado">
+                                Manifiesto
+                            </span>
+                            donde se indica al navegador los ficheros que debe almacenar en el cache local. esto permite acceder a la pagina al no tener conexion disponible.
+                    Este archivo en html luce de la siguiente manera:
+                            <br/>
+                        </p>
+                    </p>
+                    <div class="code">
+                        <p>
+                            <span class="propiedad">
+                                < !DOCTYPE HTML >
+                            </span>
+                            <br/>
+                            <span class="etiqueta">
+                                < html
+                            </span>
+                            <span class="propiedad">
+                                lang
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "en"
+                            </span>
+                            <span class="propiedad">
+                                manifest
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "/ejemplo.appcache"
+                            </span>
+                            <span class="etiqueta">
+                                >
+                            </span>
+                            <br/>
+                            < !- - lista de archivos que se traen de la pagina web - ->
+                            <br/>
+                            <span class="etiqueta">
+                                < /html >
+                            </span>
+                        </p>
+                    </div>
+                    <br/>
+                    <p>
+                        Para almacenar las paginas de la aplicacion en cache, el atributo
+                        <span class="resaltado">
+                            manifest
+                        </span>
+                        debe incluirse en dichas paginas. Admas de los ficheros la mism pagina que los contiene es alamcenada. Si no se indica este atributo, el navegador simplemente no la almacena pero si la pagina esta explicita en el archivo manifiesto, si.
+                        <br/>
+                        El atributo puede apuntar a una URL absoluta (incluye todas las aprtes de la url) o relativa (contiene partes de una url para hacerla mas breve), pero las URL absolutas deben tener el mismo origen que la aplicación web. El archivo como tal puede llevar cualquier extensión:
+                    </p>
+                    <br/>
+                    <div class="code">
+                        <p>
+                            < !- - UTL Absoluta - - >
+                            <br/>
+                            <span class="etiqueta">
+                                < html
+                            </span>
+                            <span class="propiedad">
+                                manifest
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "http://www.ejemplo.com/ejemplo.mf"
+                            </span>
+                            <span class="etiqueta">
+                                >
+                            </span>
+                            <br/>
+                            ......
+                            <br/>
+                            <span class="etiqueta">
+                                < /html >
+                            </span>
+                        </p>
+                    </div>
+                    <br/>
+                    <p>
+                        El tipo MIME (Extensiones Multiproposito de correo de internet) para los archivos de manifiesto es
+                        <span class="resaltado">
+                            text/cache-manifest.
+                        </span>
+                        y para los archivos textuales es el valor por defecto. Un archivo de este tipo no puede contener binarios y debe ser legible.
+                    </p>
+                    <p>
+                        <span class="icon-checkmark">
+                        </span>
+                        LocalStorage o Almacenamiento Local.
+                    </p>
+                    <br/>
+                    <p>
+                        Para comprender el concepto, hablemos de las
+                        <span class="resaltado">
+                            cookies
+                        </span>
+                        . Una cookie es un archivo generado por un sitio web que contiene fragmentos de datos que son enviados entre un emisor y un receptor. Basicamente, permiten identificar el historial de actividad de un usuario en un sitio web específico.
+                        <br/>
+                        Ahora bien, las cookies presentan ciertos inconvenientes:
+                        <br/>
+                        <ol class="lista">
+                            <li>
+                                Espacio limitado: Una cookie sólo puede ocupar 4kb de espacio. Por tal motivo, se ocupan para almacenar un identificador y este ser utilizado por el servidor para capturar la visita.
+                            </li>
+                            <li>
+                                Al realizar una petición al servidor, toda la información almacenada en las cookies se envia y recibe nuevamente con la respuesta del servidor. Por ende, los intercambios de información entre navegador web y servidor las cookies van anexas.
+                            </li>
+                            <li>
+                                Tienen una tiempo de vida.
+                            </li>
+                        </ol>
+                        <br/>
+                    </p>
+                    <p>
+                        En este punto entra el
+                        <span class="resaltado">
+                            Almacenamiento Local
+                        </span>
+                        , cuenta con las siguientes ventajas ante las cookies:
+                    </p>
+                    <br/>
+                    <ol class="lista">
+                        <li>
+                            Espacio menos limitado: de acuerdo al navegador puede ocupar entre 5MB y 10MB. Con este espacio se puede tener mas información.
+                        </li>
+                        <li>
+                            En las peticiones, la información almacenada NO es enviada al servidores.
+                        </li>
+                        <li>
+                            No existe una tiempo de vida, la información mantendra almacenada auqneu se cierre el navegador, hasta que se elimine expresamente.
+                        </li>
+                    </ol>
+                    <br/>
+                    <p>
+                        Para tener en cuenta. Mantener la información por un tiempo, no siempre es una buena idea. A veces lo que interesa es que la información se elimina una vez se cierre el navegador. Para este caso en particular, se debe usar
+                        <span class="resaltado">
+                            sessionStorage.
+                        </span>
+                        <br/>
+                        SessionStorage cuenta con las mismas caracteristicas que localStorage, pero con la diferencia que al cerrar el navegador se pierde la información.
+                        <br/>
+                        HTML5 cuenta con una API en JavaScript para interactuar, si gusta puede buscar mas informacion al respecto de esta exelente herramienta.
+                    </p>
+                    <p>
+                        <span class="icon-checkmark">
+                        </span>
+                        Indexed Database y Web SQL
+                    </p>
+                    <br/>
+                    <p>
+                        Indexed Database
+                    </p>
+                    <br/>
+                    <p>
+                        Es una API de bajo nivel que ofrece almacenamiento en el cliente de cantidades significativas de datos. Para búsquedas de alto rendimiento en esos datos usa índices.
+                        <br/>
+                        IndexedDB provee APIs separados para un acceso síncrono o asíncrono. El API síncrono está destinado a ser usado únicamente dentro de Web Workers, pero no será implementado aún por cualquier navegador. El API asíncrono trabaja con o sin Web Workers.
+                        <br/>
+                    </p>
+                    <p>
+                        Web SQL
+                    </p>
+                    <br/>
+                    <p>
+                        En ciertas ocasiones se requiere almacenar grandes cantidades de objetos localmente para satisfacer los requisitos de datos fuera de línea de las aplicaciones web. Web Storage o Almacenamiento Web es útil para almacenar pares de claves y sus valores. Sin embargo, no proporciona la recuperación en orden de claves, la búsqueda eficiente de valores o el almacenamiento de valores duplicados para una clave.
+                        <br/>
+                        Esta especificación proporciona una API concreta para realizar una gestión de datos clave-valor avanzada. Se realiza ocupando de bases de datos transaccionales para almacenar claves y cada uno de sus valores  (una o más por clave), y proporciona un medio para atravesar claves en un orden especifico. Se implementa mediante el uso de estructuras de datos de B-tree persistentes que se consideran eficientes para la inserción y la eliminación, así como en el cruce de un gran número de registros de datos.
+                        <br/>
+                        <br/>
+                    </p>
+                </p>
+            </article>
+        </div>
+    </body>
+</html>
