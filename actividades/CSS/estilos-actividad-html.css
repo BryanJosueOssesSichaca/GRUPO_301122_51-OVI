@@ -99,6 +99,34 @@ nav input[type="button"]:hover{
 	background: #cccbcb;
 }
 
+/* Footer pagina web */
+footer{
+    clear: both;
+    float: left;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background-color: #000; 
+}
+
+footer .licence{
+    text-align: center;
+}
+
+footer .licence a{
+    color: #fff;
+    text-decoration: none; 
+}
+
+footer .licence a:hover{
+    text-decoration: underline; 
+}
+
+footer .licence img{
+    margin-bottom: 10px;
+}
+
+
 .editor{
 	padding: 1%;
 	overflow: hidden;
@@ -132,6 +160,66 @@ nav input[type="button"]:hover{
 .resultados h2{
 	text-align: center;
 	padding-bottom: 10px;
+}
+
+
+.invisible{
+	visibility: hidden;
+}
+
+.sinCuerpo{
+	display: none;
+}
+
+.listado{
+	list-style-type: circle;
+	margin:10px 0; 
+	margin-left: 50px;
+}
+
+.listado li:hover{
+	color:#4d4d33;
+}
+
+.good{
+	background: #e6ffe6;
+	border: 1px solid #006600;
+	padding:10px;
+	color: #006600;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#informacion{
+	padding:10px;
+	border:1px solid #e3e3e3;
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	width: 80%;
+	margin:auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	cursor:pointer;
+	trasition:0.5s ease;
+}
+
+#informacion p{
+	padding: 5px;
+}
+
+#informacion p.list:hover{
+	font-weight: bold;
+}	
+
+#informacion p strong{
+	color: #b30000;
+}
+
+#informacion h2{
+	color: #b30000;
+	text-align: center;
 }
 
 iframe{

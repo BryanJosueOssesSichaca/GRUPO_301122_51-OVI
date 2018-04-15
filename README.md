@@ -25,8 +25,8 @@ Del listado de cursos disponible para realizar el contenido y actividades del OV
 **por lo tanto el OVI cuenta con apartados para el contenido de:**
 
 * Git y Github - [Bryan Josue Osses Sichaca](https://github.com/BryanJosueOssesSichaca)
-* HTML5 - [Andres Camilo Tautiva Vargas](https://github.com/Camilo159) / [Jose David Mejia Guzman](https://github.com/JDavidMGuzman96)
-* CSS3 - [Laura Marcela Blanco Huertas](https://github.com/451arual)
+* HTML5 - [Jose David Mejia Guzman](https://github.com/JDavidMGuzman96) / [Bryan Josue Osses Sichaca](https://github.com/BryanJosueOssesSichaca) / [Andres Camilo Tautiva Vargas](https://github.com/Camilo159)
+* CSS3 - [Bryan Josue Osses Sichaca](https://github.com/BryanJosueOssesSichaca) / [Jose David Mejia Guzman](https://github.com/JDavidMGuzman96) / [Laura Marcela Blanco Huertas](https://github.com/451arual)
 * Editores de codigo - [Jose David Mejia Guzman](https://github.com/JDavidMGuzman96)
 
 El contenido de la pagina web se carga a través de un **script en jQuery** llamado [Script_agregar_contenido.js](Javascript/Script_agregar_contenido.js) el contenido tiene que ser visualizado a través del **Index** del OVI ya que desde el index se **cargan los demas archivos .html, archivos .js (Javascript) y archivos .css necesarios para el correcto funcionamiento**

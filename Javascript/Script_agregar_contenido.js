@@ -41,11 +41,14 @@
 		cargarContenido("#github-video","videoGithub.html");
 		/* Agregar contenido de HTML */
 		cargarContenido("#Articulo1-HTML5","Principal_HTML5.html");
+
 		cargarContenido("#Sintaxis-HTML5","Sintaxis_HTML.html");
 		cargarContenido("#Novedades-1-HTML5","Novedades_1_HTML5.html");
 		cargarContenido("#Novedades-2-HTML5","Novedades_2_HTML5.html");
 		/* Agregar contenido de CSS */
 		cargarContenido("#Articulo1-CSS3","Principal_CSS3.html");
+		cargarContenido("#Selectores-CSS","Selectores-CSS.html");
+
 		/* Agregar contenido  editores de codigo */
 		cargarContenido("#intro_editores","Principal_editores.html");		
 		cargarContenido("#editor_notepad","EditorNotepad_HTML5.html");
