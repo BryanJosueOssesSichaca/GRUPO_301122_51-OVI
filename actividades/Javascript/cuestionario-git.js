@@ -145,7 +145,7 @@
 					promedio.classList.add("clave");
 				}
 
-				var average = (correcto / 10) * 100;
+				var average = correcto / 10 * 100;
 
 				answer.classList.add("score");
 				message.id = "message";
