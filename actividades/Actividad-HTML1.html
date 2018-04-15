@@ -19,9 +19,6 @@
 	            <h1><a href="../index.html" target="_blank"> O.V.I Diseño Web - Grupo 51</a></h1>
 	        </div> 
     	</header>
-    	<section id="informacion" class="sinCuerpo">
-    		
-    	</section>
     	<nav>
     		<ul>
     			<li><input type="button" id="runCodeButton" value="Prueba tus cambios!"></li>
@@ -40,7 +37,6 @@
     					<option value="8">Imagenes HTML</option>
     				</select>
     			</li>
-    			<li><input type="button" id="eraseButton" value="limpiar editores"></li>
     		</ul>
     	</nav>
 		<section class="editor">
@@ -57,9 +53,8 @@
 		<h1>Bienvenido a la actividad de HTML5</h1>
 		<p>Estimad@ estudiante sea bienvenido a la actividad de HTML5 del OVI de diseño web del grupo 51, este mensaje tiene la función de guiarlo en la utilización del editor.</p>
 		<ul>
-			<li><strong>Prueba tus cambios!</strong> el botón prueba tus cambios le permite probar en linea y en tiempo real los cambios realizados sobre las areas de texto disponibles</li>
+			<li><strong>Prueba tus cambios!</strong> el boton prueba tus cambios le permite probar en linea y en tiempo real los cambios realizados sobre las areas de texto disponibles</li>
 			<li><strong>Ejemplos HTML5</strong> la lista desplegable Ejemplos HTML5 le ofrece ejemplos sobre las distintas etiquetas que componen el lenguaje HTML como encabezados, parrafos, etiquetas de formularios etc...</li>
-			<li><strong>Guardar los cambios</strong> el botón guardar los cambios le permite descargar un archivo .HTML	con el codigo HTML y CSS que haya escrito en los editores o guardar los ejemplos prediseñados! <span class="parametro"><strong>Nota:</strong> se recomienda utilizar Google Chrome para hacer uso de esta función</span></li>
 		</ul>
 		<p>
 			en el area de texto titulada <strong>Editor HTML</strong> puede escribir codigo HTML, mientras que en el area de texto titulada <strong>Editor CSS</strong> puede escribir codigo CSS. los cambios se mostrarán en el area inferior titulada <strong>Visualización</strong> una vez que de click en el boton <strong>Prueba tus cambios!</strong>
@@ -145,7 +140,7 @@ p{
 	var botonCodigo = document.getElementById("runCodeButton");
 	var botonGuardar = document.getElementById("saveFileButton");
 
-	function cargar(){
+	function runCode(){
 		var content = document.getElementById("HTML").value;
 		var contentStyles = document.getElementById("CSS").value;
 		var iframe = document.getElementById("targetCode");
@@ -172,10 +167,9 @@ p{
 		styles.innerHTML = "\n" + contentStyles + "\n";
 		documento.head.append(styles);
 	}
-	botonCodigo.addEventListener("click",cargar);
-	cargar();
+	botonCodigo.addEventListener("click",runCode);
+	runCode();
 
-	//cargar ejemplos lista desplegable
 	function cargarEjemplo(){
 		var html = document.getElementById("HTML");
 		var css = document.getElementById("CSS");
@@ -243,16 +237,7 @@ p{
 				saveText = documentHtml[0]+"Ejemplo Encabezados"+documentHtml[1]+"\n\t\t<h1>Encabezado de primer nivel</h1>\n\t\t<h2>Encabezado de segundo nivel</h2>\n\t\t<h3>Encabezado de tercer nivel</h3>\n\t\t<h4>Encabezado de cuarto nivel</h4>\n\t\t<h5>Encabezado de quinto nivel</h5>\n\t\t<h6>Encabezado de sexto nivel</h6>" + documentHtml[2];
 
 				styles = "h1{color:#990000}\n\nh2{color:#cc3300}\n\nh3{color:#cc9900}\n\nh4{color:#86b300}\n\nh5{color:#66ff33}\n\nh6{color:#000}";
-					info.innerHTML = "";
-
-				contenido = [
-					"<h2>Encabezados HTML</h2><p>los elementos de encabezado describen el contenido que presentan (Titulos), facilitan la lectura y comprensión de los contenidos, se dividen en seis niveles de importancia (1 a 6).</p><p>Estas etiquetas son importantes para el posicionamiento de la pagina web, el encabezado <strong>&lt;h1&gt;</strong> debe guardar relación con el titulo de nuestra pagina web y solo debe haber uno por pagina.</p>"
-				];
-
-				cargarContenidoHTML(contenido,info);
-				info.classList.remove("sinCuerpo");
 				break;
-
 			case "5":
 				saveText = documentHtml[0] + "Ejemplo parrafos" + documentHtml[1] + "\n\t\t<p> los parrafos en HTML5 se realizan con la etiqueta &lt;p&gt;</p></p>\n\t\t<p>Por defecto son elementos de tipo bloque asi que ocupan el 100% del espació disponible</p>\n\t\t<p>Puedes comprobarlo oprimiendo f12 e inspeccionando los estilos del elemento</p>" + documentHtml[2];
 				styles = "p {\n\tcolor: #0080ff;\n\tfont-size: 1.5em;\n}";
@@ -304,7 +289,6 @@ p{
 				break;
 
 			case "9":
-
 				break;
 				cargarContenidoHTML(contenido,info);
 				info.classList.remove("sinCuerpo");
@@ -316,27 +300,10 @@ p{
 		css.innerHTML = styles;
 		css.value = styles;
 
-		cargar();
+		runCode();
 	}
 
 	document.getElementById("ejemplos").addEventListener("change",cargarEjemplo);
-
-	//cargar contenido en Informacion
-	function cargarContenidoNodo(contenido,contenedor,clase){
-		contenedor.innerHTML = "";
-
-		for(i in contenido){
-			
-			var nodo = document.createElement("p");
-			nodo.classList.add(clase);
-			nodo.innerHTML = contenido[i];
-			contenedor.appendChild(nodo);
-		}	
-	}
-
-	function cargarContenidoHTML(contenido,contenedor){
-		contenedor.innerHTML = contenido[0];
-	}
 
 	/** Guardar archivo HTML **/
 	function saveFile(){
@@ -355,7 +322,7 @@ p{
 
 		var blob = new Blob([saveText],{type: "text/html"});
 		var fileName = prompt("Ingresar Nombre del archivo (sin extensión .html)");
-		
+		console.log(fileName);
 		if(fileName){
 			var link = document.createElement("a");
 			link.download = fileName;
@@ -370,8 +337,6 @@ p{
 				document.body.appendChild(link);
 			}
 			link.click();
-		}else{
-			alert("Para guardar el documento debes agregar un titulo");
 		}
 
 		
@@ -382,7 +347,6 @@ p{
 	}
 
 	saveFileButton.addEventListener("click",saveFile);
-
 
 	//limpiar editores
 	document.getElementById("eraseButton").addEventListener("click",function(e){
@@ -398,6 +362,7 @@ p{
 		info.classList.add("sinCuerpo");
 		cargar();
 	});
+
 	
 	//Permitir tabulación en textarea
 	var textareas = document.getElementsByTagName('textarea');
