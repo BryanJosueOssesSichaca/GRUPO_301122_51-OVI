@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="Bryan Josue Osses Sichaca">
+    <meta name="description" content="O.V.I diseño web grupo 51 - tematica curso 301122 Git y Gihub, HTML5, CSS3 y Editores de codigo.">
+    <meta name="keywords" content="HTML,CSS,Editores de codigo,Git,Github,O.V.I,Grupo 51,curso diseño web,301122,UNAD">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Selectores CSS</title>
+</head>
+<body>
+	<article>
+		<header>
+			<h2>Selectores y media queries CSS <span class="icon-css3"></span></h2>
+			<p>Publicado el 15/04/2018 a las 00:37</p>
+		</header>
+		<p class="title">Selector universal</p>
+		<p>
+			Para seleccionar todos los elementos de una página solo se utiliza el símbolo <span class="clave">* (asterisco)</span>, normalmente se utiliza para resetear los estilos predefinidos por los navegadores sin embargo cuando se combina con otros selectores, también puede hacer referencia a todos los elementos dentro de otro elemento.
+		</p>
+		<div class="code">
+			<p>
+			<span class="init">*</span> {
+			<br><br>
+				<span class="clave" style="margin-left:20px;">margin: <span class="parametro">0;</span></span><br>
+				<span class="clave" style="margin-left:20px;">padding: <span class="parametro">0;</span></span><br>
+				<span class="clave" style="margin-left:20px;">box-sizing: <span class="parametro">border-box;</span></span>
+			<br><br>
+			}
+			</p>
+		</div>
+		<p class="title">Selector de etiqueta</p>
+		<p>
+			Utilizando el nombre de una etiqueta HTML (p, div, img, span etc…) podemos aplicar estilos a todos los elementos de ese tipo concreto en el documento.
+		</p>
+		<div class="code">
+			<p>
+			<span class="init">h1</span> {
+			<br><br>
+				<span class="clave" style="margin-left:20px;">/*codigo css*/</span>
+			<br><br>
+			}
+			</p>
+		</div>
+		<p>
+		Podemos aplicar los mismos estilos a varias etiquetas también separándolas por coma (,)
+		</p>
+		<div class="code">
+			<p>
+			<span class="init">h1, h2, h3, h4</span> {
+			<br><br>
+				<span class="clave" style="margin-left:20px;">/*codigo css*/</span>
+			<br><br>
+			}
+			</p>
+		</div>
+		<p>
+			En el ejemplo los estilos serán aplicados a todas las etiquetas <span class="parametro">h1, h2, h3 y h4</span> dentro del documento.
+		</p>
+		<p class="title">Selector de Id</p>
+		<p>
+			 El nombre que indiquemos en el selector hará referencia al valor del atributo <span class="init">Id=” ”</span> (el cual define un identificador único dentro del documento HTML que no debe de repetirse) de un elemento en concreto de la página, debemos de anteponer el símbolo <span class="clave"># (numeral)</span> al nombre del identificador.
+		</p>
+		<div class="code">
+			<p>
+			<span class="init">#NombreDelIdentificador</span> {
+			<br><br>
+				<span class="clave" style="margin-left:20px;">/*codigo css*/</span>
+			<br><br>
+			}
+			</p>
+		</div>
+		<p class="title">Selector de clase</p>
+		<p>
+			Todos los elementos html pueden hacer uso del atributo <span class="init">class=” "</span>, la diferencia entre el atributo <span class="init">id=“ ”</span> y  es que el id tiene que ser único e irrepetible en todo el documento HTML mientras que un elemento HTML puede tener múltiples clases y estas clases pueden ser reutilizadas por otro elementos dentro del mismo documento también. 
+		</p>
+		<p>
+			 El nombre que indiquemos en el selector hará referencia al valor o uno de los valores del atributo <span class="init">class=” ”</span> que posea un elemento HTML, debemos anteponer el símbolo <span class="clave">. (punto)</span> al nombre de la clase.
+		</p>
+		<div class="code">
+			<p>
+			<span class="init">.NombreDeLaClase</span> {
+			<br><br>
+				<span class="clave" style="margin-left:20px;">/*codigo css*/</span>
+			<br><br>
+			}
+			</p>
+		</div>
+		<p class="title">
+			Selector de atributos
+		</p>
+		<p>
+			Permite aplicar estilos a un elemento que hace uso de un atributo concreto y  este atributo toma un valor determinado, debemos especificar el tributo y su valor entre <span class="parametro">[ ]</span>.
+		</p>
+		<table>
+			<caption>Con CSS3 <span class="icon-css3"></span> disponemos de varias posibilidades con este tipo de selector:</caption>
+			<tr>
+				<th>Sintaxis</th>
+				<th>Explicación</th>
+			</tr>
+			<tr>
+				<td> <span class="init">Elemento</span>[<span class="clave">atributo1=</span><span class="parametro">”valor”</span>] </td>
+				<td>selecciona todos los elementos que utilicen ese atributo y cuyo valor finalice con el valor indicado.</td>
+			</tr>
+			<tr>
+				<td> <span class="init">Elemento</span>[<span class="clave">atributo~=</span><span class="parametro">”valor”</span>] </td>
+				<td>selecciona todos los elementos que utilicen ese atributo y cuyo valor contenga el valor indicado.</td>
+			</tr>
+			<tr>
+				<td> <span class="init">Elemento</span>[<span class="clave">atributo^=</span><span class="parametro">”valor”</span>]  </td>
+				<td>selecciona todos los elementos que utilicen ese atributo y cuyo valor inicie con el valor indicado.</td>
+			</tr>
+			<tr>
+				<td> <span class="init">Elemento</span>[<span class="clave">atributo*=</span><span class="parametro">”valor”</span>]  </td>
+				<td>selecciona todos los elementos que utilicen ese atributo y cuyo valor contenga en cualquier parte (substring) el valor indicado.</td>
+			</tr>
+		</table>
+		<p class="title">
+			Selectores jerárquicos
+		</p>
+		<p>
+			Los documentos HTML y XML están formados de manera jerárquica, lo que quiere decir que hay elementos que contienen a otros formando una estructura de árbol.
+		</p>
+		<div class="image-center">
+			<img src="Imagenes/jerarquia-HTML.png" alt="Jerarquía HTML" title="Jerarquía HTML">
+			<p style="text-align: center" class="reference">Menú "Options" Github Desktop (15 de Abril del 2018) “elaboración propia - Bryan Josue Osses Sichaca”</p>
+		</div>
+		<p>
+			Por ejemplo el elemento <span class="parametro">&lt;html&gt;</span> contiene al elemento <span class="parametro">&lt;head&gt;</span> el cual a su vez contiene el elemento <span class="parametro">&lt;title&gt;</span> lo que quiere decir que <span class="parametro">&lt;head&gt;</span> es hijo directo de <span class="parametro">&lt;html&gt;</span>, <span class="parametro">&lt;title&gt;</span> a su vez es nieto de <span class="parametro">&lt;html&gt;</span> y es hijo directo de <span class="parametro">&lt;head&gt;</span>, <span class="clave">los elementos que están al mismo nivel forman hermanos</span> por ejemplo dentro de <span class="parametro">&lt;head&gt;</span> esta <span class="parametro">&lt;title&gt;</span> y a la vez la etiqueta <span class="parametro">&lt;meta&gt;</span> lo que quiere decir que meta es hermano de <span class="parametro">&lt;title&gt;</span> y también es hijo directo de <span class="parametro">&lt;head&gt;</span>.
+		</p>
+		<p>
+			Teniendo en cuenta esta estructura jerárquica podemos crear selectores que encajen con cierta jerarquía dentro del documento.
+		</p>
+	</article>
+</body>
+</html>

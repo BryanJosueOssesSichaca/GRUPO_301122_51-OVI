@@ -45,6 +45,7 @@
 		cargarContenido("#Sintaxis-HTML5","Sintaxis_HTML.html");
 		/* Agregar contenido de CSS */
 		cargarContenido("#Articulo1-CSS3","Principal_CSS3.html");
+		cargarContenido("#Selectores-CSS","Selectores-CSS.html");
 		/* Agregar contenido  editores de codigo */
 		cargarContenido("#intro_editores","Principal_editores.html");		
 		cargarContenido("#editor_notepad","EditorNotepad_HTML5.html");
