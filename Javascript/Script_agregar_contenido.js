@@ -65,7 +65,7 @@
 		cargarContenido("#Articulo1-CSS3","Principal_CSS3.html");
 		cargarContenido("#Selectores-CSS","Selectores-CSS.html");
 		cargarContenido("#Novedades-CSS","Novedades_CSS3.html");
-		cargarContenido("#Media-queries-CSS","media-query-css.HTML");
+		cargarContenido("#Media-queries-CSS","media-query-css.html");
 		cargarContenido("#Ejemplo-Basico-CSS","Ejemplo-CSS.html");
 
 		/* Agregar contenido  editores de codigo */
