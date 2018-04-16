@@ -1,0 +1,2477 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Novedades CSS3
+        </title>
+    </head>
+    <body>
+        <div class="scroll">
+            <article>
+                <header>
+                    <h2>
+                        CSS3
+                        <span class="icon-css3">
+                        </span>
+                    </h2>
+                    <p>
+                        Publicado el 15/04/2018 a las 21:00
+                    </p>
+                </header>
+                <h1>
+                    Novedades
+                </h1>
+                <hr/>
+                <br/>
+                <p>
+                    A continuacion se relacionan las propiedades mas significativas dentro de CSS3:
+                    <br/>
+                </p>
+                <h2>
+                    <span class="icon-checkmark">
+                    </span>
+                    Bordes
+                </h2>
+                <p>
+                    <p>
+                        Son los contornos de los elementos. Para establecer algunos bordes  se deben definir propiedades adicionales.
+                    </p>
+                    <ol class="lista">
+                        <li>
+                            <div class="code">
+                                <p>
+                                    <span class="funcion ">
+                                        border-color
+                                    </span>
+                                </p>
+                            </div>
+                            :añade color al borde de los elementos.
+                        </li>
+                    </ol>
+                    <p>
+                        Por ejemplo se añade borde a un parrafo
+                        <br/>
+                    </p>
+                    <div class="code">
+                        <p>
+                            <span class="etiqueta">
+                                p
+                            </span>
+                            <span class="resaltado">
+                                {
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                border-style:
+                            </span>
+                            <span class="coordenada">
+                                solid
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                border-color:
+                            </span>
+                            <span class="coordenada">
+                                green
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="etiqueta">
+                                }
+                            </span>
+                        </p>
+                    </div>
+                    <div class="image-center">
+                        <img alt="controls3" src="Imagenes/border-color.png" style="max-width:50%" title="Border-Color-CSS3"/>
+                        <p class="reference" style="text-align: center">
+                            Border-Color-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                        </p>
+                    </div>
+                    <ol class="lista">
+                        <li>
+                            <div class="code">
+                                <p>
+                                    <span class="funcion ">
+                                        border-image
+                                    </span>
+                                </p>
+                            </div>
+                            : permite utilizar imágenes como bordes de los elementos de la página.
+                        </li>
+                    </ol>
+                    <p>
+                        Por ejemplo se tiene la siguiente imagen y se desea colocarla como borde.
+                    </p>
+                    <div class="image-center">
+                        <img alt="imagen-borde" src="Imagenes/border-imagen.png" style="max-width:30%" title="Imagen para borde en CSS3"/>
+                        <p class="reference" style="text-align: center">
+                            File: Very Basic Frame Icon - iconarchive.com. (2018). iconarchive.com. Recuperado el 15 de Abril de 2018, desde
+                            <a href="www.iconarchive.com/" target="_blank">
+                                http://icons.iconarchive.com/icons/icons8/windows-8/256/Very-Basic-Frame-icon.png
+                            </a>
+                        </p>
+                    </div>
+                    <p>
+                        Para esta ocasion, se coloca como borde de un area de texto
+                    </p>
+                    <div class="code">
+                        <p>
+                            <span class="etiqueta">
+                                textarea
+                            </span>
+                            <span class="resaltado">
+                                {
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                border:
+                            </span>
+                            <br/>
+                            < ! - - Asigna el grosor del borde en pixeles - - >
+                            <br/>
+                            <span class="coordenada">
+                                10px solid transparent
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            < ! - - Define el espacio entre el contenido del textarea y el borde en pixeles - - >
+                            <br/>
+                            <span class="funcion">
+                                padding
+                            </span>
+                            <span class="resaltado">
+                                :
+                            </span>
+                            <span class="coordenada">
+                                15px
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                border-image
+                            </span>
+                            <span class="resaltado">
+                                :
+                            </span>
+                            <span class="coordenada">
+                                url
+                            </span>
+                            <span class="resaltado">
+                                (
+                            </span>
+                            <span class="atributo">
+                                imagen.png
+                            </span>
+                            <span class="resaltado">
+                                )
+                            </span>
+                            <br/>
+                            < ! - - Define como se comporta el borde  - - >
+                            <br/>
+                            <span class="coordenada">
+                                20% round
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="etiqueta">
+                                }
+                            </span>
+                        </p>
+                    </div>
+                    <div class="image-center">
+                        <img alt="border-image" src="Imagenes/border-image.png" style="max-width:50%" title="Border-Image-CSS3"/>
+                        <p class="reference" style="text-align: center">
+                            Border-Image-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                        </p>
+                    </div>
+                    <ol class="lista">
+                        <li>
+                            <div class="code">
+                                <p>
+                                    <span class="funcion ">
+                                        border-radius
+                                    </span>
+                                </p>
+                            </div>
+                            : define la curvatura del borde de un elemento.
+                        </li>
+                    </ol>
+                    <p>
+                        Por ejemplo se desea redondear las esquinas de un contenedor div.
+                    </p>
+                    <div class="code">
+                        <p>
+                            <span class="etiqueta">
+                                div
+                            </span>
+                            <span class="resaltado">
+                                {
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                width
+                            </span>
+                            <span class="resaltado">
+                                :
+                            </span>
+                            <span class="coordenada">
+                                150px
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                height
+                            </span>
+                            <span class="resaltado">
+                                :
+                            </span>
+                            <span class="coordenada">
+                                75px
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                background
+                            </span>
+                            <span class="resaltado">
+                                :
+                            </span>
+                            <span class="coordenada">
+                                #C1FF93
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            < ! - - El borde parece salir del contenedor - - >
+                            <br/>
+                            <span class="funcion">
+                                border
+                            </span>
+                            <span class="resaltado">
+                                :
+                            </span>
+                            <span class="coordenada">
+                                ridge #C1FF93
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                border-radius
+                            </span>
+                            <span class="resaltado">
+                                :
+                            </span>
+                            <br/>
+                            < ! - - Se establecen coordenadas- - >
+                            <br/>
+                            <span class="coordenada">
+                                40px 10px
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="etiqueta">
+                                }
+                            </span>
+                        </p>
+                    </div>
+                    <div class="image-center">
+                        <img alt="border-radius" src="Imagenes/border-radius.png" style="max-width:50%" title="Border-Radiud-CSS3"/>
+                        <p class="reference" style="text-align: center">
+                            Border-Radius-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                        </p>
+                    </div>
+                    <ol class="lista">
+                        <li>
+                            <div class="code">
+                                <p>
+                                    <span class="funcion ">
+                                        box-shadow
+                                    </span>
+                                </p>
+                            </div>
+                            : permite establecer una sombra bajo un contenedor.
+                        </li>
+                    </ol>
+                    <p>
+                        Por ejemplo se desea colocar un efecto sombra en un contenedor div.
+                        <br/>
+                        . Ahora a los contendores en el archivo html se le asignara un id.
+                    </p>
+                    <p>
+                        <div class="code">
+                            <p>
+                                <span class="etiqueta">
+                                    #contenedor
+                                </span>
+                                <span class="resaltado">
+                                    {
+                                </span>
+                                <br/>
+                                <span class="funcion">
+                                    width
+                                </span>
+                                <span class="resaltado">
+                                    :
+                                </span>
+                                <span class="coordenada">
+                                    200px
+                                </span>
+                                <span class="resaltado">
+                                    ;
+                                </span>
+                                <br/>
+                                <span class="funcion">
+                                    height
+                                </span>
+                                <span class="resaltado">
+                                    :
+                                </span>
+                                <span class="coordenada">
+                                    45px
+                                </span>
+                                <span class="resaltado">
+                                    ;
+                                </span>
+                                <br/>
+                                <span class="funcion">
+                                    border
+                                </span>
+                                <span class="resaltado">
+                                    :
+                                </span>
+                                <span class="coordenada">
+                                    1px solid
+                                </span>
+                                <span class="resaltado">
+                                    ;
+                                </span>
+                                <br/>
+                                <span class="funcion">
+                                    padding
+                                </span>
+                                <span class="resaltado">
+                                    :
+                                </span>
+                                <span class="coordenada">
+                                    10px
+                                </span>
+                                <span class="resaltado">
+                                    ;
+                                </span>
+                                <br/>
+                                < ! - - Se define la ubicacion de la sombra por pixeles y el color- - >
+                                <br/>
+                                <span class="funcion">
+                                    box-shadow
+                                </span>
+                                <span class="resaltado">
+                                    :
+                                </span>
+                                <span class="coordenada">
+                                    5px 10px 18px
+                                </span>
+                                <span class="etiqueta">
+                                    blue
+                                </span>
+                                <span class="resaltado">
+                                    ;
+                                </span>
+                                <br/>
+                                <span class="etiqueta">
+                                    }
+                                </span>
+                            </p>
+                        </div>
+                    </p>
+                    <div class="image-center">
+                        <img alt="box-shadow" src="Imagenes/box-shadow.png" style="max-width:50%" title="Box-Shadow-CSS3"/>
+                        <p class="reference" style="text-align: center">
+                            Border-Shadow-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                        </p>
+                    </div>
+                    <h2>
+                        <span class="icon-checkmark">
+                        </span>
+                        Backgrounds
+                        <br/>
+                    </h2>
+                    <ol class="lista">
+                        <li>
+                            <div class="code">
+                                <p>
+                                    <span class="funcion ">
+                                        background-origin
+                                    </span>
+                                </p>
+                            </div>
+                            : permite decidir la posición de la imagen de fondo con respecto al borde, padding o el contenido del elemento.
+                            <br/>
+                            Sie el archivo que se adjunta es de tipo
+                            <span class="resaltado ">
+                                fixed
+                            </span>
+                            la propiedad no funcionara.
+                        </li>
+                    </ol>
+                    <p>
+                        Por ejemplo tenemos estas dos imagenes para colocar de fondo:
+                    </p>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="image-center">
+                                    <img alt="background-origin" src="Imagenes/sun.png" style="max-width:20%" title="Sol para origen de fondo en CSS3"/>
+                                    <p class="reference" style="text-align: center">
+                                        File: Sun Icon - iconarchive.com. (2018). iconarchive.com. Recuperado el 15 de Abril de 2018, desde
+                                        <a href="http://icons.iconarchive.com/icons/dapino/beach/128/sun-icon.png" target="_blank">
+                                            http://icons.iconarchive.com/icons/dapino/beach/128/sun-icon.png
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="image-center">
+                                    <img alt="background-origin" src="Imagenes/flower.png" style="max-width:20%" title="Flor para origen de fondo en CSS3"/>
+                                    <p class="reference" style="text-align: center">
+                                        File: Sun Icon - iconarchive.com. (2018). iconarchive.com. Recuperado el 15 de Abril de 2018, desde
+                                        <a href="http://icons.iconarchive.com/icons/dapino/beach/128/sun-icon.png" target="_blank">
+                                            http://icons.iconarchive.com/icons/dapino/beach/128/sun-icon.png
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <div class="code">
+                        <p>
+                            <span class="etiqueta ">
+                                div
+                            </span>
+                            <span class="resaltado">
+                                {
+                            </span>
+                            <br/>
+                            <span class="funcion ">
+                                width:
+                            </span>
+                            <span class="coordenada ">
+                                250px
+                            </span>
+                            <span class="resaltado ">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="funcion ">
+                                height:
+                            </span>
+                            <span class="coordenada ">
+                                175px
+                            </span>
+                            <span class="resaltado ">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="resaltado ">
+                                }
+                            </span>
+                            <br/>
+                            <span class="propiedad">
+                                #paddingbox
+                            </span>
+                            <span class="resaltado">
+                                {
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                border:
+                            </span>
+                            <span class="coordenada">
+                                8px solid
+                            </span>
+                            <span class="etiqueta">
+                                gray
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                padding:
+                            </span>
+                            <span class="coordenada">
+                                20px
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            /*  Asignar imagenes de fondo  */
+                            <br/>
+                            <span class="funcion">
+                                background
+                            </span>
+                            <span class="resaltado">
+                                :
+                            </span>
+                            <span class="coordenada">
+                                url
+                            </span>
+                            <span class="resaltado">
+                                (
+                            </span>
+                            <span class="atributo">
+                                flower.png
+                            </span>
+                            <span class="resaltado">
+                                ),
+                            </span>
+                            <span class="coordenada">
+                                url
+                            </span>
+                            <span class="resaltado">
+                                (
+                            </span>
+                            <span class="atributo">
+                                sun.png
+                            </span>
+                            <span class="resaltado">
+                                );
+                            </span>
+                            <br/>
+                            /*  Evitar que creen mosaico  */
+                            <br/>
+                            <span class="funcion">
+                                background-repeat
+                            </span>
+                            <span class="resaltado">
+                                :
+                            </span>
+                            <span class="coordenada">
+                                no-repeat
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            /*  Ubicacion de Origen de las imagenes */
+                            <br/>
+                            <span class="funcion">
+                                background-origin
+                            </span>
+                            <span class="resaltado">
+                                :
+                            </span>
+                            <span class="coordenada">
+                                content-box
+                            </span>
+                            <span class="resaltado">
+                                ,
+                            </span>
+                            <span class="coordenada">
+                                padding-box
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="resaltado">
+                                }
+                            </span>
+                        </p>
+                    </div>
+                    <br/>
+                    <p>
+                        Se aprecia lo siguiente:
+                    </p>
+                </p>
+                <br/>
+                <div class="image-center">
+                    <img alt="background-origin" src="Imagenes/code-result1-bo.png" style="max-width:50%" title="Resultado-Background-Origin-Padding-Box-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Resultado-Background-Origin-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    Si en lugar de
+                    <span class="coordenada">
+                        padding-box
+                    </span>
+                    se estuviera ocupando el valor
+                    <span class="coordenada">
+                        border-box
+                    </span>
+                    se mostraria lo siguiente:
+                </p>
+                <br/>
+                <div class="image-center">
+                    <img alt="background-origin" src="Imagenes/code-result2-bo.png" style="max-width:50%" title="Resultado-Background-Origin-Border-Box-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Resultado-Background-Origin-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    Si en lugar de
+                    <span class="coordenada">
+                        padding-box
+                    </span>
+                    se estuviera ocupando el valor
+                    <span class="coordenada">
+                        content-box
+                    </span>
+                    se mostraria lo siguiente:
+                </p>
+                <br/>
+                <div class="image-center">
+                    <img alt="background-origin" src="Imagenes/code-result3-bo.png" style="max-width:50%" title="Resultado-Background-Origin-Content-Box-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Resultado-Background-Origin-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="funcion ">
+                                    background-clip
+                                </span>
+                            </p>
+                        </div>
+                        : permite extender el fondo dentro de un elemento.
+                    </li>
+                </ol>
+                <p>
+                    Por ejemplo:
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="propiedad">
+                            #panel
+                        </span>
+                        <span class="resaltado">
+                            {
+                        </span>
+                        <br/>
+                        <span class="funcion">
+                            border
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="coordenada">
+                            10px dashed
+                        </span>
+                        <span class="etiqueta">
+                            lightgray
+                        </span>
+                        <span class="resaltado">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="funcion">
+                            padding
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="coordenada">
+                            10px
+                        </span>
+                        <span class="resaltado">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="funcion">
+                            background
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="coordenada">
+                            #CCFF00
+                        </span>
+                        <span class="resaltado">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="funcion">
+                            background-clip
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="coordenada">
+                            border-box
+                        </span>
+                        <span class="resaltado">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            }
+                        </span>
+                    </p>
+                </div>
+                <p>
+                    Se aprecia que el fondo se extiende detras del borde
+                    <br/>
+                </p>
+                <div class="image-center">
+                    <img alt="background-clip-1" src="Imagenes/bgclip1.png" style="max-width:60%" title="Resultado-Background-Clip-Border-Box-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Resultado-Background-Clip-Border-Box-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    Si se cambiara el borde
+                    <span class="coordenada">
+                        dashed
+                    </span>
+                    por
+                    <span class="coordenada">
+                        dotted
+                    </span>
+                    y en lugar de
+                    <span class="coordenada">
+                        border-box
+                    </span>
+                    se estuviera ocupando el valor
+                    <span class="coordenada">
+                        padding-box
+                    </span>
+                    , se aprecia que el fondo se extiende hasta el borde interior del borde :
+                </p>
+                <div class="image-center">
+                    <img alt="background-clip-2" src="Imagenes/bgclip2.png" style="max-width:60%" title="Resultado-Background-Clip-Padding-Box-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Resultado-Background-Clip-Padding-Box-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    Si se cambiara el borde
+                    <span class="coordenada">
+                        dashed
+                    </span>
+                    por
+                    <span class="coordenada">
+                        groove
+                    </span>
+                    y en lugar de
+                    <span class="coordenada">
+                        border-box
+                    </span>
+                    se estuviera ocupando el valor
+                    <span class="coordenada">
+                        content-box
+                    </span>
+                    se aprecia que el fondo se extiende hasta el borde del cuadro de contenido:
+                </p>
+                <div class="image-center">
+                    <img alt="background-clip-3" src="Imagenes/bgclip3.png" style="max-width:60%" title="Resultado-Background-Clip-Content-Box-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Resultado-Background-Clip-Content-Box-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="funcion ">
+                                    background-size
+                                </span>
+                            </p>
+                        </div>
+                        : especifica el tamaño de una imagen de fondo con
+                        <span class="resaltado">
+                            auto
+                        </span>
+                        y
+                        <span class="resaltado">
+                            pixeles
+                        </span>
+                        .
+                    </li>
+                </ol>
+                <p>
+                    Por ejemplo se tiene una imagen de frutas y se colocara como fondo en un contenedor.
+                    <br/>
+                </p>
+                <div class="image-center">
+                    <img alt="frutas" src="Imagenes/fruits.png" style="max-width:30%" title="Imagen para borde en CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        File: Fruits Vegetables Icon - iconarchive.com. (2018). iconrchive.com. Recuperado el 15 de Abril de 2018, desde
+                        <a href="http://icons.iconarchive.com/icons/xaml-icon-studio/agriculture/256/Fruits-Vegetables-icon.png" target="_blank">
+                            http://icons.iconarchive.com/icons/xaml-icon-studio/agriculture/256/Fruits-Vegetables-icon.png
+                        </a>
+                    </p>
+                </div>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta ">
+                            div
+                        </span>
+                        <span class="resaltado">
+                            {
+                        </span>
+                        <br/>
+                        <span class="funcion ">
+                            width:
+                        </span>
+                        <span class="coordenada ">
+                            215px
+                        </span>
+                        <span class="resaltado ">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="funcion ">
+                            height:
+                        </span>
+                        <span class="coordenada ">
+                            175px
+                        </span>
+                        <span class="resaltado ">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="resaltado ">
+                            }
+                        </span>
+                        <br/>
+                        <span class="propiedad ">
+                            #panel
+                        </span>
+                        <span class="resaltado ">
+                            {
+                        </span>
+                        <br/>
+                        <span class="funcion ">
+                            border
+                        </span>
+                        <span class="resaltado ">
+                            :
+                        </span>
+                        <span class="coordenada ">
+                            3px solid
+                        </span>
+                        <span class="etiqueta ">
+                            brown
+                        </span>
+                        <span class="resaltado ">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="funcion ">
+                            padding
+                        </span>
+                        <span class="resaltado ">
+                            :
+                        </span>
+                        <span class="coordenada ">
+                            25px
+                        </span>
+                        <span class="resaltado ">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="funcion ">
+                            background
+                        </span>
+                        <span class="resaltado ">
+                            :
+                        </span>
+                        <span class="coordenada ">
+                            url
+                        </span>
+                        <span class="resaltado ">
+                            (
+                        </span>
+                        <span class="atributo ">
+                            fruits.png
+                        </span>
+                        <span class="resaltado ">
+                            );
+                        </span>
+                        <br/>
+                        <span class="funcion ">
+                            background-repeat
+                        </span>
+                        <span class="resaltado ">
+                            :
+                        </span>
+                        <span class="coordenada ">
+                            no-repeat
+                        </span>
+                        <span class="resaltado ">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="funcion ">
+                            background-size
+                        </span>
+                        <span class="coordenada ">
+                            auto
+                        </span>
+                        <span class="resaltado ">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="resaltado ">
+                            }
+                        </span>
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    Se aprecia la imegen con su tamaño original dentro del contenedor
+                    <br/>
+                </p>
+                <div class="image-center">
+                    <img alt="background-size" src="Imagenes/bgsize1.png" style="max-width:40%" title="Resultado-Background-Size-Auto-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Resultado-Background-Size-Auto-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    Si se cambia el valor de la propiedad
+                    <span class="funcion ">
+                        background-size
+                    </span>
+                    <span class="coordenada ">
+                        auto
+                    </span>
+                    por un tamaño en especifico como por ejemplo
+                    <span class="coordenada ">
+                        150px 125px
+                    </span>
+                    ,se redimensiona la imagen, tal como se muestra:
+                    <br/>
+                </p>
+                <div class="image-center">
+                    <img alt="background-size" src="Imagenes/bgsize2.png" style="max-width:40%" title="Resultado-Background-Size-Definido-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Resultado-Background-Size-Definido-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <br/>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="funcion ">
+                                    layering multiple background images
+                                </span>
+                            </p>
+                        </div>
+                        : a un elemento de la página se le pueden colocar varias imágenes de fondo al mismo tiempo.
+                    </li>
+                </ol>
+                <p>
+                    Por ejemplo un contenedor que tenga dos imagenes superpuestas y encima incluya un texto.
+                    <br/>
+                    Se ocuparan las siguientes imagenes:
+                    <br/>
+                </p>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="image-center">
+                                <img alt="multiple-background-images" src="Imagenes/paper.png" style="max-width:20%" title="Paper para fondo multiple en CSS3"/>
+                                <p class="reference" style="text-align: center">
+                                    File: Files Clipboard Icon - iconarchive.com. (2018). iconarchive.com. Recuperado el 15 de Abril de 2018, desde
+                                    <a href="http://icons.iconarchive.com/icons/gakuseisean/ivista-2/128/Files-Clipboard-icon.png" target="_blank">
+                                        http://icons.iconarchive.com/icons/gakuseisean/ivista-2/128/Files-Clipboard-icon.png
+                                    </a>
+                                </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="image-center">
+                                <img alt="background-origin" src="Imagenes/pencil.png" style="max-width:20%" title="Pencil para fondo multiple en CSS3"/>
+                                <p class="reference" style="text-align: center">
+                                    File: Pencil Icon - iconarchive.com. (2018). iconarchive.com. Recuperado el 15 de Abril de 2018, desde
+                                    <a href="http://icons.iconarchive.com/icons/double-j-design/ravenna-3d/128/Pencil-icon.png" target="_blank">
+                                        http://icons.iconarchive.com/icons/double-j-design/ravenna-3d/128/Pencil-icon.png
+                                    </a>
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <p>
+                    En el codigo html se debe asignar un id al contenedor con el nombre del selector para aplicar los estilos.
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta ">
+                            div
+                        </span>
+                        <span class="resaltado">
+                            {
+                        </span>
+                        <br/>
+                        <span class="funcion ">
+                            width:
+                        </span>
+                        <span class="coordenada ">
+                            400px
+                        </span>
+                        <span class="resaltado ">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="funcion ">
+                            height:
+                        </span>
+                        <span class="coordenada ">
+                            200px
+                        </span>
+                        <span class="resaltado ">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="resaltado ">
+                            }
+                        </span>
+                        <br/>
+                        <span class="propiedad ">
+                            "container1"
+                        </span>
+                        <span class="resaltado">
+                            {
+                        </span>
+                        <span class="funcion">
+                            background-image
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="coordenada">
+                            url
+                        </span>
+                        <span class="resaltado ">
+                            (
+                        </span>
+                        <span class="atributo ">
+                            paper.png
+                        </span>
+                        <span class="resaltado ">
+                            ),
+                        </span>
+                        <span class="coordenada">
+                            url
+                        </span>
+                        <span class="resaltado ">
+                            (
+                        </span>
+                        <span class="atributo ">
+                            pencil.png
+                        </span>
+                        <span class="resaltado ">
+                            );
+                        </span>
+                        <br/>
+                        < ! - -  Se asigna la posicion de las imagenes segun el orden establecido - - >
+                        <br/>
+                        <span class="funcion ">
+                            background-position
+                        </span>
+                        <span class="resaltado ">
+                            :
+                        </span>
+                        <span class="coordenada ">
+                            left button
+                        </span>
+                        <span class="resaltado ">
+                            ,
+                        </span>
+                        <span class="resaltado ">
+                            left top
+                        </span>
+                        <span class="resaltado ">
+                            ;
+                        </span>
+                        <br/>
+                        < ! - -  Se define que imagenes hacen mosaico y cuales no segun el orden establecido- - >
+                        <br/>
+                        <span class="funcion ">
+                            background-repeat
+                        </span>
+                        <span class="resaltado ">
+                            :
+                        </span>
+                        <span class="coordenada ">
+                            no repeat
+                        </span>
+                        <span class="resaltado ">
+                            ,
+                        </span>
+                        <span class="resaltado ">
+                            repeat
+                        </span>
+                        <span class="resaltado ">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="funcion ">
+                            padding
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="coordenada">
+                            15px
+                        </span>
+                        <span class="resaltado">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            }
+                        </span>
+                    </p>
+                </div>
+                <p>
+                    El texto hace parte de html dentro del contenedor. Se aprecia una superposicion de las imagenes al igual que el texto.
+                </p>
+                <br/>
+                <div class="image-center">
+                    <img alt="background-multiple-image" src="Imagenes/bgmimg.png" style="max-width:60%" title="Resultado-Background-Multiples-Imagenes-Definido-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Resultado-Background-Multiples-Imagenes-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <h2>
+                    <span class="icon-checkmark">
+                    </span>
+                    Color
+                    <br/>
+                </h2>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="funcion ">
+                                    HSL colors
+                                </span>
+                            </p>
+                        </div>
+                        : un color se peude indicar usando tono, saturacion y luminosidad.
+                    </li>
+                </ol>
+                <table>
+                    <tr>
+                        <td>
+                            H
+                            <br/>
+                            Hue o Tono
+                        </td>
+                        <td>
+                            El tono es un grado en la rueda de color de 0 a 360. 0 es rojo, 120 es verde y 240 es azul.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            S
+                            <br/>
+                            Saturation o Sturacion
+                        </td>
+                        <td>
+                            Es un valor porcentual donde: 0% significa un tono de gris y 100% es el color completo.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            L
+                            <br/>
+                            Lightness o Luminosidad
+                        </td>
+                        <td>
+                            Es un porcentaje donde: 0% es negro, 50% neutro y el 100% es blanco.
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <p>
+                    Se relaciona codigo html-css para trabajar con los colores en formato HSL
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta ">
+                            < div
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "width:300px; height:100px;"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(50, 100%, 50%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(50, 100%, 50%
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(240, 100%, 50%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(240, 100%, 50%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(0, 100%, 50%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(0, 100%, 50%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(120, 80%, 40%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(120, 80%, 40%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(40, 100%, 50%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(40, 100%, 50%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(250, 55%, 60%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(250, 55%, 60%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < div/>
+                        </span>
+                        <br/>
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    ´De acuerdo a los numeros y porcentajes indicados se generan los siguientes colores:
+                    <br/>
+                </p>
+                <div class="image-center">
+                    <img alt="HSL-color" src="Imagenes/HSL.png" style="max-width:40%" title="Resultado-Colors-HSL-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Resultado-Colors-HSL-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    Para la saturacion
+                </p>
+                <br/>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta ">
+                            < div
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "width:300px; height:100px;"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(0, 0%, 50%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(0, 0%, 50%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(0, 20%, 50%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(0, 20%, 50%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(0, 40%, 50%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(0, 40%, 50%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(0, 60%, 50%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(0, 60%, 50%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(0, 80%, 50%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(0, 80%, 50%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(0, 100%, 50%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(0, 100%, 50%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < div/>
+                        </span>
+                        <br/>
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    ´De acuerdo a los porcentajes indicados se generan los siguientes colores:
+                    <br/>
+                </p>
+                <div class="image-center">
+                    <img alt="HSL-color-S" src="Imagenes/HSL_1.png" style="max-width:40%" title="Resultado-Colors-HSL-Saturacion-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Resultado-Colors-HSL-Saturacion-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    Para la Luminosidad
+                </p>
+                <br/>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta ">
+                            < div
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "width:300px; height:100px;"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(0, 0%, 100%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(0, 0%, 100%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(0, 0%, 95%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(0, 0%, 95%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(0, 0%, 70%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(0, 0%, 70%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(0, 0%, 50%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(0, 0%, 50%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(0, 0%, 25%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(0, 0%, 25%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsl(0, 0%, 0%);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsl(0, 0%, 0%)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < div/>
+                        </span>
+                        <br/>
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    ´De acuerdo a los porcentajes indicados se genera la siguiente escala:
+                    <br/>
+                </p>
+                <div class="image-center">
+                    <img alt="HSL-color-S" src="Imagenes/HSL_2.png" style="max-width:40%" title="Resultado-Colors-HSL-Luminosidad-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Resultado-Colors-HSL-Luminosidad-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="funcion ">
+                                    HSLA-colors
+                                </span>
+                            </p>
+                        </div>
+                        : el valor alfa tiene rango entre 0.0 (totalmete transparente) y 1.0 (indica cierta transparencia pero no del todo).
+                    </li>
+                </ol>
+                <p>
+                    Se relaciona codigo html-css para trabajar con los colores en formato HSLA.
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta ">
+                            < div
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "width:375px; height:100px;"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsla(90, 80%, 60%, 0);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsla(90, 80%, 60%, 0)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsla(90, 80%, 60%, 0.2);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsla(90, 80%, 60%, 0.2)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsla(90, 80%, 60%, 0.4);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsla(90, 80%, 60%, 0.4)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsla(90, 80%, 60%, 0.6);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsla(90, 80%, 60%, 0.6)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsla(90, 80%, 60%, 0.8);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsla(90, 80%, 60%, 0.8)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:hsla(90, 80%, 60%, 1);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            hsla(90, 80%, 60%, 1)
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < div/>
+                        </span>
+                        <br/>
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    ´De acuerdo a los datos ingresados, se genera la siguiente escala:
+                    <br/>
+                </p>
+                <div class="image-center">
+                    <img alt="HSLA-color" src="Imagenes/HSLA.png" style="max-width:40%" title="Resultado-Colors-HSLA-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Resultado-Colors-HSLA-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <br/>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="funcion ">
+                                    RGBA colors opacity
+                                </span>
+                            </p>
+                        </div>
+                        : derivan de los colores RGB (Red, Green, Blue) y cuenta con una valor alfa que especifica opacidad en el objeto.
+                    </li>
+                </ol>
+                <p>
+                    Se relaciona codigo html-css para trabajar con los colores RGBA.
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta ">
+                            < div
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "width:375px; height:100px;"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:rgba(255,255,0,0.3);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            Amarillo
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:rgba(0,0,255,0.3);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            Azul
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:rgba(255,0,0,0.3);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            Rojo
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:rgba(0,255,0,0.3);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            Verde
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:rgba(192,192,192,0.3);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            Gris
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < h1
+                        </span>
+                        <span class="propiedad ">
+                            style
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "background-color:rgba(150,0,255,0.3);"
+                        </span>
+                        <span class="etiqueta ">
+                            >
+                        </span>
+                        <span class="resaltado ">
+                            Lila
+                        </span>
+                        <span class="etiqueta ">
+                            < h1/>
+                        </span>
+                        <br/>
+                        <span class="etiqueta ">
+                            < div/>
+                        </span>
+                        <br/>
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    ´De acuerdo con los valores ingresados, se obtienen colores pastel, muy suaves:
+                    <br/>
+                </p>
+                <div class="image-center">
+                    <img alt="RGBA-color" src="Imagenes/rgba.png" style="max-width:40%" title="Resultado-Colors-RGBA-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Resultado-Colors-RGBA-CSS3 (15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <h2>
+                    <span class="icon-checkmark">
+                    </span>
+                    Texto
+                    <br/>
+                </h2>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="funcion ">
+                                    text-shadow
+                                </span>
+                            </p>
+                        </div>
+                        : agrega una sombra al elemento que contenga texto.
+                    </li>
+                </ol>
+                <p>
+                    Por ejemplo se tiene un titulo en el centro de la pagina y se desea agregarle sombra
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="propiedad">
+                            #texto
+                        </span>
+                        <span class="resaltado">
+                            {
+                        </span>
+                        <br/>
+                        < ! - - Tamaño, coordenadas y color de la sombra - - >
+                        <br/>
+                        <span class="funcion">
+                            text-shadow
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="coordenada">
+                            6px 2px 8px
+                        </span>
+                        <span class="etiqueta">
+                            blue
+                        </span>
+                        <span class="resaltado">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            }
+                        </span>
+                        <br/>
+                    </p>
+                </div>
+                <br/>
+                <p>
+                    Se muestra el siguiente texto:
+                    <br/>
+                </p>
+                <h1 align="center" style="text-shadow: 6px 2px 6px blue;">
+                    Hola soy un texto negro con sombra azul
+                </h1>
+                <br/>
+                <p>
+                    Tambien se puede probar:
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="propiedad">
+                            #texto
+                        </span>
+                        <span class="resaltado">
+                            {
+                        </span>
+                        <br/>
+                        <span class="funcion">
+                            color
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="etiqueta">
+                            white
+                        </span>
+                        <span class="resaltado">
+                            ;
+                        </span>
+                        <br/>
+                        < ! - - Tamaño, coordenadas y color de la sombra - - >
+                        <br/>
+                        <span class="funcion">
+                            text-shadow
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="coordenada">
+                            2px 2px 4px #000000
+                        </span>
+                        <span class="resaltado">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            }
+                        </span>
+                        <br/>
+                    </p>
+                </div>
+                <p>
+                    Se muestra el siguiente texto:
+                    <br/>
+                </p>
+                <h1 align="center" style="color: lightgray;
+            text-shadow: 2px 2px 4px #000000;">
+                    Hola soy un texto blanco con sombra negra
+                </h1>
+                <br/>
+                <br/>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="funcion ">
+                                    text-overflow
+                                </span>
+                            </p>
+                        </div>
+                        : permite controlar el contenido desbordado y que no se muestra. Puede ser cortado, mostrar una elipsis ('…') o una cadena de texto personalizada.
+                    </li>
+                </ol>
+                <p>
+                    Funciona de la siguiente manera:
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            div.
+                        </span>
+                        <span class="resaltado">
+                            .
+                        </span>
+                        <span class="propiedad">
+                            a
+                        </span>
+                        <span class="resaltado">
+                            {
+                        </span>
+                        <br/>
+                        /*No ajusta el texto al control*/
+                        <br/>
+                        <span class="funcion">
+                            white-space
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="coordenada">
+                            nowrap
+                        </span>
+                        <span class="coordenada">
+                            ;
+                        </span>
+                        <br/>
+                        /*Ancho del elemento*/
+                        <br/>
+                        <span class="funcion">
+                            width
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="coordenada">
+                            100px
+                        </span>
+                        <span class="resaltado">
+                            ;
+                        </span>
+                        <br/>
+                        /*Desbordamiento de texto oculto*/
+                        <br/>
+                        <span class="funcion">
+                            overflow
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="coordenada">
+                            hidden
+                        </span>
+                        <span class="resaltado">
+                            ;
+                        </span>
+                        <br/>
+                        /*Lo que se meustra al usuario para indicarle la falta de texto*/
+                        <br/>
+                        <span class="funcion">
+                            text-overflow
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="coordenada">
+                            ellipsis
+                        </span>
+                        <span class="resaltado">
+                            ;
+                        </span>
+                        <br/>
+                        /*Borde del elemento*/
+                        <span class="funcion">
+                            border
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="coordenada">
+                            1px solid #000000
+                        </span>
+                        <span class="resaltado">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            }
+                        </span>
+                        <br/>
+                        <br/>
+                        /*evento hover del mouse*/
+                        <br/>
+                        <span class="propiedad">
+                            div.contenedor1
+                        </span>
+                        <span class="etiqueta">
+                            div.
+                        </span>
+                        <span class="resaltado">
+                            .
+                        </span>
+                        <span class="propiedad">
+                            a
+                        </span>
+                        <span class="resaltado">
+                            : hover {
+                        </span>
+                        <br/>
+                        /*Se muestra el texto al pasar el mouse*/
+                        <br/>
+                        <span class="funcion">
+                            overflow
+                        </span>
+                        <span class="resaltado">
+                            :
+                        </span>
+                        <span class="coordenada">
+                            visible
+                        </span>
+                        <span class="resaltado">
+                            ;
+                        </span>
+                        <br/>
+                        <span class="resaltado">
+                            }
+                        </span>
+                    </p>
+                </div>
+                <p>
+                    Se muestra un elemento con el texto incompleto y al pasar el mouse se muestra enh su totalidad.
+                    <br/>
+                </p>
+                <div class="image-center">
+                    <img alt="Overflow-texto-oculto" src="Imagenes/overflow1.png" style="max-width:35%" title="Text-Overflow-Oculto-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Text-Overflow-Oculto-CSS3(15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                    <br/>
+                    <img alt="Overflow-texto-visible" src="Imagenes/overflow2.png" style="max-width:80%" title="Text-Overflow-Visible-CSS3"/>
+                    <p class="reference" style="text-align: center">
+                        Text-Overflow-Visible-CSS3(15 de Abril del 2018) “elaboración propia: Jose David Mejia Guzman”
+                    </p>
+                </div>
+                <br/>
+                <h2>
+                    <span class="icon-checkmark">
+                    </span>
+                    Interface
+                    <br/>
+                </h2>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="funcion ">
+                                    box-sizing
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+                <p>
+                </p>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="funcion ">
+                                    resize
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+                <p>
+                </p>
+                <h2>
+                    <span class="icon-checkmark">
+                    </span>
+                    Formatos
+                    <br/>
+                </h2>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="funcion ">
+                                    media queries
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+                <p>
+                </p>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="funcion ">
+                                    multiple column layout
+                                </span>
+                            </p>
+                        </div>
+                        : maqueta directamente el texto en varias columnas.
+                    </li>
+                </ol>
+                <p>
+                </p>
+                <ol class="lista">
+                    <li>
+                        <div class="code">
+                            <p>
+                                <span class="funcion ">
+                                    speech
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+                <p>
+                </p>
+            </article>
+        </div>
+    </body>
+</html>
