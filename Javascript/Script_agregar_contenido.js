@@ -31,6 +31,7 @@
 		cargarContenido("#autores","autores.html");
 		//contenido de actividades
 		cargarContenido("#actividades","actividades.html")
+		cargarContenido("#CSS","crucigramacss.html")
 
 		/* Agregar contenido de Github */
 		cargarContenido("#Articulo-Git","Principal_git.html");
