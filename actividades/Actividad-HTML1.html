@@ -145,6 +145,11 @@ p{
 	var botonCodigo = document.getElementById("runCodeButton");
 	var botonGuardar = document.getElementById("saveFileButton");
 
+	/*
+		la función cargar se encarga de modificar el valor de los textarea con los identificadores
+		HTML y CSS asi como de recargar el contenido del iframe targetCode para que se muestre
+		el valor de HTML y CSS en el mismo.
+	*/
 	function cargar(){
 		var content = document.getElementById("HTML").value;
 		var contentStyles = document.getElementById("CSS").value;
@@ -176,6 +181,11 @@ p{
 	cargar();
 
 	//cargar ejemplos lista desplegable
+	/*
+		la función cargarEjemplo() se encarga de cargar los diferentes ejemplos de la actividad teniendo en cuenta 
+		el value de cada uno de los option de la lista desplegable (select) a traves de un switch que va a evaluar
+		ese valor y cargar uno u otro contenido html.
+	*/
 	function cargarEjemplo(){
 		var html = document.getElementById("HTML");
 		var css = document.getElementById("CSS");
@@ -340,10 +350,16 @@ p{
 
 	/** Guardar archivo HTML **/
 	function saveFile(){
-
+		//obtenemos el valor del elemento con el identificador HTML
 		var html = document.getElementById("HTML").value;
 		var saveText;
 
+		/*
+			buscamos si dentro de ese valor se encuentra la subcadena <meta y en caso de que se encuentre
+			obtenemos el valor del elemento con el identificador CSS, dividimos la subcadena desde <meta,
+			y añadimos el valor de CSS en el <head> del valor de HTML, para agregar los estilos tambien
+			al archivo a descagrar.
+		*/
 		if(html.indexOf("<meta") > 1){
 			var css = document.getElementById("CSS").value;
 			var subcadena = html.split("<meta");
@@ -353,7 +369,11 @@ p{
 			saveText = html;
 		}
 
+		/* se crea un objeto binario con el mime type text/html y el valor de la variable saveText
+			que contiene todo el contenido de CSS y HTML
+		*/
 		var blob = new Blob([saveText],{type: "text/html"});
+		/* con la función prompt se abre una ventana modal de dialogo para que el usuario ingrese el nombre del archivo a descargar */
 		var fileName = prompt("Ingresar Nombre del archivo (sin extensión .html)");
 		
 		if(fileName){
@@ -370,6 +390,7 @@ p{
 				document.body.appendChild(link);
 			}
 			link.click();
+		//en caso de no ingresar el nombre de el archivo aparece un mensaje que le indica al usuario que obligatoriamente debe ingresar el nombre del archivo
 		}else{
 			alert("Para guardar el documento debes agregar un titulo");
 		}

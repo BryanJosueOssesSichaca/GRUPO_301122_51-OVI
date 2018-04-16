@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Media Queries CSS3</title>
+</head>
+<body>
+	<article>
+		<header>
+			<h2>Media Query CSS3 <span class="icon-css3"></span></h2>
+			<p>Publicado el 15/04/2018 a las 21:00</p>
+		</header>
+		<p>
+			Las media queries (Media Query) son un módulo introducido en CSS3 el cuales nos permite definir estilos CSS que se aplicarán al documento si se cumple cierta condición o circunstancia.
+		</p>
+		<p>
+			Son la base fundamental del <span class="init">responsive web design</span>, método que se ha convertido en un estándar a la hora de diseñar sitios web actuales ya que nos permite diseñar sitios web que puedan adaptarse a la resolución y tamaño de pantalla de los diferentes dispositivos (moviles, televisores, diferentes resoluciones de pantalla de computadores etc...) en los cuales se visualiza la pagina web.   
+		</p>
+		<p>
+			Las media quieres actúan como un bloque de reglas CSS que serán aplicadas sobre el documento HTML cuando se cumpla cierta condición, siempre comienzan con la palabra reservada o instrucción <span class="clave">“@media”</span> seguido del primer parámetro <span class="parametro">“mediatype” (el cual indica el tipo de medio al que las reglas CSS serán aplicadas)</span>.  
+		</p>
+		<table>
+			<caption>mediatype</caption>
+			<tr>
+				<th>Nombre</th>
+				<th>Explicación</th>
+			</tr>
+			<tr>
+				<td> All </td>
+				<td>Aplicable a documentos impresos o medios paginados.</td>
+			</tr>
+			<tr>
+				<td> Print </td>
+				<td>Aplicable a documentos impresos o medios paginados.</td>
+			</tr>
+			<tr>
+				<td> Screen </td>
+				<td> Aplicable primeramente a pantallas de computadores.</td>
+			</tr>
+			<tr>
+				<td> TV </td>
+				<td>Aplicable dispositivos televisores.</td>
+			</tr>
+			<tr>
+				<td> handheld </td>
+				<td>Aplicable a dispisitivos moviles (pantalla pequeña con poco ancho de banda).</td>
+			</tr>
+			<tr>
+				<td> Speech </td>
+				<td>Aplicable a sintetizadores de voz.</td>
+			</tr>
+		</table>
+		<br>
+		<p>
+			Y el segundo parámetro el <span class="parametro">“media feature” donde especificamos al navegador que condición debe cumplir el dispositivo para que se apliquen los estilos CSS definidos en la media query</span> (los mas comunes se refieren a las dimensiones de la pantalla del dispositivo <span class="init">height, width, max-height, max-width, min-height, min-width</span> y tambien los que se refieren a la orientación del dispositivo <span class="comentario">orientation</span> <span class="init">landscape o portrait</span>).
+		</p>
+		<p>
+			Las media queries pueden utilizar multiples operadores lógicos en su declaración, los más utilizado son <strong>and</strong> y <strong>only</strong>.
+		</p>
+		<ol class='lista'>
+			<li><span class="init">And</span> – se utiliza para colocar juntas multiples “media features” a ser evaluadas. </li>
+			<li><span class="init">Only</span> – previene que los navegadores antiguos que no soportan las media queries apliquen los estilos asignados.</li>
+		</ol>
+		<p class="title">Ejemplo Media Query</p>
+		<div class="code">
+			<p>
+				<span class="init">@media</span> <span class="clave">screen</span> and (<span class="parametro">max-width</span>: 650px) {
+				<br><br>
+				<span class="comentario">/* Codigo CSS */</span>
+				<br><br>
+				}
+			</p>
+		</div>
+		<p>
+			Esta media query solo se aplica si el mediatype concuerda con <span class="init">screen</span> y si el ancho maximo de la pantalla son <span class="parametro">650px</span>.
+		</p>
+		<div class="code">
+			<p>
+				<span class="init">@media</span> <span class="clave">handheld</span> and (<span class="parametro">max-width</span>: 650px) and (<span class="parametro">orientation</span>: landscape){
+				<br><br>
+				<span class="comentario">/* Codigo CSS */</span>
+				<br><br>
+				}
+			</p>
+		</div>
+		<p>
+			Esta media query solo se aplica si el mediatype concuerda con <span class="init">handheld</span> y si el ancho maximo de la pantalla son <span class="parametro">650px</span> y si la orientación de la pantalla es <span class="parametro">vertical</span>.
+		</p>
+		<p class="title">Existen 2 maneras de declarar media queries:</p>
+		<p>
+			<strong><span class="parametro">1.</span></strong> a la hora de enlazar un archivo CSS con la etiqueta link podemos utilizar el atributo <span class="init">media=” ”</span>
+		</p>
+		<div class="code">
+			<p>
+				&lt;link <span class="comentario">rel="stylesheet"</span> <span class="clave">media=</span><span class="init">"only screen and (max-width: 500px)"</span> <span class="parametro">href="estilos.css"</span>&gt;
+			</p>
+		</div>
+		<p>
+			<strong><span class="parametro">2.</span></strong> dentro de un archivo CSS o etiqueta <span class="init">style</span>.
+		</p>
+		<p>
+			La diferencia radica en que si definimos la media query a la hora de enlazar un archivo CSS solo podremos definir 1 la cual será aplicada a esa hoja de estilos en concreto,  en cambio dentro de una hoja de estilos .css podemos definir múltiples media queries.
+		</p>
+	</article>
+</body>
+</html>
