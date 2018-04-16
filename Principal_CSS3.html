@@ -1,69 +1,404 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Introducción CSS3</title>
-</head>
-<body>
-    
-<div class="scroll">
-<article>
-    <header>
-        <h2>
-            CSS3 <span class="icon-css3"></span>
-        </h2>
-        <p>
-            Publicado el 05/04/2018 a las 11:00
-        </p>
-    </header>
-    <p>
-        El nombre viene de Cascading Style Sheets y sus siglas CSS, que en español traduce Hojas de estilo en cascada. Este es un lenguaje de programación usado para definir la presentación de un documento estructurado escrito en HTML o XML (y por extensión en XHTML), y con esto lo que se persigue es la idea de  separar la estructura de un documento de su presentación.<br>
-        La información de estilo puede ser adjuntada como un documento separado o en el mismo documento HTML. En este último caso podrían definirse estilos generales en la cabecera del documento o en cada etiqueta particular mediante el atributo " &lt;style&gt;".<br>
-    </p>
-
-<p>
-    Caracteristicas Principales.<br>
-</p>
-<br>
-
-        <p>
-            
-            <br>
-            <h2>Múltiples imágenes de fondo</h2>
-            <br>
-            <p>
-            Logra que un elemento de la página tenga varias imágenes de fondo a la vez. 
-            </p>
-            <br>
-            <h2>Bordes con imágenes</h2>
-            <br>
-            <p>
-            Hace posible la utilización de imágenes como bordes de los elementos de la página, sin código HTML especial, simplemente con hojas de estilo. 
-            </p>
-            <br>
-            <h2>Bordes redondeados</h2>
-            <br>
-            <p>
-            Define la curvatura que debe tener el borde del elemento. 
-            </p>
-            <br>
-            <h2>Word-wrap</h2><br>
-            <p>
-            Esta propiedad sirve para romper las palabras que son demasiado largas y no caben enteras por la anchura de una caja.
-            </p>
-            <br>
-            <h2>Textos multi-columna </h2>
-            </br>         
-            <p>
-            Permite maquetar directamente el texto en varias columnas.  
-            </p><br>
-            <h2>Sombras</h2><br>
-            <p>
-            Permite aplicar sombras a los elementos de la página, sin usar imágenes, Javascript ni nada extra, simplemente con un atributo de CSS3.
-        </p>
-    
-</article>
-</div>
-
-</body>
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Introducción CSS3
+        </title>
+    </head>
+    <body>
+        <div class="scroll">
+            <article>
+                <header>
+                    <h2>
+                        CSS3
+                        <span class="icon-css3">
+                        </span>
+                    </h2>
+                    <p>
+                        Publicado el 05/04/2018 a las 11:00
+                    </p>
+                </header>
+                <p>
+                    CSS o Cascading Style Sheets es un lenguaje de Hojas de Estilo en Cascada que permite definir la presentación de un documento estructurado escrito en HTML o XML, y se separa la estructura de un documento de su presentación.
+                    <br/>
+                </p>
+                <p class="title">
+                    Concepcion
+                    <br/>
+                </p>
+                <p>
+                    CSS puede ser mas que un lenguaje de hojas de estilo personalizadas, a parte de darle apariencia a nuestra pagina web podemos implementar muchisimas cosas que sin lugar a duda no pensabamos que se pudieran hacer: juegos, animaciones y efectos combinados que antes solo se conseguia con otro javascript y otros lenguajes. Ppr ejemplo se han creado: un minion, letreros de neon, figuras en tercera dimension y dibujos que las personas al verlos no se imaginan que esta detras una hoja de estilos. Deja que tu imaginacion vuele y tu mismo te pones los limites en este mundo de la programacion.
+                </p>
+                <p class="title">
+                    Uso
+                    <br/>
+                </p>
+                <p>
+                    Puede incorporarse de tres formas
+                </p>
+                <br/>
+                <p>
+                    <span class="icon-checkmark">
+                        Inline
+                    </span>
+                    <br/>
+                    <p>
+                        Cuando se desea efectuar cambios sobre un elmento en especifico. Se coloca dentro de la etiquetas de apertura del elemento.
+                    </p>
+                    <div class="code">
+                        <p>
+                            < ! - - Se alinea el texto contenido en el titulo- - >
+                            <br/>
+                            <span class="etiqueta">
+                                < h1
+                            </span>
+                            <span class="propiedad">
+                                style
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "text-align:center"
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <span class="etiqueta">
+                                >
+                            </span>
+                            <span class="resaltado">
+                                Titulo
+                            </span>
+                            <span class="etiqueta">
+                                < h1/>
+                            </span>
+                        </p>
+                    </div>
+                    <p>
+                        Resultado:
+                        <br/>
+                    </p>
+                    <h1 style="text-align:center">
+                        Titulo
+                        <h1>
+                        </h1>
+                        <br/>
+                    </h1>
+                    <div class="code">
+                        <p>
+                            < ! - - Se cambia el color del contenido de la linea de texto- - >
+                            <br/>
+                            <span class="etiqueta">
+                                < p
+                            </span>
+                            <span class="propiedad">
+                                style
+                            </span>
+                            <span class="resaltado">
+                                =
+                            </span>
+                            <span class="atributo">
+                                "color:red; text-align:center;"
+                            </span>
+                            <span class="etiqueta">
+                                >
+                            </span>
+                            <span class="resaltado">
+                                Este es una linea de texto modificada con css
+                            </span>
+                            <span class="etiqueta">
+                                < /p>
+                            </span>
+                        </p>
+                    </div>
+                    <p>
+                        Resultado:
+                        <br/>
+                    </p>
+                    <p style="color:red; text-align:center;">
+                        Este es una linea de texto modificada con css
+                    </p>
+                    <br/>
+                </p>
+                <p>
+                    <span class="icon-checkmark">
+                        Internal
+                    </span>
+                    <br/>
+                    <p>
+                        Cuando se desea realizar cambios a nivel de documento html. Se indica entre las etiquetas
+                        <span class="resaltado">
+                            < head > < /head >
+                        </span>
+                        colocando el codigo dentro de las etiquetas
+                        <span class="resaltado">
+                            < style > < /tyle >
+                        </span>
+                        <br/>
+                        Por ejemplo:
+                        <br/>
+                    </p>
+                    <div class="code">
+                        <p>
+                            <span class="etiqueta">
+                                < style >
+                            </span>
+                            <br/>
+                            < ! - - asigna color de fondo al cuerpo de la pagina - - >
+                            <br/>
+                            <span class="etiqueta">
+                                body
+                            </span>
+                            <span class="resaltado">
+                                {
+                            </span>
+                            <span class="funcion">
+                                font-size:
+                            </span>
+                            <span class="coordenada">
+                                1.3em
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="resaltado">
+                                }
+                            </span>
+                            <br/>
+                            <br/>
+                            < ! - - asigna tamaño de letra a los parrafos de la pagina - - >
+                            <br/>
+                            <span class="etiqueta">
+                                p
+                            </span>
+                            <span class="resaltado">
+                                {
+                            </span>
+                            <span class="funcion">
+                                background-color:
+                            </span>
+                            <span class="coordenada">
+                                blue
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="resaltado">
+                                }
+                            </span>
+                            <br/>
+                            <span class="etiqueta">
+                                < /style >
+                            </span>
+                        </p>
+                    </div>
+                    <br/>
+                </p>
+                <p>
+                    <span class="icon-checkmark">
+                        External
+                    </span>
+                    <br/>
+                    <p>
+                        Cuando se desean hacer cambios globales en todos los archivos del proyecto. Se escribe en un documento con extension
+                        <span class="resaltado">
+                            .css
+                        </span>
+                        y se llama entre las etiquetas
+                        <span class="resaltado">
+                            < head > < /head >
+                        </span>
+                        <br/>
+                        Por ejemplo: deseamos realizar cambios en la cabecera, secciones, articulos y pies de pagina, para estandarizar el estilo en las paginas de nuestra web.
+                        <br/>
+                    </p>
+                    <div class="code">
+                        <p>
+                            < ! - - Este es mi documento externo .css - - >
+                            <br/>
+                            <span class="etiqueta">
+                                header
+                            </span>
+                            <br/>
+                            <span class="resaltado">
+                                {
+                            </span>
+                            <span class="funcion">
+                                background-color:
+                            </span>
+                            <span class="coordenada">
+                                #C5C9FB
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                font-size:
+                            </span>
+                            <span class="coordenada">
+                                15
+                            </span>
+                            <span class="etiqueta">
+                                px
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                text-underline-position:
+                            </span>
+                            <span class="coordenada">
+                                all
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="resaltado">
+                                }
+                            </span>
+                            <br/>
+                            <br/>
+                            <span class="etiqueta">
+                                section, article
+                            </span>
+                            <span class="resaltado">
+                                {
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                font-weight:
+                            </span>
+                            <span class="coordenada">
+                                75
+                            </span>
+                            <span class="etiqueta">
+                                %
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                font-size:
+                            </span>
+                            <span class="coordenada">
+                                2
+                            </span>
+                            <span class="etiqueta">
+                                em
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <span class="etiqueta">
+                                }
+                            </span>
+                            <br/>
+                            <br/>
+                            <span class="etiqueta">
+                                footer
+                            </span>
+                            <span class="resaltado">
+                                {
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                font-size:
+                            </span>
+                            <span class="coordenada">
+                                10
+                            </span>
+                            <span class="etiqueta">
+                                px
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="funcion">
+                                font-weight:
+                            </span>
+                            <span class="coordenada">
+                                bold
+                            </span>
+                            <span class="resaltado">
+                                ;
+                            </span>
+                            <br/>
+                            <span class="resaltado">
+                                }
+                            </span>
+                            <br/>
+                        </p>
+                    </div>
+                    <br/>
+                </p>
+                <p>
+                    Se llama de la siguiente manera:
+                    <br/>
+                </p>
+                <div class="code">
+                    <p>
+                        <span class="etiqueta">
+                            < head >
+                        </span>
+                        <br/>
+                        <span class="etiqueta">
+                            < link
+                        </span>
+                        <span class="propiedad">
+                            rel
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "stylesheet"
+                        </span>
+                        <span class="propiedad">
+                            type
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "text/css"
+                        </span>
+                        <span class="propiedad">
+                            href
+                        </span>
+                        <span class="resaltado">
+                            =
+                        </span>
+                        <span class="atributo">
+                            "hojadeestilos.css"
+                        </span>
+                        <span class="etiqueta">
+                            />
+                        </span>
+                        <br/>
+                        <span class="etiqueta">
+                            < /head >
+                        </span>
+                        <br/>
+                    </p>
+                </div>
+                <p>
+                    En el atributo
+                    <span class="resaltado">
+                        href
+                    </span>
+                    <br/>
+                    entre las comillas se indica la ruta del archivo.
+                </p>
+            </article>
+        </div>
+    </body>
 </html>
