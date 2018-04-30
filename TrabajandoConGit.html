@@ -2,42 +2,42 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Trabajando con Git</title>
+	<title>Trabajar con Git</title>
 </head>
 <body>
 	<div class="scroll">
 		<article>
 			<header>
-				<h2>Trabajando con Git <span class="icon-git"></span></h2>
+				<h2>Trabajar con Git <span class="icon-git"></span></h2>
 				<p>Publicado el 06/04/2018 a las 12:27</p>
 			</header>
 			<p class="title-important">Flujo de Trabajo</p>
-			<p>En GIT existen 3 diferentes estados con los que trabajamos</p>
+			<p>En GIT existen 3 diferentes estados de trabajo</p>
 			<h3>1 Working directory</h3>
-			<p>Aquí editamos, agregamos los diferentes archivos y trabajamos en nuestro proyecto.
+			<p>Para editar, agregar archivos y trabajar en el proyecto.
 			</p>
 			<h3>2 Staging área</h3>
-			<p>Aquí es donde escogemos que archivos están listos para pasar al tercer estado, al igual que decidimos que archivos no están listos.</p>
+			<p>Para escoger los archivos están listos y los que no para pasar al tercer estado.</p>
 			<h3>3 repository</h3>
-			<p>Aquí se lleva todo el registro de nuestro proyecto (una vez hacemos commit).</p>
+			<p>Para llevar todo el registro en el proyecto (una vez hecho el commit).</p>
 			<div class="image-center">
 				<img src="Imagenes/stages.png" alt="stages" title="stages"/>
 				<p style="text-align: center" class="reference">Flujo de trabajo en Git (06 de Abril del 2018) “elaboración propia - Bryan Josue Osses Sichaca”</p>
 			</div>
 			<p>
-				por lo tanto (1) siempre tendremos un directorio en el cual agregaremos o modificaremos archivos, una vez que la modificación de estos archivos este lista debemos de seleccionar que archivos estan listos y colocarlos en la staging area  de esta manera indicamos que cambios queremos incluir en el (3) commit que llevara registro de los cambios de nuestro proyecto.
+				Por lo tanto (1) siempre se tendrá un directorio donde se agregarán o modificarán archivos, una vez que la modificación de estos archivos este lista se seleccionan los archivos que están listos y se colocan en la staging area, de esta manera se indican los cambios que se desean incluir en el (3) commit que llevará registro de los cambios en el proyecto.
 			</p>
-			<p class="title-important">Preparando archivos para confirmación</p>
+			<p class="title-important">Preparar archivos para confirmación</p>
 			<p class="title">Agregar archivos al staging área (Git Bash)</p>
 			<p>
-				Una vez que se han producido cambios en los archivos existentes o se han agregado nuevos archivos al directorio de trabajo, si utilizamos el comando <span class="clave">$ git status</span> podremos ver que nos indica que archivos han sido modificados o agregados, asi como cuales cambios estan listos para confirmar y cuales no.
+				Una vez que se han producido cambios en los archivos existentes o se han agregado nuevos archivos al directorio de trabajo, al utilizar el comando <span class="clave">$ git status</span> se visualizan los archivos que han sido modificados o agregados, así como los cambios que están listos para confirmar y los que no.
 			</p>
 			<div class="image-center">
 				<img src="Imagenes/git-status.png" alt="git-status" title="git-status" style="max-width:700px"/>
 				<p style="text-align: center" class="reference">Git Bash - comando status (07 de Abril del 2018) “elaboración propia - Bryan Josue Osses Sichaca”</p>
 			</div>
 			<p>
-				Si queremos ver con exactitud, las líneas de código agregadas o eliminadas en estos cambios podemos utilizar el comando <span class="clave">diff</span>:
+				Si se desea ver con exactitud, las líneas de código agregadas o eliminadas en estos cambios se utiliza el comando <span class="clave">diff</span>:
 			</p>
 			<div class="code">
 				<p>
@@ -45,7 +45,7 @@
 				</p>
 			</div>
 			<p>
-				si queremos ver únicamente los cambios sobre los archivos que están en el staging área o que están preparados para confirmación tenemos que agregar el parámetro <span class="clave">--staged</span> 
+				Si se desea ver únicamente los cambios sobre los archivos que están en el staging área o que están preparados para confirmación se agrega el parámetro <span class="clave">--staged</span> 
 			</p>
 			<div class="code">
 				<p>
@@ -53,7 +53,7 @@
 				</p>
 			</div>
 			<p>
-				una ves que ya sabemos que cambios se han realizados, para poder hacer commit sobre estos cambios, primero debemos añadir estos cambios al staging área, para eso utilizamos el comando <span class="clave">add</span>:
+				Una vez verificados los cambios realizados, para hacer commit sobre estos, primero se añaden al staging área, para eso se utiliza el comando <span class="clave">add</span>:
 			</p>
 			<div class="code">
 				<p>
@@ -61,14 +61,14 @@
 				</p>
 			</div>
 			<p>
-				Si hemos creado  o modificado multiples archivos podemos agregar todos estos cambios de una sola vez al staging área agregando el parámetro <span class="clave">--A</span> o <span class="clave">--all</span> 	
+				Al crear o modificar múltiples archivos, se pueden agregar estos cambios de una sola vez al staging área agregando el parámetro <span class="clave">--A</span> o <span class="clave">--all</span> 	
 			</p>
 			<div class="code">
 				<p>
 					<span class="init">$</span> git <span class="clave">add</span> <span class="parametro">--all</span> 
 				</p>
 			</div>
-			<p><b><span class="parametro">NOTA:</span></b> para quitar un archivo del staging area utilizamos el comando <span class="clave">reset</span>:</p>
+			<p><b><span class="parametro">NOTA:</span></b> para quitar un archivo del staging area se utiliza el comando <span class="clave">reset</span>:</p>
 			<div class="code">
 				<p>
 					<span class="init">$</span> git <span class="clave">reset HEAD</span> <span class="parametro">nombre_del_archivo</span>
@@ -86,8 +86,8 @@
 				<p style="text-align: center" class="reference">Git Bash - comando status, archivos preparados (07 de Abril del 2018) “elaboración propia - Bryan Josue Osses Sichaca”</p>
 			</div>
 			<p class="title">Agregar archivos al staging área (Github Desktop)</p>
-			<p>En el panel principal de GithubDesktop encontramos la pestaña changes, en esta pestaña podemos ver los cambios realizados, las líneas de código agregadas y quitadas.
-			Para agregar un archivo al staging área hay que marcar el checkbox <input type="checkbox" checked="checked"> que se encuentra al lado izquierdo del nombre del archivo y viceversa para quitar un archivo del staging area.  
+			<p>En el panel principal de GithubDesktop se aprecia la pestaña changes, donde se pueden ver los cambios realizados, las líneas de código agregadas y eliminadas.
+			Para agregar un archivo al staging área se marca el checkbox <input type="checkbox" checked="checked"> ubicado al lado izquierdo del nombre del archivo y viceversa para eliminar un archivo del staging area.  
 			</p>	
 			<div class="image-center">
 				<img src="Imagenes/changes.png" alt="changes" title="changes"/>
@@ -96,7 +96,7 @@
 			<p class="title-important">Confirmando Cambios</p>
 			<p class="title">Confirmando cambios (Git Bash)</p>
 			<p>
-				Para confirmar los cambios debemos utilizar el comando <span class="clave">commit</span> (Confirmación):
+				Para confirmar los cambios se utiliza el comando <span class="clave">commit</span> (Confirmación):
 			</p>
 			<div class="code">
 				<p>
@@ -104,14 +104,14 @@
 				</p>
 			</div>
 			<p>
-				El parámetro <span class="parametro">--m</span> sirve para escribir directamente la descripción del commit en la linea de comandos o terminal, en caso de no agregar el parámetro <span class="parametro">--m</span> se abrirá el editor que hayamos configurado para trabajar con GIT o el editor por defecto del sistema con el fin de escribir una descripción para el commit o confirmación.
+				El parámetro <span class="parametro">--m</span> permite escribir directamente la descripción del commit en la linea de comandos o terminal, en caso de no agregar el parámetro <span class="parametro">--m</span> se abrirá el editor configurado para trabajar con GIT o el editor por defecto del sistema con el fin de escribir una descripción para el commit o confirmación.
 			</p>
 			<div class="image-center">
 				<img src="Imagenes/commit.png" alt="commit" title="commit"/>
 				<p style="text-align: center" class="reference">Commit Git bash (07 de Abril del 2018) “elaboración propia - Bryan Josue Osses Sichaca”</p>
 			</div>
 			<p>
-				En caso de querer modificar el mensaje de la descripción del commit podemos utilizar el parámetro <span class="parametro">--amend</span>
+				En caso de querer modificar el mensaje de la descripción del commit se utiliza el parámetro <span class="parametro">--amend</span>
 			</p>
 			<div class="code">
 				<p>
@@ -119,7 +119,7 @@
 				</p>
 			</div>
 			<p>
-				mientras nos encontremos en una rama local podemos deshacer el commit o confirmación realizada utilizando el comando <span class="clave">reset</span>
+				Al estar en una rama local se puede deshacer el commit o confirmación realizada utilizando el comando <span class="clave">reset</span>
 
 			</p>
 			<div class="code">
@@ -128,13 +128,13 @@
 				</p>
 			</div>
 			<p>
-				al agregar el parametro <span class="parametro">--soft</span> eliminamos el commit pero nuestros archivos quedan intactos en caso de querer borrar todo lo que contenga el commit utilizar el parametro <span class="parametro">--hard</span> 
+				Al agregar el parámetro <span class="parametro">--soft</span> se elimina el commit pero los archivos permanecen intactos y en caso de querer borrar todo lo que contenga el commit se utiliza el parámetro <span class="parametro">--hard</span> 
 			</p>
 			<p>
-				<span class="parametro">HEAD (cabeza)</span> representa al commit en el cual nos encontramos, normalmente es el ultimo commit realizado , <span class="parametro">~1</span> es la cantidad de commits que se retrocederan con respecto a HEAD. 
+				<span class="parametro">HEAD (cabeza)</span> representa al commit actual, normalmente es el ultimo commit realizado , <span class="parametro">~1</span> es la cantidad de commits que se retrocederán con respecto a HEAD. 
 			</p>
 			<p>
-				En caso de querer Deshacer un commit que ya se haya subido a una rama remota debemos utilizar el comando <span class="clave">revert</span>
+				Si se desea Deshacer un commit que se haya subido a una rama remota se utiliza el comando <span class="clave">revert</span>
 			</p>
 			<div class="code">
 				<p>
@@ -142,22 +142,22 @@
 				</p>
 			</div>
 			<p>
-				Podemos sustituir HEAD por el código <span class="clave">SHA</span> del commit, por si aún no has leído el artículo crear y clonar repositorios  con Git, explicaba que para ver el historial de commits utilizábamos el comando <span class="clave">log</span>, el cual nos imprime en pantalla entre otros datos el código <span class="clave">SHA</span> de confirmación del commit. 
+				Se puede sustituir HEAD por el código <span class="clave">SHA</span> del commit, puede remitirse al artículo crear y clonar repositorios  con Git, donde se explica el procedimiento para ver el historial de commits utilizando el comando <span class="clave">log</span>, que imprime en pantalla entre otros datos el código <span class="clave">SHA</span> de confirmación del commit. 
 			</p>
 			<p class="title">Confirmando cambios (Github desktop)</p>
 			<p>
-				en el panel principal de Github Desktop, en la pestaña changes encontramos dos campos de texto, el primero que es llamado <span class="clave">summary</span> y el segundo mas grande <span class="clave">description</span>. 
-				En summary se debe escribir el nombre del commit mientras que en description la descripcion del commit. 
+				En el panel principal de Github Desktop, en la pestaña changes se aprecian dos campos de texto, el primero es llamado <span class="clave">summary</span> y el segundo mas grande <span class="clave">description</span>. 
+				En summary se debe escribir el nombre del commit y en description la descripcion del commit. 
 			</p>
 			<p>
-				por ultimo debemos dar click en el boton llamado <span class="clave">commit to</span> <span class="parametro">"Master"</span> (Master hace referencia a la rama maestra o principal del repositorio, mas adelante en este mismo articulo se hablara sobre las ramas).
+				Por último se da clic en el botón <span class="clave">commit to</span> <span class="parametro">"Master"</span> (Master hace referencia a la rama maestra o principal del repositorio, más adelante en este mismo artículo se hablará sobre las ramas).
 			</p>
 			<div class="image-center">
 				<img src="Imagenes/commit-desktop.png" alt="commit-GithubDesktop" title="commit-GithubDesktop" style="max-width:300px"/>
 				<p style="text-align: center" class="reference">Github Desktop, commit (07 de Abril del 2018) “elaboración propia - Bryan Josue Osses Sichaca”</p>
 			</div>
 			<p>
-				en caso de querer revertir un commit, tenemos que ir a la pestaña <span class="clave">History</span> y dar click derecho sobre el commit que queramos eliminar, aparecera un menú emergente con la opcion <span class="parametro">revert this commit</span>.
+				Si se desea revertir un commit, se ubica la pestaña <span class="clave">History</span> y se da clic derecho sobre el commit que se desea eliminar, aparecerá un menú emergente con la opción <span class="parametro">revert this commit</span>.
 			</p>
 			<div class="image-center">
 				<img src="Imagenes/revert.png" alt="revert" title="revert"/>
@@ -165,17 +165,17 @@
 			</div>
 			<p class="title-important">Ramas o bifurcaciones</p>
 			<p>
-				una rama representa una linea del tiempo en nuestro proyecto, son caminos independientes que pueden evolucionar de manera distinta, en la practica representan diferentes estados que nuestro proyecto puede tener.
+				Una rama representa una linea del tiempo en el proyecto, son caminos independientes que pueden evolucionar de manera distinta, en la práctica representan diferentes estados que el proyecto puede tener.
 			</p>
 			<p>
-				los cambios realizados en una rama solo se reflejan en la misma, es por esto que podemos experimentar o hacer grandes cambios en una rama diferente sin afectar la rama principal Master u otras ramas dentro del repositorio Git.
+				Los cambios realizados en una rama solo se reflejan en la misma, esto permite experimentar o hacer grandes cambios en una rama diferente sin afectar la rama principal Master u otras ramas dentro del repositorio Git.
 			</p>
 			<p>
-				cuando creamos un repositorio, Git nos creará automaticamente una rama llamada <span class="clave">Master</span>, la rama por defecto de Git es la rama <span class="clave">Master</span> y apartir de esta misma es que se crearán nuevas ramas o bifurcaciones.
+				Al crear un repositorio, Git creará automaticamente la rama <span class="clave">Master</span>, es la rama por defecto y a partir de esta se crean nuevas ramas o bifurcaciones.
 			</p>
 			<p class="title">Ramas (Git Bash)</p>
 			<p>
-				Si queremos ver las ramas que posee nuestro repositorio debemos utilizar el comando <span class="clave">branch</span>:
+				Si se desean ver las ramas que posee el repositorio se utiliza el comando <span class="clave">branch</span>:
 			</p>
 			<div class="code">
 				<p>
@@ -183,7 +183,7 @@
 				</p>
 			</div>
 			<p>
-				si queremos crear una nueva rama en nuestro proyecto debemos pasarle como parametro al comando <span class="clav">branch</span> el nombre de la rama. 
+				Si se desea crear una nueva rama en el proyecto se indica como parámetro al comando <span class="clav">branch</span> el nombre de la rama. 
 			</p>
 			<div class="code">
 				<p>
@@ -195,7 +195,7 @@
 				<p style="text-align: center" class="reference">Git bash, creando nueva rama (07 de Abril del 2018) “elaboración propia - Bryan Josue Osses Sichaca”</p>
 			</div>
 			<p>
-				para cambiar entre ramas debemos utilizar el comando <span class="clave">checkout</span>:
+				Para cambiar entre ramas se utiliza el comando <span class="clave">checkout</span>:
 			</p>
 			<div class="code">
 				<p>
@@ -207,13 +207,13 @@
 				<p style="text-align: center" class="reference">Git bash, moverse entre ramas (07 de Abril del 2018) “elaboración propia - Bryan Josue Osses Sichaca”</p>
 			</div>
 			<p>
-				una ves que cambiemos de rama los cambios se realizarán sobre esta misma y no sobre master, si queremos reflejar los cambios que hemos realizado sobre esta nueva rama tendremos que fusionarlas (merge).
+				Una vez alterada la rama, los cambios se realizarán sobre esta y no sobre master, si se desea reflejar los cambios realizados sobre esta nueva rama se deben fusionar(merge).
 			</p>
 			<p>
-				al hacer <span class="clave">merge</span> entre dos ramas se generará un nuevo commit con los cambios derivados de la fusion de esas dos ramas.
+				Al hacer <span class="clave">merge</span> entre dos ramas se generará un nuevo commit con los cambios derivados de la fusión de esas dos ramas.
 			</p>
 			<p>
-				para fusionar ramas debemos utilizar el comando <span class="clave">merge</span>
+				Para fusionar ramas se utiliza el comando <span class="clave">merge</span>
 			</p>
 			<div class="code">
 				<p>
@@ -225,10 +225,10 @@
 				<p style="text-align: center" class="reference">Git bash, mezclando ramas (07 de Abril del 2018) “elaboración propia - Bryan Josue Osses Sichaca”</p>
 			</div>
 			<p>
-				primero debemos situarnos sobre la rama que va a absorver a la otra (utilizamos el comando <span class="clave">checkout</span> para movernos entre ramas), en el ejemplo me sitúo sobre la rama Master para poder absorver en Master la otra rama llamada nueva_rama.
+				Primero se ubica sobre la rama que absorberá a la otra (se utiliza el comando <span class="clave">checkout</span> para moverse entre ramas), en el ejemplo se sitúa sobre la rama Master para poder absorber en Master la otra rama llamada nueva_rama.
 			</p>
 			<p>
-				Si queremos eliminar una rama local tenemos que pasarle el parametro <span class="parametro">-D</span> al comando <span class="clave">branch</span>
+				Si se desea eliminar una rama local se indica el parámetro <span class="parametro">-D</span> al comando <span class="clave">branch</span>
 			</p>
 			<div class="code">
 				<p>
@@ -241,28 +241,28 @@
 			</div>
 			<p class="title">Ramas (Github Desktop)</p>
 			<p>
-				Para crear ramas, en el panel principal de Github Desktop debemos ir a la pestaña llamada <span class="clave">Current branch</span> damos click y se desplegará un nuevo menú, en este nuevo menú en la pestaña <span class="clave">branches</span> hay un campo de texto en el cual debemos escribir el nombre de la nueva rama y finalmente dar click en el boton <span class="clave">new branch</span> para crear una nueva rama.
+				Para crear ramas, en el panel principal de Github Desktop se ubica la pestaña <span class="clave">Current branch</span> al dar clic se desplegará un nuevo menú y en la pestaña <span class="clave">branches</span> se aprecia campo de texto donde se debe escribir el nombre de la nueva rama y finalmente se da clic en el botón <span class="clave">new branch</span> para crear una nueva rama.
 			</p>
 			<div class="image-center">
 				<img src="Imagenes/branch-githubdesktop.png" alt="new-branch-GithubDesktop" title="new-branch-GithubDesktop"/>
 				<p style="text-align: center" class="reference">Github Desktop, creando ramas (07 de Abril del 2018) “elaboración propia - Bryan Josue Osses Sichaca”</p>
 			</div>
 			<p>
-				Para cambiar de ramas, tenemos que dar click sobre el nombre de la rama en la que queremos situarnos, la rama en la que estamos situados es la que esta marcada con un icono <span class="icon-checkmark"></span> dentro de la lista.
+				Para cambiar de ramas, se da clic sobre el nombre de la rama donde se desea ubicar, la rama donde se encuentra ubicado es la que esta marcada con un icono <span class="icon-checkmark"></span> dentro de la lista.
 			</p>
 			<div class="image-center">
 				<img src="Imagenes/ramas-githubDesktop.png" alt="ramas-GithubDesktop" title="ramas-GithubDesktop" style="max-width:300px"/>
 				<p style="text-align: center" class="reference">Github Desktop, moviendose entre ramas (07 de Abril del 2018) “elaboración propia - Bryan Josue Osses Sichaca”</p>
 			</div>
 			<p>
-				para borrar una rama, primero tenemos que seleccionarla e ir al menú <span class="clave">branch -> delete</span>
+				Para borrar una rama, primero se selecciona y luego se dirige al menú <span class="clave">branch -> delete</span>
 			</p>
 			<div class="image-center">
 				<img src="Imagenes/delete-branch-githubDesktop.png" alt="delete-branch-githubDesktop" title="delete-branch-githubDesktop"/>
 				<p style="text-align: center" class="reference">Github Desktop, eliminando ramas (07 de Abril del 2018) “elaboración propia - Bryan Josue Osses Sichaca”</p>
 			</div>
 			<p>
-				para mezclar ramas en github desktop tenemos que seleccionar la rama que va a absorver a la otra rama, ir al menú <span class="clave">branch -> merge into current</span> se abrirá una nueva ventana con la lista de ramas existentes en el proyecto, seleccionar en la lista la rama que sera absorvida y dar click en el boton <span class="init">Merge into [Nombre rama]</span>
+				Para mezclar ramas en github desktop se selecciona la rama que absorberá a la otra, se dirige al menú <span class="clave">branch -> merge into current</span> se abrirá una nueva ventana con la lista de ramas existentes en el proyecto, se selecciona en la lista la rama que será absorbida y se da clic en el botón <span class="init">Merge into [Nombre rama]</span>
 			</p>
 			
 			<div class="image-center">
