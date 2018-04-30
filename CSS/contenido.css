@@ -1,20 +1,25 @@
-.content article .video {
+
+
+.content article .video{
     width: 80%;
-    height: 500px;
+    height:500px;
     margin-left: 10%;
     margin-bottom: 20px;
-    transition: 1s ease;
+    transition: 1s ease; 
 }
-.content article header {
+
+.content article header{
     margin-bottom: 20px;
 }
-.content div.principal {
+
+.content div.principal{
     margin-top: 50px;
     transition: 1s ease;
 }
-.content table {
-    width: 90%;
-    margin: auto;
+
+.content table{
+    width:90%;
+    margin:auto;
     border: 1px solid #000;
     border-collapse: collapse;
     font-size: 1.05em;
@@ -22,181 +27,214 @@
     -o-transition: 1s ease;
     transition: 1s ease;
 }
+
 .content table th, .content table td {
-    padding: 10px;
+    padding:10px;
     border: 1px solid #000;
 }
-.content table th {
-    background: #ccc;
+
+.content table th{
+    background:#ccc;
 }
-.content table tr:hover {
+
+.content table tr:hover{
     background: #f1f1f1;
 }
-.content table caption {
+
+.content table caption{
     margin-bottom: 10px;
-    font-size: 1.3em;
+    font-size:1.3em;
     font-weight: bold;
 }
-div.scroll {
-    height: 1500px;
-    overflow: scroll;
+
+div.scroll{
+    height:1500px;
+    overflow:scroll;
     padding: 1%;
 }
-.content article>p, article>h3, article>h2, article>h4, .content div.principal, div.title-important p {
+.content article > p, article > h3, article > h2,article > h4, .content div.principal,div.title-important p{
     font-size: 1.3em;
     text-align: justify;
     margin-bottom: 20px;
-    width: 100%;
+    width:100%;
 }
-.content article ol.lista {
+
+.content article ol.lista{
     list-style: circle;
 }
-.content article ul.lista {
+
+.content article ul.lista{
     list-style: decimal;
 }
-.content article ul.lista, .content article ol.lista {
-    margin-bottom: 20px;
+
+.content article ul.lista, .content article ol.lista{
+    margin-bottom:20px;
 }
-.content article ol.lista li {
+
+
+.content article ol.lista li{
     margin-bottom: 10px;
     margin-left: 1.5%;
     font-size: 1.3em;
     text-align: justify;
 }
-div.image {
+
+div.image{
     width: 40%;
     float: left;
     padding: 1%;
     margin-right: 2%;
 }
-div.image img, div.image-center img {
-    width: 100%;
-    height: auto;
+
+div.image img, div.image-center img{
+    width:100%;
+    height:auto;
 }
-div.image-center {
-    width: 70%;
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 0;
+
+div.image-center{
+    width:70%;
+    margin:auto;
+    margin-bottom:20px;
+    padding:0;
     text-align: center !important;
 }
-div.image-zoom img {
-    -webkit-transition: all .9s ease;
-    /* Safari y Chrome */
-    -moz-transition: all .9s ease;
-    /* Firefox */
-    -o-transition: all .9s ease;
-    /* IE 9 */
-    -ms-transition: all .9s ease;
-    /* Opera */
-    width: 100%;
+div.image-zoom img{
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+    width:100%;
 }
 div.image-zoom:hover {
-    -webkit-transform: scale(1.35);
-    -moz-transform: scale(1.35);
-    -ms-transform: scale(1.35);
-    -o-transform: scale(1.35);
-    transform: scale(1.35);
+    -webkit-transform:scale(1.35);
+    -moz-transform:scale(1.35);
+    -ms-transform:scale(1.35);
+    -o-transform:scale(1.35);
+    transform:scale(1.35);
 }
-div.image-zoom {
-    width: 70%;
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 0;
+div.image-zoom{
+    width:70%;
+    margin:auto;
+    margin-bottom:20px;
+    padding:0;
     text-align: center !important;
 }
-div.code {
+div.code{
     padding: 10px;
     display: inline-block;
     font-size: 1.2em;
-    background: #f1f1f1;
+    background:#f1f1f1;
     border: 1px solid #cccbcb;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    border-radius:5px;
+    margin-bottom:10px;
 }
-div.code p {
-    font-family: 'Mina' !important;
+
+div.code p{
+    font-family: 'Mina' !important; 
 }
-p.title, p.title-important {
-    color: #126093;
+
+p.title, p.title-important{
+    color:#126093;
     font-weight: bold;
     margin-top: 10px;
 }
-p.title-important {
+
+p.title-important{
     color: #666 !important;
     font-size: 2em !important;
 }
-.title-important {
+
+.title-important{
     text-align: center !important;
 }
-.init {
-    color: #9f1bad;
+
+.init{
+    color:#9f1bad;
 }
-.clave {
-    color: #4dc03b;
+
+.clave{
+    color:#4dc03b;
 }
-.parametro {
-    color: #a62219;
+
+.parametro{
+    color:#a62219;
 }
-.etiqueta {
-    color: #F10060;
+
+.etiqueta{
+    color:#F10060;
     font-weight: bold;
 }
-.propiedad {
-    color: #11CE1A;
+
+.propiedad{
+    color:#11CE1A;
     font-weight: bold;
 }
-.comentario {
+
+.comentario{
     color: #0039e6;
 }
-.atributo {
-    color: #B29E16;
+
+.atributo{
+    color:#B29E16;
     font-weight: bold;
 }
-.funcion {
-    color: #00ACEC;
+
+.funcion{
+    color:#00ACEC;
     font-weight: bold;
 }
+
 .valor {
-    color: #FF7800;
+    color:#FF7800 ;
     font-weight: bold;
 }
+
 .coordenada {
-    color: #A800FF;
+    color:#A800FF;
     font-weight: bold;
 }
-.resaltado {
+.resaltado{
     font-weight: bold;
 }
-.reference {
-    font-style: italic;
-    color: #454545;
+
+.reference{
+    font-style:italic;
+    color:#454545;
     text-align: justify;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom:10px;
 }
-@media screen and (max-width: 1100px) {
-    .content article .video {
+
+@media screen and (max-width: 1100px){
+   
+    .content article .video{
         height: 300px;
     }
-    .content div.principal {
-        margin-top: 30px;
+
+     .content div.principal{
+        margin-top:30px;
+
     }
-    div.image {
-        width: 70%;
+
+    div.image{
+        width:70%;
         float: none;
-        margin: auto;
+        margin:auto;
     }
-    div.image-center {
+
+    div.image-center{
         width: 100%;
     }
-    .content table {
+
+       .content table{
         width: 100%;
     }
 }
-@media screen and (max-width: 670px) {
-    div.scroll {
-        overflow: hidden;
-        height: auto;
+
+@media screen and (max-width: 670px){
+    
+    div.scroll{
+        overflow:hidden;
+        height:auto;
     }
 }

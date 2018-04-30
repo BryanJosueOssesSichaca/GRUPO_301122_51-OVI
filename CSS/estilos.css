@@ -1,24 +1,29 @@
+
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Mina');
-* {
+
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
 }
-ul, ol {
+
+ul, ol{
     list-style: none;
 }
+
 /* Header principal de la pagina */
 
-body>header {
+body > header{   
     overflow: hidden;
     color: #fff;
     border-bottom: 1px solid #000;
     background: #fff;
-    width: 100%;
+    width:100%;
 }
-header div.logo {
+
+header div.logo{
     display: inline-block;
     max-width: 400px;
     height: 100%;
@@ -26,40 +31,46 @@ header div.logo {
     vertical-align: top;
     transition: 1s all ease;
 }
-header div.logo img {
+
+header div.logo img{
     width: 100%;
     height: auto;
     display: block;
 }
-header div.principal {
-    display: inline-block;
+
+header div.principal{
+    display:inline-block;
     vertical-align: top;
     transition: 1s all ease;
 }
-header div.principal h1 {
+
+header div.principal h1{
     color: #fff;
     text-shadow: 2px 2px #0c3d66;
     box-shadow: 2px 2px #082b47;
-    background: linear-gradient(#1a75c0, #1667aa);
+    background:linear-gradient(#1a75c0,#1667aa);
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     display: inline-block;
     vertical-align: top;
-    font-family: 'Mina', Arial, Helvetica, sans-serif;
+    font-family: 'Mina',Arial, Helvetica, sans-serif;
 }
+
 /* Barra redes sociales */
 
-header div.social {
+header div.social{
     vertical-align: top;
     padding: 30px;
-    float: right;
+    float:right;
 }
-header div.social ul li {
+
+header div.social ul li{
     float: left;
     margin-left: 2px;
 }
-header div.social ul li a {
+
+header div.social ul li a{
     text-decoration: none;
     font-size: 2em;
     color: #fff;
@@ -67,53 +78,63 @@ header div.social ul li a {
     padding: 5px 10px;
     border-radius: 5px;
 }
-.social ul li .icon-facebook {
-    background: #3b5998;
+
+.social ul li .icon-facebook{
+    background:#3b5998;
 }
-.social ul li .icon-github {
-    background: #4078c0;
+.social ul li .icon-github{
+    background:#4078c0;
 }
-.social ul li .icon-twitter {
-    background: #00abf0;
+.social ul li .icon-twitter{
+    background:#00abf0;
 }
-.social ul li .icon-youtube {
-    background: #ae181f;
+.social ul li .icon-youtube{
+    background:#ae181f;
 }
-.social ul li a:hover {
+
+.social ul li a:hover{
     background: #000;
 }
-header div.principal h1:hover {
+
+header div.principal h1:hover{
     border-radius: 10px;
     background: #125893;
 }
+
 /* Menu de navegación */
 
-header nav {
-    border-top: 1px solid #000;
+header nav{
+    border-top:1px solid #000;
     overflow: hidden;
 }
-header nav ul>li {
+
+header nav ul > li{
     width: 25%;
-    background: #125893;
+    background:#125893;
     float: left;
 }
-nav ul li ul {
+
+nav ul li ul{
     width: 25%;
     display: none;
-    position: absolute;
+    position:absolute;
     transition: 0.5s;
 }
-nav ul li ul li {
+
+nav ul li ul li{
     width: 100%;
 }
-nav ul li ul li:first-child a {
+
+nav ul li ul li:first-child a{
     border-top: 1px solid #000;
 }
-nav ul li:hover>ul {
+
+nav ul li:hover > ul{
     display: block;
-    z-index: 100;
+    z-index:100;
 }
-header nav ul li a {
+
+header nav ul li a{
     color: #fff;
     text-decoration: none;
     width: 100%;
@@ -123,68 +144,77 @@ header nav ul li a {
     font-size: 1em;
     transition: 0.3s;
 }
-nav ul li a:hover {
-    background: #F4AF00;
-    color: #000;
-}
-/* Menú movil */
 
-.menu {
+nav ul li a:hover{
+    background:#F4AF00;
+    color:#000;
+}
+
+ /* Menú movil */
+
+ .menu{
     background: #1F2122;
     height: 50px;
     border: 1px solid black;
     padding: 0 10px;
-    color: #fff;
+    color:#fff;
     display: none;
 }
-.menu h3 {
+
+.menu h3{
     float: left;
     margin-top: 15px;
 }
-.menu-toggle {
+
+.menu-toggle{
     background: #1F2122;
     color: #fff;
     cursor: pointer;
     padding: 18px;
     width: 50px;
-    line-height: 0;
-    border: none;
+    line-height: 0;		
+    border:none;
     text-align: left;
     outline: none;
     font-size: 1em;
-    transition: 0.4s;
+    transition:0.4s; 
     border: 1px solid #000;
     border-radius: 5px;
     float: right;
     margin-top: 5px;
 }
-.activo, .menu-toggle:hover {
+
+.activo, .menu-toggle:hover{
     background-color: #434343;
 }
-.plegable {
+
+.plegable{
     max-height: 1000px !important;
-    transition: 1s;
+    transition:1s;
 }
+
 /*Contenedor principal de la pagina web */
 
-main {
+main{
     width: 95%;
     margin: auto;
     margin-top: 20px;
     padding-bottom: 20px;
-    overflow: hidden;
+    overflow:hidden;
     transition: 1s;
 }
+
 /* Aside de la pagina web */
 
-aside {
+aside{
     width: 22.5%;
     background: #ccc;
     float: left;
     margin-right: 1%;
     border: 1px solid black;
     border-radius: 5px;
-}
+}	
+
 aside h3.title {
     text-align: center;
     background-color: #fff;
@@ -192,30 +222,34 @@ aside h3.title {
     border-radius: 5px 5px 0 0;
     padding: 5px 0;
 }
+
+
 /* Contador de visitas */
 
-.contador {
+.contador{
     background: #fff;
     text-align: center;
     padding: 10px 0;
     border-radius: 5px;
     border-top: 1px solid #ccc;
 }
-.contador h3 {
+
+.contador h3{
     margin-bottom: 10px;
 }
-/* Twitter feed */
 
-.twitter-feed {
+/* Twitter feed */
+.twitter-feed{
     height: 400px;
     overflow: scroll;
     border-top: 1px solid #ccc;
     border-radius: 5px;
 }
-/*Menú Javascript*/
 
-.acordeon {
-    background-color: #F4AF00;
+ /*Menú Javascript*/
+
+.acordeon{
+    background-color:  #F4AF00;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     cursor: pointer;
@@ -226,53 +260,64 @@ aside h3.title {
     outline: none;
     font-size: 1em;
     transition: 0.4s;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #000; 
     border-radius: 5px;
 }
-.acordeon:hover {
+
+.acordeon:hover{
     background-color: #125893;
 }
-.active {
+
+.active{
     background-color: #0f4979;
 }
-.panel {
+
+.panel{
     padding: 0;
     background-color: #fff;
     overflow: hidden;
-    transition: 1s;
+    transition: 1s; 
     border-radius: 5px;
     text-align: center;
 }
-.desplegable {
+
+.desplegable{
     max-height: 0;
     transition: 1s all ease-in;
 }
-div.panel ul li a {
+
+
+
+div.panel ul li a{
     display: block;
     padding: 10px 10px 10px 20px;
     font-size: 20px;
     color: #666;
-    text-decoration: none;
-    transition: 0.2s;
+    text-decoration: none; 
+    transition: 0.2s; 
 }
-div.panel ul li a:hover {
-    background-color: #125893;
-    color: #fff;
+
+div.panel ul li a:hover{
+    background-color:#125893; 
+    color:#fff;
     text-shadow: 2px 2px 2px #000;
 }
-span.icon-minus, span.icon-plus {
+
+span.icon-minus, span.icon-plus{
     font-size: 0.8em;
     display: inline-block;
 }
+
 /* Section principal pagina web */
 
-.content {
-    width: 75.5%;
-    background: #fff;
+.content{
+    width:75.5%;
+    background:#fff;			
     float: left;
-    margin-left: 1%;
+    margin-left:1%;
 }
-.content article header {
+
+.content article header{
     margin-bottom: 10px;
     border: 1px solid #cccbcb;
     padding: 10px;
@@ -280,23 +325,26 @@ span.icon-minus, span.icon-plus {
     background: #f1f1f1;
     text-align: center;
 }
-.content article header h2 {
-    font-size: 2em;
-    color: #000;
-}
-.content article header p {
-    font-size: 1.3em;
-    color: #454545;
-    font-weight: bold;
-    margin-top: 5px;
-}
-/* Footer del articulo principal */
 
-.content footer {
+.content article header h2{
+    font-size: 2em;
+    color:#000;
+}
+
+.content article header p{
+    font-size: 1.3em;
+    color:#454545;
+    font-weight: bold;
+    margin-top:5px;
+}
+
+/* Footer del articulo principal */
+.content footer{
     background: #fff;
     margin-top: 10px;
 }
-.button-next {
+
+.button-next{
     float: right;
     margin-right: 3%;
     cursor: pointer;
@@ -305,132 +353,161 @@ span.icon-minus, span.icon-plus {
     transition: 0.5s;
     box-shadow: 1px 1px #000;
     font-size: 1em;
-    padding: 1.5%;
+    padding:1.5%;
 }
-.button-next a {
+
+.button-next a{
     text-decoration: none;
     color: #fff;
     border-radius: 50%;
     display: block;
 }
-.button-next:hover {
-    background: #000;
+
+.button-next:hover{
+    background:#000;  
     font-size: 1.3em;
 }
-/* Footer pagina web */
 
-footer {
+/* Footer pagina web */
+footer{
     clear: both;
     float: left;
     width: 100%;
     padding: 20px;
     color: #fff;
-    background-color: #000;
+    background-color: #000; 
 }
-footer .licence {
+
+footer .licence{
     text-align: center;
 }
-footer .licence a {
+
+footer .licence a{
     color: #fff;
-    text-decoration: none;
+    text-decoration: none; 
 }
-footer .licence a:hover {
-    text-decoration: underline;
+
+footer .licence a:hover{
+    text-decoration: underline; 
 }
-footer .licence img {
+
+footer .licence img{
     margin-bottom: 10px;
 }
-/* Media queries */
 
-@media screen and (max-width: 1170px) {
-    header div.social ul li {
-        margin-left: 0;
-        float: none;
+
+/* Media queries */
+@media screen and (max-width: 1170px){
+    header div.social ul li{
+       margin-left: 0;
+       float:none;
     }
-    .social {
+
+    .social{
         position: fixed;
         right: 0;
         top: 50%;
-        z-index: 10;
+        z-index:10;
         padding: 0 !important;
     }
-    .social ul {
+
+    .social ul{
         list-style: none;
     }
-    .social ul li a {
-        display: inline-block;
-        ;
+
+    .social ul li a{
+        display: inline-block;;
         padding: 5px 10px !important;
         color: #fff;
         background: #000;
-        text-decoration: none;
+        text-decoration:none;
         font-size: 1.2em !important;
         transition: all 0.5s ease;
         border-radius: 0 !important;
     }
 }
-@media screen and (max-width: 900px) {
-    header div.logo {
-        display: block;
+
+@media screen and (max-width: 900px){
+    header div.logo{
+        display:block;
         width: 100%;
         max-width: none;
         text-align: center;
     }
-    header div.logo img {
+
+    header div.logo img{
         display: inline;
         max-width: 400px;
     }
-    header div.principal {
-        width: 100%;
+
+    header div.principal{
+        width:100%;
         text-align: center;
         padding: 10px;
         padding-top: 0;
     }
-    main {
+
+    main{
         width: 100%;
     }
-    aside {
-        width: 25%;
+
+    aside{
+      width: 25%;
     }
-    .content {
+
+    .content{
         width: 73%;
     }
-    .social {
+
+    .social{
         top: 5%;
     }
 }
-@media screen and (max-width: 670px) {
-    body>header {
-        position: relative;
+
+
+@media screen and (max-width: 670px){
+
+    body > header{
+        position:relative;
     }
-    main {
-        margin-top: 10px;
+
+    main{
+        margin-top:10px;
     }
-    .menu {
+
+    .menu{
         display: block;
     }
-    nav {
+
+    nav{
         max-height: 0;
-        transition: 1s;
+        transition:1s;
     }
-    nav.pane ul li {
+
+    nav.pane ul li{
         width: 100%;
+        
     }
-    header nav ul li:hover>ul {
+
+    header nav ul li:hover > ul{
         display: none;
     }
-    .social {
+
+    .social{
         display: none;
     }
-    aside {
-        width: 100%;
+
+    aside{
+        width:100%;
         transition: 1s;
         margin-left: 0;
     }
-    .content {
-        width: 100%;
+
+    .content{
+        width:100%;
         margin-top: 10px;
         margin-left: 0;
         padding: 10px;
     }
 }
+
