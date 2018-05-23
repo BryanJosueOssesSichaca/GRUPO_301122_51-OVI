@@ -12,7 +12,7 @@
 			<p>Publicado el 06/04/2018 a las 00:45</p>
 		</header>
 		<p>
-			Una vez que esté instalado git y si es la primera vez que lo utilizamos, tenemos que configurar nuestros datos como nombre, correo electrónico, editor etc… para esto utilizamos el comando <b>config</b> en la línea de comandos (GIT bash para Windows, la terminal del sistema para distribuciones de Linux y Mac Os):
+			Una vez que se haya instalado git y si es la primera vez que se utiliza, se configuran los datos básicos: nombre, correo electrónico, editor etc… para esto, se ocupa el comando <b>config</b> en la línea de comandos (GIT bash para Windows, la terminal del sistema para distribuciones de Linux y Mac Os):
 		</p>
 		<p class="title">Configurar nombre de usuario:</p>
 		<div class="code">
@@ -20,18 +20,18 @@
 				<span class="init">$</span> git <span class="clave">config</span> --global user.name <span class="parametro">“NombreDeUsuario”</span>
 			</p>
 		</div>
-		<p class="title">Configurar Correo Electronico:</p>
+		<p class="title">Configurar Correo Electrónico:</p>
 		<div class="code">
 			<p>
 				<span class="init">$</span> git <span class="clave">config</span> --global user.email <span class="parametro">CorreoElectornico@ejemplo.com</span>
 			</p>
 		</div>
 		<p>
-			GIT siempre utilizará esta informacion para todo lo que hagas en el Sistema, para sobrescribir los datos solamente hay que utilizar el mismo comando pero con un nombre o email diferente.
+			GIT siempre utilizará esta información para todas las acciones realizadas en el Sistema, para sobrescribir los datos solamente hay que utilizar el mismo comando pero con un nombre o email diferente.
 		</p>
 		<p class="title">Configurar Editor</p>
 		<p>
-			Puedes especificar el editor que GIT utilizará por defecto cuando GIT necesite que introduzcas un mensaje (como la descripción de los commits) en caso de no configurar esta opción git utilizara el editor por defecto del sistema <span class="clave">(en Windows, Git Bash utiliza por defecto el editor Vim)</span>.
+			Se puede especificar el editor que GIT utilizará por defecto cuando GIT cuando requiera que sea introducido un mensaje (como la descripción de los commits) en caso de no configurar esta opción git utilizara el editor por defecto del sistema <span class="clave">(en Windows, Git Bash utiliza por defecto el editor Vim)</span>.
 		</p>
 		<div class="code">
 			<p>
@@ -39,7 +39,7 @@
 			</p>
 		</div>
 		<p class="title">Comprobar la configuración</p>
-		<p>Para comprobar La configuración utilizamos el comando:</p>
+		<p>Se utiliza el siguiente comando:</p>
 		<div class="code">
 			<span class="init">$</span> git <span class="clave">config</span> -- global <span class="parametro">--list</span>
 		</div>
@@ -47,22 +47,22 @@
 			<p class="title-important">Configuración de Git a través de Github Desktop</p>
 		</div>
 		<p>
-			Si utilizas GIT a través de una herramienta que nos proporcione una interfaz gráfica como Github Desktop, GIT kraken o source tree no tendrás que ingresar ningún comando de manera manual sino acceder a través de los menús de opciones.
+			Si se utiliza GIT a través de una herramienta que proporcione una interfaz gráfica como Github Desktop, GIT Kraken o Source Tree, no se requiere ingresar ningún comando de manera manual sino acceder a través de los menús de opciones.
 		</p>
 		<p>
-			En Github Desktop  debemos ir al menú <span class="clave">File -> Options</span>, allí nos encontraremos multiples pestañas:
+			En Github Desktop al dirigirse al menú <span class="clave">File -> Options</span>, se aprecian múltiples pestañas:
 		</p>
 		<p class="title">Accounts:</p>
 		<p>
-			Aquí podemos iniciar sesión con nuestra cuenta de Github (Usuario y contraseña).
+			Para iniciar sesión con la cuenta de Github (Usuario y contraseña).
 		</p>
 		<p class="title">Git:</p>
 		<p>
-			igual que con el comando <span class="clave">config</span>, podemos configurar nuestro nombre y correo electrónico.
+			Igual que con el comando <span class="clave">config</span>, se puede configurar el nombre y correo electrónico.
 		</p>
 		<p class="title">Advanced:</p>
 		<p>
-			Podemos elegir el editor externo, el Shell para la línea de comandos de GIT (por defecto GIT bash) entre otras opciones.
+			Para elegir el editor externo, el Shell para la línea de comandos de GIT (por defecto GIT bash) entre otras opciones.
 		</p>
 		<div class="image-center">
 			<img style="max-width:450px" src="Imagenes/accounts.png" alt="options-GithubDesktop" title="options-GithubDesktop"/>
@@ -70,7 +70,7 @@
 		</div>
 		<p class="title-important">Obtener ayuda sobre un comando</p>
 		<p>
-			en Git podemos ver la pagina del manual (manPage) la cual nos brindara información sobre cualquier comando de diferentes maneras:
+			En Git para visualizar la página del manual (manPage) donde se encuentra información sobre cualquier comando, se realiza siguiendo la sintáxis:
 		</p>
 		<div class="code">
 			<p>
